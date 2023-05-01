@@ -43,6 +43,19 @@ class UseLinuxExtension : Extension() {
 			}
 		}
 
+		publicSlashCommand {
+			name = "force-send"
+			description = "Sends a notification immediately."
+
+			check {
+				if (event.interaction.user.id.value != 502871063223336990UL) fail("No.")
+			}
+
+			action {
+				lastSentNotification = 0L
+			}
+		}
+
 		kord.launch {
 			delay(10000L)
 
