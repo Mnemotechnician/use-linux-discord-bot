@@ -7,7 +7,7 @@ import com.kotlindiscord.kord.extensions.extensions.publicSlashCommand
 import com.kotlindiscord.kord.extensions.types.respond
 import com.kotlindiscord.kord.extensions.utils.*
 import dev.kord.common.annotation.KordPreview
-import dev.kord.common.entity.Snowflake
+import dev.kord.common.entity.*
 import dev.kord.core.behavior.channel.createMessage
 import dev.kord.core.entity.channel.TextChannel
 import dev.kord.rest.builder.message.create.embed
@@ -35,9 +35,14 @@ class UseLinuxExtension : Extension() {
 				val channel = arguments.target.fetchChannel()
 
 				if (channel !is TextChannel) {
-					respond {
-						content = "Target must be a text channel"
-					}
+					respond { content = "Target must be a text channel" }
+					return@action
+				}
+
+				// The author must be an admin in that channel
+				val perms = channel.getEffectivePermissions(event.interaction.user.id)
+				if (Permission.ManageChannels !in perms) {
+					respond { content = "You do not have the permission to modify that channel." }
 					return@action
 				}
 
@@ -45,6 +50,28 @@ class UseLinuxExtension : Extension() {
 				saveState()
 
 				respond { content = "Success."}
+			}
+		}
+
+		publicSlashCommand(::AddChannelArgs) {
+			name = "remove-channel"
+			description = "Remove a channel from the list of notified channels"
+
+			action {
+				val removed = targetChats.find { it.id == arguments.target.id } ?: run {
+					respond { content = "This channel is not opted-in." }
+					return@action
+				}
+
+				// The author must be an admin in that channel
+				val perms = removed.getEffectivePermissions(event.interaction.user.id)
+				if (Permission.ManageChannels !in perms) {
+					respond { content = "You do not have the permission to modify that channel." }
+					return@action
+				}
+
+				targetChats.remove(removed)
+				respond { content = "Success." }
 			}
 		}
 
@@ -121,6 +148,13 @@ class UseLinuxExtension : Extension() {
 		val target by channel {
 			name = "target"
 			description = "Channel to add to the list of notified channels"
+		}
+	}
+
+	inner class RemoveChannelArgs : Arguments() {
+		val target by channel {
+			name = "target"
+			description = "Channel to remove from the list of notified channels"
 		}
 	}
 
