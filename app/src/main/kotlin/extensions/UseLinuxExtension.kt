@@ -22,7 +22,7 @@ class UseLinuxExtension : Extension() {
 
 	val targetChats = mutableListOf<TextChannel>()
 	var lastSentNotification = 0L
-	val saveFile = File("${System.getenv("USER_HOME")}/use-linux.json")
+	val saveFile = File("${System.getProperty("user.home")}/use-linux.json")
 
 	override suspend fun setup() {
 		loadState()
@@ -32,14 +32,19 @@ class UseLinuxExtension : Extension() {
 			description = "Add a channel to the list of notified channels"
 
 			action {
-				if (arguments.target !is TextChannel) {
+				val channel = arguments.target.fetchChannel()
+
+				if (channel !is TextChannel) {
 					respond {
 						content = "Target must be a text channel"
 					}
 					return@action
 				}
 
-				targetChats.add(arguments.target as TextChannel)
+				targetChats.add(channel)
+				saveState()
+
+				respond { content = "Success."}
 			}
 		}
 
@@ -53,23 +58,26 @@ class UseLinuxExtension : Extension() {
 
 			action {
 				lastSentNotification = 0L
+				respond { content = "Will send a notification to ${targetChats.size} channels" }
 			}
 		}
 
 		kord.launch {
-			delay(10000L)
+			delay(1000L)
 
 			// Send a notfication in every channel every 4 hours
 			while (true) {
-				if (System.currentTimeMillis() - lastSentNotification < 4 * 60 * 60 * 1000) {
+				if (System.currentTimeMillis() - lastSentNotification > 4 * 60 * 60 * 1000) {
 					runCatching {
 						targetChats.forEach {
 							it.createMessage {
 								embed { description = "Remember to use Linux!" }
 							}
 						}
+
 						lastSentNotification = System.currentTimeMillis()
 						println("Notification sent")
+						saveState()
 					}.onFailure {
 						println("Error: $it")
 					}
@@ -77,8 +85,6 @@ class UseLinuxExtension : Extension() {
 				delay(1000L)
 			}
 		}
-
-		saveState()
 	}
 
 	suspend fun loadState() {
