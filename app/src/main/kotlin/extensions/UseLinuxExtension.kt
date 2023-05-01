@@ -91,6 +91,8 @@ class UseLinuxExtension : Extension() {
 				kord.defaultSupplier.getChannelOrNull(it) as? TextChannel
 			})
 		}
+
+		println("State loaded")
 	}
 
 	fun saveState() {
@@ -102,6 +104,8 @@ class UseLinuxExtension : Extension() {
 				)
 			)
 		)
+
+		println("State saved")
 	}
 
 	inner class AddChannelArgs : Arguments() {
