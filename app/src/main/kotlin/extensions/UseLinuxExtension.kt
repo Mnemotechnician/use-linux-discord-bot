@@ -22,7 +22,7 @@ class UseLinuxExtension : Extension() {
 
 	val targetChats = mutableListOf<TextChannel>()
 	var lastSentNotification = 0L
-	val saveFile = File("${env("USER_HOME")}/use-linux.json")
+	val saveFile = File("${System.getenv("USER_HOME")}/use-linux.json")
 
 	override suspend fun setup() {
 		loadState()
@@ -82,7 +82,7 @@ class UseLinuxExtension : Extension() {
 	}
 
 	suspend fun loadState() {
-		if (saveFile.exists()) {
+		if (saveFile.exists()) runCatching {
 			val state = saveFile.readText()
 			val stateObj = Json.decodeFromString<State>(state)
 
@@ -90,6 +90,9 @@ class UseLinuxExtension : Extension() {
 			targetChats.addAll(stateObj.channels.mapNotNull {
 				kord.defaultSupplier.getChannelOrNull(it) as? TextChannel
 			})
+		}.onFailure {
+			println("Failed to load state: $it")
+			return
 		}
 
 		println("State loaded")

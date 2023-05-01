@@ -7,8 +7,13 @@ private val TOKEN = env("TOKEN")
 
 suspend fun main() {
 	val bot = ExtensibleBot(TOKEN) {
+		chatCommands {
+			defaultPrefix = "!"
+			enabled = true
+			invokeOnMention = true
+		}
 		extensions {
-			add(::UseLinuxExtension)
+			add { UseLinuxExtension() }
 		}
 	}
 
