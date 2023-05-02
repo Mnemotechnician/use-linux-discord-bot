@@ -16,13 +16,16 @@ import kotlinx.serialization.*
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.Json.Default.encodeToString
 import java.io.File
+import kotlin.math.*
 
 class UseLinuxExtension : Extension() {
 	override val name = "use-linux"
 
 	val targetChats = mutableListOf<TextChannel>()
-	var lastSentNotification = 0L
 	val saveFile = File("${System.getProperty("user.home")}/use-linux.json")
+
+	var lastSentNotification = 0L
+	val notificationInterval = 4 * 60 * 60 * 1000L
 
 	override suspend fun setup() {
 		loadState()
@@ -79,6 +82,7 @@ class UseLinuxExtension : Extension() {
 			name = "force-send"
 			description = "Sends a notification immediately."
 
+			// Owner-only
 			check {
 				if (event.interaction.user.id.value != 502871063223336990UL) fail("No.")
 			}
@@ -92,19 +96,23 @@ class UseLinuxExtension : Extension() {
 		kord.launch {
 			delay(1000L)
 
-			// Send a notfication in every channel every 4 hours
+			// Send a notification in every channel every 4 hours
 			while (true) {
-				if (System.currentTimeMillis() - lastSentNotification > 4 * 60 * 60 * 1000) {
+				if (System.currentTimeMillis() - lastSentNotification > notificationInterval) {
 					runCatching {
+						// To compensate for possible delays, we don't just set it to the current moment
+						lastSentNotification = max(
+							System.currentTimeMillis() - 1000 * 60 * 60, // Lower limit - at least (interval - 1 hour) away
+							lastSentNotification + notificationInterval) // Normal amount - exactly (interval) away
+						saveState()
+
 						targetChats.forEach {
 							it.createMessage {
 								embed { description = "Remember to use Linux!" }
 							}
 						}
 
-						lastSentNotification = System.currentTimeMillis()
 						println("Notification sent")
-						saveState()
 					}.onFailure {
 						println("Error: $it")
 					}
