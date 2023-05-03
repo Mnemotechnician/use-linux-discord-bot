@@ -17,11 +17,12 @@ import kotlinx.serialization.*
 import kotlinx.serialization.Transient
 import kotlinx.serialization.json.Json
 import java.io.File
+import java.util.*
 
 class UseLinuxExtension : Extension() {
 	override val name = "use-linux"
 
-	val targetChats = mutableListOf<TargetChat>()
+	val targetChats = Collections.synchronizedList(mutableListOf<TargetChat>())
 	val saveFile = File("${System.getProperty("user.home")}/use-linux.json")
 
 	override suspend fun setup() {
@@ -45,7 +46,7 @@ class UseLinuxExtension : Extension() {
 
 				// The bot must be able to send messages in it
 				val botPerms = channel.getEffectivePermissions(getKoin().inject<Kord>().value.selfId)
-				if (Permission.SendMessages !in botPerms) {
+				if (Permission.SendMessages !in botPerms || Permission.ViewChannel !in botPerms) {
 					respond { content = "I can not send messages there." }
 					return@action
 				}
@@ -127,6 +128,8 @@ class UseLinuxExtension : Extension() {
 							chat.send()
 						}.onFailure {
 							println("Failed to send notification in ${chat.id}: $it")
+							// Next attempt in no less than 5 minutes
+							chat.nextNotification = System.currentTimeMillis() + 1000 * 60 * 5L
 						}
 						saveState()
 					}
