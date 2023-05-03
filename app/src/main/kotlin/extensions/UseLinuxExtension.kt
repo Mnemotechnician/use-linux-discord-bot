@@ -1,31 +1,28 @@
 package com.github.mnemotechnician.uselinux
 
 import com.kotlindiscord.kord.extensions.commands.Arguments
+import com.kotlindiscord.kord.extensions.commands.application.slash.converters.impl.*
 import com.kotlindiscord.kord.extensions.commands.converters.impl.*
 import com.kotlindiscord.kord.extensions.extensions.Extension
 import com.kotlindiscord.kord.extensions.extensions.publicSlashCommand
-import com.kotlindiscord.kord.extensions.types.respond
+import com.kotlindiscord.kord.extensions.types.*
 import com.kotlindiscord.kord.extensions.utils.*
-import dev.kord.common.annotation.KordPreview
 import dev.kord.common.entity.*
+import dev.kord.core.Kord
 import dev.kord.core.behavior.channel.createMessage
 import dev.kord.core.entity.channel.TextChannel
 import dev.kord.rest.builder.message.create.embed
 import kotlinx.coroutines.*
 import kotlinx.serialization.*
+import kotlinx.serialization.Transient
 import kotlinx.serialization.json.Json
-import kotlinx.serialization.json.Json.Default.encodeToString
 import java.io.File
-import kotlin.math.*
 
 class UseLinuxExtension : Extension() {
 	override val name = "use-linux"
 
-	val targetChats = mutableListOf<TextChannel>()
+	val targetChats = mutableListOf<TargetChat>()
 	val saveFile = File("${System.getProperty("user.home")}/use-linux.json")
-
-	var lastSentNotification = 0L
-	val notificationInterval = 4 * 60 * 60 * 1000L
 
 	override suspend fun setup() {
 		loadState()
@@ -41,22 +38,33 @@ class UseLinuxExtension : Extension() {
 					respond { content = "Target must be a text channel" }
 					return@action
 				}
+				if (targetChats.any { it.id == channel.id }) {
+					respond { content = "This channel is already opted-in." }
+					return@action
+				}
+
+				// The bot must be able to send messages in it
+				val botPerms = channel.getEffectivePermissions(getKoin().inject<Kord>().value.selfId)
+				if (Permission.SendMessages !in botPerms) {
+					respond { content = "I can not send messages there." }
+					return@action
+				}
 
 				// The author must be an admin in that channel
-				val perms = channel.getEffectivePermissions(event.interaction.user.id)
-				if (Permission.ManageChannels !in perms) {
+				val userPerms = channel.getEffectivePermissions(event.interaction.user.id)
+				if (Permission.ManageChannels !in userPerms) {
 					respond { content = "You do not have the permission to modify that channel." }
 					return@action
 				}
 
-				targetChats.add(channel)
+				targetChats.add(TargetChat(channel.id, arguments.intervalMinutes))
 				saveState()
 
 				respond { content = "Success."}
 			}
 		}
 
-		publicSlashCommand(::AddChannelArgs) {
+		publicSlashCommand(::RemoveChannelArgs) {
 			name = "remove-channel"
 			description = "Remove a channel from the list of notified channels"
 
@@ -67,7 +75,7 @@ class UseLinuxExtension : Extension() {
 				}
 
 				// The author must be an admin in that channel
-				val perms = removed.getEffectivePermissions(event.interaction.user.id)
+				val perms = removed.getChannel().getEffectivePermissions(event.interaction.user.id)
 				if (Permission.ManageChannels !in perms) {
 					respond { content = "You do not have the permission to modify that channel." }
 					return@action
@@ -79,17 +87,32 @@ class UseLinuxExtension : Extension() {
 		}
 
 		publicSlashCommand {
-			name = "force-send"
-			description = "Sends a notification immediately."
+			name = "channel-info"
+			description = "View all notified channels and their intervals."
 
 			// Owner-only
 			check {
-				if (event.interaction.user.id.value != 502871063223336990UL) fail("No.")
+				if (event.interaction.user.id.value != 502871063223336990UL) fail("Access Denied.")
 			}
 
 			action {
-				lastSentNotification = 0L
-				respond { content = "Will send a notification to ${targetChats.size} channels" }
+				editingPaginator {
+					val pageSize = 10
+
+					targetChats.windowed(pageSize, pageSize, partialWindows = true).forEachIndexed { index, chats ->
+						page {
+							title = "Channels ${index * pageSize + 1}-${index * pageSize + pageSize}"
+
+							chats.forEach {
+								field {
+									val timeLeft = it.nextNotification - System.currentTimeMillis()
+									name = "#${it.getChannel().name}: ${it.id} (interval: ${it.intervalMinutes} minutes)"
+									value = "${timeLeft / 1000 / 60} minutes left"
+								}
+							}
+						}
+					}
+				}.send()
 			}
 		}
 
@@ -98,23 +121,14 @@ class UseLinuxExtension : Extension() {
 
 			// Send a notification in every channel every 4 hours
 			while (true) {
-				if (System.currentTimeMillis() - lastSentNotification > notificationInterval) {
-					runCatching {
-						// To compensate for possible delays, we don't just set it to the current moment
-						lastSentNotification = max(
-							System.currentTimeMillis() - 1000 * 60 * 60, // Lower limit - at least (interval - 1 hour) away
-							lastSentNotification + notificationInterval) // Normal amount - exactly (interval) away
-						saveState()
-
-						targetChats.forEach {
-							it.createMessage {
-								embed { description = "Remember to use Linux!" }
-							}
+				targetChats.forEach { chat ->
+					if (chat.shouldSend()) {
+						runCatching {
+							chat.send()
+						}.onFailure {
+							println("Failed to send notification in ${chat.id}: $it")
 						}
-
-						println("Notification sent")
-					}.onFailure {
-						println("Error: $it")
+						saveState()
 					}
 				}
 				delay(1000L)
@@ -122,15 +136,12 @@ class UseLinuxExtension : Extension() {
 		}
 	}
 
-	suspend fun loadState() {
+	fun loadState() {
 		if (saveFile.exists()) runCatching {
 			val state = saveFile.readText()
 			val stateObj = Json.decodeFromString<State>(state)
 
-			lastSentNotification = stateObj.lastSent
-			targetChats.addAll(stateObj.channels.mapNotNull {
-				kord.defaultSupplier.getChannelOrNull(it) as? TextChannel
-			})
+			targetChats.addAll(stateObj.targetChats)
 		}.onFailure {
 			println("Failed to load state: $it")
 			return
@@ -141,12 +152,7 @@ class UseLinuxExtension : Extension() {
 
 	fun saveState() {
 		saveFile.writeText(
-			Json.encodeToString(
-				State(
-					lastSentNotification,
-					targetChats.map { it.id }
-				)
-			)
+			Json.encodeToString(State(targetChats))
 		)
 
 		println("State saved")
@@ -156,6 +162,31 @@ class UseLinuxExtension : Extension() {
 		val target by channel {
 			name = "target"
 			description = "Channel to add to the list of notified channels"
+		}
+
+		val intervalMinutes by defaultingNumberChoice {
+			name = "interval"
+			description = "Interval between notifications. Default is 4 hours."
+			defaultValue = 240
+
+			choices += mapOf(
+				"10 minutes" to 10L,
+				"30 minutes" to 30L,
+				"1 hour" to 60L,
+				"2 hours" to 120L,
+				"3 hours" to 180L,
+				"4 hours" to 240L,
+				"8 hours" to 480L,
+				"12 hours" to 720L,
+				"1 day" to 60 * 24L,
+				"1 week" to 60 * 24 * 7L,
+				"1 month" to 60 * 24 * 30L,
+				"1 year" to 60 * 24 * 365L,
+				"1 decade" to 60 * 24 * 365 * 10L,
+				"1 century" to 60 * 24 * 365 * 100L,
+				"1 millennia" to 60 * 24 * 365 * 1000L,
+				"1 million years" to 60 * 24 * 365 * 1_000_000L
+			)
 		}
 	}
 
@@ -167,5 +198,38 @@ class UseLinuxExtension : Extension() {
 	}
 
 	@Serializable
-	data class State(val lastSent: Long, val channels: List<Snowflake>)
+	data class State(val targetChats: List<TargetChat>)
+
+	@Serializable
+	data class TargetChat(val id: Snowflake, val intervalMinutes: Long) {
+		@EncodeDefault
+		var nextNotification = 0L
+		@Transient
+		var cachedChannel: TextChannel? = null
+		val kord by getKoin().inject<Kord>()
+
+		fun shouldSend() =
+			System.currentTimeMillis() > nextNotification
+
+		suspend fun getChannel(): TextChannel {
+			if (cachedChannel != null) return cachedChannel!!
+
+			val channel = kord.defaultSupplier.getChannelOrNull(id) as? TextChannel
+				?: error("Channel not found: $id")
+			cachedChannel = channel
+			return channel
+		}
+
+		suspend fun send() {
+			val channel = getChannel()
+
+			channel.createMessage {
+				embed { description = "Remember to use Linux!" }
+			}
+
+			// This accounts for the possible delays (at most 5 minutes)
+			nextNotification = (nextNotification + intervalMinutes * 60 * 1000)
+				.coerceAtLeast(System.currentTimeMillis() + (intervalMinutes - 5) * 60 * 1000)
+		}
+	}
 }
