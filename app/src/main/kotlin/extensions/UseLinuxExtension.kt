@@ -1,5 +1,6 @@
-package com.github.mnemotechnician.uselinux
+package com.github.mnemotechnician.uselinux.extensions
 
+import com.github.mnemotechnician.uselinux.misc.*
 import com.kotlindiscord.kord.extensions.commands.Arguments
 import com.kotlindiscord.kord.extensions.commands.application.slash.converters.impl.*
 import com.kotlindiscord.kord.extensions.commands.converters.impl.*
@@ -19,7 +20,7 @@ import kotlinx.serialization.json.Json
 import java.io.File
 import java.util.*
 
-class UseLinuxExtension : Extension() {
+class UseLinuxExtension : ULBotExtension() {
 	override val name = "use-linux"
 
 	val targetChats = Collections.synchronizedList(mutableListOf<TargetChat>())
@@ -35,33 +36,27 @@ class UseLinuxExtension : Extension() {
 			action {
 				val channel = arguments.target.fetchChannel()
 
-				if (channel !is TextChannel) {
-					respond { content = "Target must be a text channel" }
-					return@action
-				}
-				if (targetChats.any { it.id == channel.id }) {
-					respond { content = "This channel is already opted-in." }
-					return@action
-				}
+				when {
+					channel !is TextChannel ->
+						respond { content = "Target must be a text channel." }
 
-				// The bot must be able to send messages in it
-				val botPerms = channel.getEffectivePermissions(getKoin().inject<Kord>().value.selfId)
-				if (Permission.SendMessages !in botPerms || Permission.ViewChannel !in botPerms) {
-					respond { content = "I can not send messages there." }
-					return@action
+					targetChats.any { it.id == channel.id } ->
+						respond { content = "This channel is already opted-in." }
+
+					!channel.canPost() ->
+						respond { content = "I can not send messages there." }
+
+					!channel.isModifiableBy(event.interaction.user.id) ->
+						respond { content = "You do not have the permission to modify that channel." }
+
+					else -> {
+						targetChats.add(TargetChat(channel.id, arguments.intervalMinutes))
+						saveState()
+
+						respond { content = "Success."}
+						log("Added notification channel ${channel.name} (${channel.id}).")
+					}
 				}
-
-				// The author must be an admin in that channel
-				val userPerms = channel.getEffectivePermissions(event.interaction.user.id)
-				if (Permission.ManageChannels !in userPerms) {
-					respond { content = "You do not have the permission to modify that channel." }
-					return@action
-				}
-
-				targetChats.add(TargetChat(channel.id, arguments.intervalMinutes))
-				saveState()
-
-				respond { content = "Success."}
 			}
 		}
 
@@ -75,15 +70,14 @@ class UseLinuxExtension : Extension() {
 					return@action
 				}
 
-				// The author must be an admin in that channel
-				val perms = removed.getChannel().getEffectivePermissions(event.interaction.user.id)
-				if (Permission.ManageChannels !in perms) {
+				if (!removed.getChannel().isModifiableBy(event.interaction.user.id)) {
 					respond { content = "You do not have the permission to modify that channel." }
 					return@action
 				}
 
 				targetChats.remove(removed)
 				respond { content = "Success." }
+				log("Removed notification channel ${removed.getChannel().name} (${removed.id}).")
 			}
 		}
 
@@ -91,10 +85,7 @@ class UseLinuxExtension : Extension() {
 			name = "channel-info"
 			description = "View all notified channels and their intervals."
 
-			// Owner-only
-			check {
-				if (event.interaction.user.id.value != 502871063223336990UL) fail("Access Denied.")
-			}
+			ownerOnlyCheck()
 
 			action {
 				editingPaginator {
@@ -127,7 +118,7 @@ class UseLinuxExtension : Extension() {
 						runCatching {
 							chat.send()
 						}.onFailure {
-							println("Failed to send notification in ${chat.id}: $it")
+							log("Failed to send notification in ${chat.id}: $it")
 							// Next attempt in no less than 5 minutes
 							chat.nextNotification = System.currentTimeMillis() + 1000 * 60 * 5L
 						}
@@ -146,11 +137,11 @@ class UseLinuxExtension : Extension() {
 
 			targetChats.addAll(stateObj.targetChats)
 		}.onFailure {
-			println("Failed to load state: $it")
+			log("Failed to load the state: $it")
 			return
 		}
 
-		println("State loaded")
+		log("State loaded successfully.")
 	}
 
 	fun saveState() {
@@ -158,7 +149,7 @@ class UseLinuxExtension : Extension() {
 			Json.encodeToString(State(targetChats))
 		)
 
-		println("State saved")
+		log("State saved")
 	}
 
 	inner class AddChannelArgs : Arguments() {
