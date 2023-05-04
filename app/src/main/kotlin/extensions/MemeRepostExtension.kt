@@ -173,7 +173,7 @@ class MemeRepostExtension : ULBotExtension() {
 
 	/** Loads a random picture from the subreddit and returns a pair of (title, url). May throw a network exception. */
 	suspend fun loadPicture(subreddit: String): Pair<String, String> {
-		kord.resources.httpClient.get("https://reddit.com/r/$subreddit/hot.json?limit=30")
+		kord.resources.httpClient.get("https://reddit.com/r/$subreddit/best.json?limit=30")
 			.body<JsonObject>()["data"]!!
 			.jsonObject["children"]!!
 			.jsonArray
