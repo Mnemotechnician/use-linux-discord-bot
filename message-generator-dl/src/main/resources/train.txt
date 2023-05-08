@@ -1,0 +1,16 @@
+Remember to use Linux!
+Linux: a powerful and flexible alternative to traditional operating systems
+Are you tired of paying for expensive operating systems? Try Linux.
+Experience true freedom of choice with Linux.
+Linux: a community-driven operating system for all users
+Embrace the power of open-source with Linux
+Tired of bloated operating systems? Simplify your life with Linux.
+Join millions of users who trust Linux for their computing needs.
+Linux: the reliable and secure operating system for your computer
+Say goodbye to software restrictions with Linux.
+Discover the benefits of open-source software with Linux.
+There are two variants of the GRU implementation. The default one is based on v3 and has reset gate applied to hidden state before matrix multiplication. The other one is based on original and has the order reversed.
+The second variant is compatible with GPU-only and allows inference on CPU. Thus it has separate biases for kernel and recurrent_kernel.
+The New Amsterdam Theatre is a Broadway theater on 214 West 42nd Street, in the Theater District of Manhattan in New York City. It was one of the first Broadway venues to open in the Times Square neighborhood, on October 26, 1903. The theater has 1,702 seats across three levels. Both the Beaux-Arts exterior and the Art Nouveau interior of the building are New York City landmarks, and the building is on the National Register of Historic Places. The New Amsterdam consists of an auditorium in the rear and a narrow ten-story office wing in the front. The facade on 42nd Street is made of gray limestone; the rest of the facade is brick. The elliptical auditorium contains two balconies cantilevered above a ground-level orchestra. Above the main auditorium was a roof theater. The main theater has a steel frame and was designed with advanced mechanical systems for its time. It is operated by Disney Theatrical Productions and has hosted the musicals The Lion King, Mary Poppins and Aladdin.
+National Film or National-Film was a German film production and distribution company which operated during the silent and early sound era. In the early 1920s it made an attempt to take over Erich Pommer's Decla-Bioscop, but the projected merger failed and Decla instead joined with the major studio UFA. While Decla was generally in favour of joining with National, it was pressured by its creditors Deutsche Bank to merge with UFA.
+The Rotunda is a historic building located at Hermann, Gasconade County, Missouri. It was built about 1864, and is an octagonal, red brick building. It was built as an exhibition hall for the Gasconade County Agricultural Association and is currently used occasionally for community purposes.

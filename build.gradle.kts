@@ -6,6 +6,10 @@ plugins {
 group = "com.github.mnemotechnician"
 version = "1.0-SNAPSHOT"
 
+repositories {
+	mavenCentral()
+}
+
 tasks.test {
 	useJUnitPlatform()
 }
