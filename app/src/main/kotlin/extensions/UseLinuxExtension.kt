@@ -24,7 +24,11 @@ class UseLinuxExtension : ULBotExtension() {
 	override val name = "use-linux"
 
 	val targetChats = Collections.synchronizedList(mutableListOf<TargetChat>())
-	val saveFile = File("${System.getProperty("user.home")}/use-linux.json")
+	val saveFile = File("${System.getProperty("user.home")}/use-linux/use-linux.json")
+
+	init {
+		saveFile.parentFile.mkdirs()
+	}
 
 	override suspend fun setup() {
 		loadState()

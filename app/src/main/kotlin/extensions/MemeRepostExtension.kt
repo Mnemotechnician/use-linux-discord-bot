@@ -21,12 +21,16 @@ class MemeRepostExtension : ULBotExtension() {
 	val sentMemeLinks = ConcurrentLinkedQueue<String>()
 
 	val subreddits = listOf("femboymemes")
-	val saveFile = File("${System.getProperty("user.home")}/use-linux-meme-repost.json")
+	val saveFile = File("${System.getProperty("user.home")}/use-linux/use-linux-meme-repost.json")
 
 	var nextPostTimestamp = 0L
 	val postInterval = 24 * 60 * 60 * 1000L
 
 	override val name = "meme-repost"
+
+	init {
+		saveFile.parentFile.mkdirs()
+	}
 
 	override suspend fun setup() {
 		loadState()
