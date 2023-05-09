@@ -13,6 +13,7 @@ class TextGeneratorModel(tf.keras.Model):
 
         self.build(tf.TensorShape([batch_size, None]))
 
+    @tf.function
     def call(self, inputs, states=None, return_state=False, training=False):
         x = inputs
         x = self.embedding(x, training=training)

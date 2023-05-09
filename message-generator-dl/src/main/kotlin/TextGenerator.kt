@@ -11,7 +11,8 @@ import java.lang.ProcessBuilder.Redirect.*
 object TextGenerator {
 	val workDir = File("${System.getProperty("user.home")}/use-linux/deepl/").also(File::mkdirs)
 	val pythonDir = workDir.resolve("tmp").also(File::mkdir)
-	val modelDir = workDir.resolve("model.tensorflow")
+	val modelFile = workDir.resolve("model.ckpt")
+	val vocabFile = workDir.resolve("vocab.json")
 
 	private var filesCopied = false
 
@@ -73,7 +74,8 @@ object TextGenerator {
 				.redirectOutput(INHERIT)
 				.redirectInput(dataset)
 				.apply {
-					environment()["MODEL_SAVEDIR"] = modelDir.absolutePath
+					environment()["MODEL_SAVEFILE"] = modelFile.absolutePath
+					environment()["VOCAB_SAVEFILE"] = vocabFile.absolutePath
 				}
 				.start()
 				.waitFor()
@@ -92,8 +94,8 @@ object TextGenerator {
 	fun load() = run {
 		preparePythonEnvironment()
 
-		if (!modelDir.exists()) {
-			error("Model directory does not exist!")
+		if (!vocabFile.exists()) {
+			error("Model files do not exist!")
 		}
 
 		GeneratorProcess().also { it.start() }
@@ -106,7 +108,8 @@ object TextGenerator {
 			.redirectError(INHERIT)
 			.directory(pythonDir)
 			.apply {
-				environment()["MODEL_SAVEDIR"] = modelDir.absolutePath
+				environment()["MODEL_SAVEFILE"] = modelFile.absolutePath
+				environment()["VOCAB_SAVEFILE"] = vocabFile.absolutePath
 			}
 
 		/** Initialised when start() is called. */
@@ -131,7 +134,7 @@ object TextGenerator {
 
 			process.inputStream.bufferedReader().apply {
 				val output = readLine()
-				val time = readLine().removeSuffix("ms").toDouble()
+				val time = readLine().removeSuffix("s").toDouble()
 				//readLine() // empty line
 
 				return output to time

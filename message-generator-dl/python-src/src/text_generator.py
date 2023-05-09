@@ -1,9 +1,13 @@
+import sys
 import time
 import tensorflow as tf
+
 from text_generator_model import TextGeneratorModel
 
+from common import *
+
 class TextGenerator(tf.keras.Model):
-    def __init__(self, model: TextGeneratorModel, id_to_char, char_to_id, temperature=1.0):
+    def __init__(self, model, id_to_char, char_to_id, temperature=1.0):
         super().__init__()
 
         self.temperature = temperature
@@ -36,9 +40,10 @@ class TextGenerator(tf.keras.Model):
         # Run the model.
         # Predicted_logits.shape is [batch, char, next_char_logits]
         predicted_logits, states = self.model(
-            inputs=input_ids,
-            states=states,
-            return_state=True
+            input_ids,
+            states,
+            True,
+            False
         )
 
         # Only use the last prediction.
@@ -65,15 +70,20 @@ class TextGenerator(tf.keras.Model):
         start = time.time()
         states = None
         next_char: tf.Tensor = tf.constant(['Linux is the best! '])
-        result = [next_char]
+        result = ""
         length = 0
 
-        while not next_char[0].endsWith('.') and length <= 1000:
+        while True:
             next_char, states = self.generate_one_step(next_char, states=states)
-            result.append(next_char)
-            length += len(next_char)
 
-        result = tf.strings.join(result)
+            string = next_char[0].numpy().decode('UTF-8')
+            result += string
+            length += len(string)
+
+            if MESSAGE_TERMINATOR in string or length > 1000:
+                break
+
+        result = result.split(MESSAGE_TERMINATOR)[0]
         end = time.time()
 
-        return result[0].numpy().decode('utf-8'), end - start
+        return result, end - start

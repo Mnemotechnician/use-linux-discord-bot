@@ -6,19 +6,29 @@ import tensorflow as tf
 
 from text_generator import TextGenerator
 from text_generator_model import TextGeneratorModel
+from common import *
 
-if (not 'MODEL_SAVEDIR' in os.environ):
-    print("MODEL_SAVEDIR environment variable is not set")
+if (not 'MODEL_SAVEFILE' in os.environ or not 'VOCAB_SAVEFILE' in os.environ):
+    print("MODEL_SAVEFILE or VOCAB_SAVEFILE environment variable are not set")
     exit(1)
-savedir = os.environ['MODEL_SAVEDIR']
+savefile = os.environ['MODEL_SAVEFILE']
+vocabfile = os.environ['VOCAB_SAVEFILE']
 
-# Load the model and the vocabulary
-model = tf.keras.models.load_model(savedir)
-with os.open(f"{savedir}/vocabulary", os.O_RDONLY) as file:
+# Load the vocabulary
+with open(vocabfile, "r") as file:
     vocabulary = json.load(file)
 
 char_to_id = tf.keras.layers.StringLookup(vocabulary=vocabulary, mask_token=None)
 id_to_char = tf.keras.layers.StringLookup(vocabulary=char_to_id.get_vocabulary(), invert=True, mask_token=None)
+
+model = TextGeneratorModel(
+    vocab_size=len(char_to_id.get_vocabulary()),
+    batch_size=BATCH_SIZE,
+    embedding_dim=EMBEDDING_UNITS,
+    rnn_units=RNN_UNITS
+)
+# Load the model
+model.load_weights(savefile)
 
 generator = TextGenerator(model, id_to_char, char_to_id)
 
@@ -27,7 +37,7 @@ sys.stderr.write("Generating. Press enter to generate a text.")
 while True:
     input()
 
-    text, time = generator.generate()
+    text, time = generator.generate_message()
     print(text)
-    print(f"{time} ms")
+    print(f"{time} s")
     print("")

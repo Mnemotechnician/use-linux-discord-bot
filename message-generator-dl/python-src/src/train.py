@@ -6,17 +6,14 @@ import tensorflow as tf
 
 from text_generator import TextGenerator
 from text_generator_model import TextGeneratorModel
+from common import *
 
-BATCH_SIZE = 6
-SEQUENCE_SIZE = 30
-EPOCHS = 50
-EMBEDDING_UNITS = 256
-RNN_UNITS = 1024
-
-if (not 'MODEL_SAVEDIR' in os.environ):
-    print("MODEL_SAVEDIR environment variable is not set")
+if (not 'MODEL_SAVEFILE' in os.environ or not 'VOCAB_SAVEFILE' in os.environ):
+    print("MODEL_SAVEFILE or VOCAB_SAVEFILE environment variable are not set")
     exit(1)
-savedir = os.environ['MODEL_SAVEDIR']
+savefile = os.environ['MODEL_SAVEFILE']
+vocabfile = os.environ['VOCAB_SAVEFILE']
+
 
 # Read the dataset
 text = sys.stdin.read()
@@ -55,6 +52,7 @@ model.compile(optimizer='adam', loss=loss)
 history = model.fit(dataset, epochs=EPOCHS, callbacks=[])
 
 # Save the model and vocabulary
-model.save(savedir)
-with open(f"{savedir}/vocabulary", "w") as file:
+model.save_weights(savefile)
+
+with open(vocabfile, "w") as file:
     json.dump(char_to_id.get_vocabulary(), file)
