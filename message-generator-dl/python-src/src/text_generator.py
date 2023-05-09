@@ -69,7 +69,7 @@ class TextGenerator(tf.keras.Model):
         """
         start = time.time()
         states = None
-        next_char: tf.Tensor = tf.constant(['Linux is the best! '])
+        next_char: tf.Tensor = tf.constant([' '])
         result = ""
         length = 0
 

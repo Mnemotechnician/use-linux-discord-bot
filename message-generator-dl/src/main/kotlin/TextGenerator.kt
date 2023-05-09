@@ -59,11 +59,19 @@ object TextGenerator {
 	fun train() {
 		preparePythonEnvironment()
 
-		// Copy the dataset to the temp directory as well
+		// Copy the dataset to the temp directory as well, formatting it properly
 		val dataset = pythonDir.resolve("train.txt").apply {
 			outputStream().use { out ->
-				TextGenerator.javaClass.getResourceAsStream("/train.txt")!!
-					.use { it.copyTo(out) }
+				TextGenerator.javaClass.getResourceAsStream("/train.txt")!!.use {
+					val text = it.bufferedReader().readText()
+					val lines = text.lines()
+						.filter { it.isNotBlank() }
+						.map { it.trim() + "$" }
+
+					out.bufferedWriter().use {
+						it.write(lines.joinToString("\n"))
+					}
+				}
 			}
 		}
 
@@ -135,7 +143,7 @@ object TextGenerator {
 			process.inputStream.bufferedReader().apply {
 				val output = readLine()
 				val time = readLine().removeSuffix("s").toDouble()
-				//readLine() // empty line
+				readLine() // empty line
 
 				return output to time
 			}
