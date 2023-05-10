@@ -15,9 +15,9 @@ object TextGenerator {
 	val vocabFile = workDir.resolve("vocab.json")
 
 	// TODO: synchronize with common.py
-	const val SEQUENCE_SIZE = 100
+	const val SEQUENCE_SIZE = 120
 	const val MESSAGE_TERMINATOR = '$'
-	const val STARTING_TEXT = "Linux advertisement: "
+	const val STARTING_TEXT = "Advert: "
 
 	private var filesCopied = false
 
