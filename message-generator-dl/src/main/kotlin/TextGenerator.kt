@@ -11,7 +11,9 @@ import java.lang.ProcessBuilder.Redirect.*
 object TextGenerator {
 	val workDir = File("${System.getProperty("user.home")}/use-linux/deepl/").also(File::mkdirs)
 	val pythonDir = workDir.resolve("tmp").also(File::mkdir)
-	val modelFile = workDir.resolve("model.ckpt")
+	/** Not the actual model file; may not exist even after training. See [modelFileIndex]. */
+	val modelFileLocation = workDir.resolve("model.ckpt")
+	val modelFileIndex = modelFileLocation.resolveSibling("model.ckpt.index")
 	val vocabFile = workDir.resolve("vocab.json")
 
 	// TODO: synchronize with common.py
@@ -62,7 +64,7 @@ object TextGenerator {
 	 * Must be called before loading it.
 	 */
 	fun train(continueTraining: Boolean) {
-		require(!continueTraining || (modelFile.exists() && vocabFile.exists())) {
+		require(!continueTraining || (modelFileIndex.exists() && vocabFile.exists())) {
 			"Cannot continue the training: no saved state detected."
 		}
 
@@ -96,7 +98,7 @@ object TextGenerator {
 				.redirectOutput(INHERIT)
 				.redirectInput(dataset)
 				.apply {
-					environment()["MODEL_SAVEFILE"] = modelFile.absolutePath
+					environment()["MODEL_SAVEFILE"] = modelFileLocation.absolutePath
 					environment()["VOCAB_SAVEFILE"] = vocabFile.absolutePath
 					environment()["RESTORE_STATE"] = continueTraining.toString()
 				}
@@ -131,7 +133,7 @@ object TextGenerator {
 			.redirectError(INHERIT)
 			.directory(pythonDir)
 			.apply {
-				environment()["MODEL_SAVEFILE"] = modelFile.absolutePath
+				environment()["MODEL_SAVEFILE"] = modelFileLocation.absolutePath
 				environment()["VOCAB_SAVEFILE"] = vocabFile.absolutePath
 			}
 
