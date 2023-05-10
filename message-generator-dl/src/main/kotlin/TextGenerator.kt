@@ -14,6 +14,11 @@ object TextGenerator {
 	val modelFile = workDir.resolve("model.ckpt")
 	val vocabFile = workDir.resolve("vocab.json")
 
+	// TODO: synchronize with common.py
+	const val SEQUENCE_SIZE = 100
+	const val MESSAGE_TERMINATOR = '$'
+	const val STARTING_TEXT = "Linux advertisement: "
+
 	private var filesCopied = false
 
 	/** Copies the python files, if neccesary. */
@@ -66,7 +71,12 @@ object TextGenerator {
 					val text = it.bufferedReader().readText()
 					val lines = text.lines()
 						.filter { it.isNotBlank() }
-						.map { it.trim() + "$" }
+						.map { STARTING_TEXT + it.trim() + MESSAGE_TERMINATOR }
+						.map {
+							// Each line must have a length that's divisible by 30
+							val expectedLength = it.length + (SEQUENCE_SIZE - it.length % SEQUENCE_SIZE)
+							it.padEnd(expectedLength, MESSAGE_TERMINATOR)
+						}
 
 					out.bufferedWriter().use {
 						it.write(lines.joinToString("\n"))

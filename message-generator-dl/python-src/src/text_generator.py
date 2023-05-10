@@ -29,9 +29,6 @@ class TextGenerator(tf.keras.Model):
     def generate_one_step(self, inputs, states=None):
         """
         Perform a single step in the message generation.
-        :param inputs:
-        :param states:
-        :return:
         """
         # Convert strings to token IDs.
         input_chars = tf.strings.unicode_split(inputs, 'UTF-8')
@@ -69,7 +66,7 @@ class TextGenerator(tf.keras.Model):
         """
         start = time.time()
         states = None
-        next_char: tf.Tensor = tf.constant([' '])
+        next_char: tf.Tensor = tf.constant([STARTING_TEXT], dtype=tf.string)
         result = ""
         length = 0
 

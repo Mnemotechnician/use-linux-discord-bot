@@ -4,9 +4,8 @@ import sys
 
 import tensorflow as tf
 
-from text_generator import TextGenerator
-from text_generator_model import TextGeneratorModel
 from common import *
+from text_generator_model import TextGeneratorModel
 
 if (not 'MODEL_SAVEFILE' in os.environ or not 'VOCAB_SAVEFILE' in os.environ):
     print("MODEL_SAVEFILE or VOCAB_SAVEFILE environment variable are not set")
@@ -29,10 +28,10 @@ dataset = (
         .flat_map(lambda string:
             # String is a tensor. Batch it.
             tf.data.Dataset.from_tensor_slices(string)
-                .batch(SEQUENCE_SIZE, drop_remainder=True)
+                .batch(SEQUENCE_SIZE, drop_remainder=False)
                 .map(lambda x: (x[:-1], x[1:])) # Split into tuples of (input, target)
         )
-        .batch(BATCH_SIZE, drop_remainder=True)
+        .batch(BATCH_SIZE, drop_remainder=False)
         .shuffle(1000)
         .prefetch(tf.data.experimental.AUTOTUNE))
 
