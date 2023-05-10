@@ -12,7 +12,7 @@ if (not 'MODEL_SAVEFILE' in os.environ or not 'VOCAB_SAVEFILE' in os.environ):
     exit(1)
 savefile = os.environ['MODEL_SAVEFILE']
 vocabfile = os.environ['VOCAB_SAVEFILE']
-
+restore_state = bool(os.environ['RESTORE_STATE']) if 'RESTORE_STATE' in os.environ else False
 
 # Read the dataset
 text = sys.stdin.read()
@@ -48,6 +48,10 @@ model.summary()
 # Training the model
 loss = tf.losses.SparseCategoricalCrossentropy(from_logits=True)
 model.compile(optimizer='adam', loss=loss)
+
+if (restore_state):
+    model.load_weights(savefile)
+
 history = model.fit(dataset, epochs=EPOCHS, callbacks=[])
 
 # Save the model and vocabulary

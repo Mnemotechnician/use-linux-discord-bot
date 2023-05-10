@@ -61,7 +61,11 @@ object TextGenerator {
 	 *
 	 * Must be called before loading it.
 	 */
-	fun train() {
+	fun train(continueTraining: Boolean) {
+		require(!continueTraining || (modelFile.exists() && vocabFile.exists())) {
+			"Cannot continue the training: no saved state detected."
+		}
+
 		preparePythonEnvironment()
 
 		// Copy the dataset to the temp directory as well, formatting it properly
@@ -94,6 +98,7 @@ object TextGenerator {
 				.apply {
 					environment()["MODEL_SAVEFILE"] = modelFile.absolutePath
 					environment()["VOCAB_SAVEFILE"] = vocabFile.absolutePath
+					environment()["RESTORE_STATE"] = continueTraining.toString()
 				}
 				.start()
 				.waitFor()
