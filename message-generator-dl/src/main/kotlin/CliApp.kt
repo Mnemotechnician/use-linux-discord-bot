@@ -22,6 +22,8 @@ fun main() {
 			val process = TextGenerator.load()
 
 			println("Press enter to generate 5 entries")
+			println()
+			println()
 
 			var count = 0
 			while (true) {

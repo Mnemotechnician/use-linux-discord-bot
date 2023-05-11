@@ -100,7 +100,7 @@ object TextGenerator {
 				.apply {
 					environment()["MODEL_SAVEFILE"] = modelFileLocation.absolutePath
 					environment()["VOCAB_SAVEFILE"] = vocabFile.absolutePath
-					environment()["RESTORE_STATE"] = if (continueTraining) "1" else "0"
+					if (continueTraining) environment()["RESTORE_STATE"] = "1"
 				}
 				.start()
 				.waitFor()
@@ -129,8 +129,9 @@ object TextGenerator {
 	class GeneratorProcess : Closeable {
 		var started = false
 			private set
+		private val logFile = File.createTempFile("generator-process", "log")
 		private val builder = ProcessBuilder("pipenv", "run", "python3", "generate.py")
-			.redirectError(INHERIT)
+			.redirectError(logFile)
 			.directory(pythonDir)
 			.apply {
 				environment()["MODEL_SAVEFILE"] = modelFileLocation.absolutePath
@@ -154,15 +155,24 @@ object TextGenerator {
 		 * [start] must be called first.
 		 */
 		fun generate(): Pair<String, Double> {
-			process.outputStream.write('\n'.code)
-			process.outputStream.flush()
+			try {
+				process.outputStream.write('\n'.code)
+				process.outputStream.flush()
 
-			process.inputStream.bufferedReader().apply {
-				val output = readLine()
-				val time = readLine().removeSuffix("s").toDouble()
-				readLine() // empty line
+				process.inputStream.bufferedReader().apply {
+					val output = readLine()
+					val time = readLine().removeSuffix("s").toDouble()
+					readLine() // empty line
 
-				return output to time
+					return output to time
+				}
+			} catch (e: Exception) {
+				System.err.apply {
+					logFile.readText().let(::println)
+					println()
+				}
+
+				throw IllegalStateException("An error has occurred. The log is printed above.", e)
 			}
 		}
 

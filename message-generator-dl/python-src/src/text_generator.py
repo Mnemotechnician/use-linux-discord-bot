@@ -80,7 +80,7 @@ class TextGenerator(tf.keras.Model):
             if MESSAGE_TERMINATOR in string or length > 1000:
                 break
 
-        result = result.split(MESSAGE_TERMINATOR)[0]
+        result = result.split(MESSAGE_TERMINATOR)[0].replace("\n", " ")
         end = time.time()
 
         return result, end - start
