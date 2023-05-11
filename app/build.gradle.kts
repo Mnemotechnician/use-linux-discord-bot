@@ -16,6 +16,8 @@ repositories {
 }
 
 dependencies {
+	implementation(project(":message-generator-dl"))
+
 	implementation("com.kotlindiscord.kord.extensions", "kord-extensions", "1.5.6-SNAPSHOT")
 
 	implementation("dev.kord", "kord-core", "0.8.0")

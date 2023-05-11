@@ -1,10 +1,10 @@
 package com.github.mnemotechnician.uselinux.extensions
 
+import com.github.mnemotechnician.messagegen.TextGenerator
 import com.github.mnemotechnician.uselinux.misc.*
 import com.kotlindiscord.kord.extensions.commands.Arguments
 import com.kotlindiscord.kord.extensions.commands.application.slash.converters.impl.*
 import com.kotlindiscord.kord.extensions.commands.converters.impl.*
-import com.kotlindiscord.kord.extensions.extensions.Extension
 import com.kotlindiscord.kord.extensions.extensions.publicSlashCommand
 import com.kotlindiscord.kord.extensions.types.*
 import com.kotlindiscord.kord.extensions.utils.*
@@ -19,12 +19,25 @@ import kotlinx.serialization.Transient
 import kotlinx.serialization.json.Json
 import java.io.File
 import java.util.*
+import kotlin.collections.HashMap
 
 class UseLinuxExtension : ULBotExtension() {
 	override val name = "use-linux"
 
 	val targetChats = Collections.synchronizedList(mutableListOf<TargetChat>())
 	val saveFile = File("${System.getProperty("user.home")}/use-linux/use-linux.json")
+
+	lateinit var textGeneratorProcess: TextGenerator.GeneratorProcess
+		private set
+	val generatorProcessLoaded get() = ::textGeneratorProcess.isInitialized
+
+	/** Maps channels to the moments /generate will be usable in them. */
+	val channelTimeouts = HashMap<Snowflake, Long>()
+	/** Maps users to the moments when they will be able to use /generate again. */
+	val userTimeouts = HashMap<Snowflake, Long>()
+
+	val timeoutUserSeconds = 10
+	val timeoutChannelSeconds = 4
 
 	init {
 		saveFile.parentFile.mkdirs()
@@ -112,24 +125,73 @@ class UseLinuxExtension : ULBotExtension() {
 			}
 		}
 
+		publicSlashCommand {
+			name = "generate"
+			description = "Generate your very own message telling you to use Linux!"
+
+			check {
+				if (!generatorProcessLoaded) fail("The generator process has not started yet!")
+			}
+			check {
+				val userTimeout = userTimeouts[event.interaction.user.id] ?: 0L
+				if (System.currentTimeMillis() < userTimeout) {
+					fail("You must wait $timeoutUserSeconds seconds before using this command again.")
+				}
+			}
+			check {
+				val channelTimeout = channelTimeouts[event.interaction.channelId] ?: 0L
+				if (System.currentTimeMillis() < channelTimeout) {
+					fail("You must wait $timeoutChannelSeconds seconds before using this command again in this channel.")
+				}
+			}
+
+			action {
+				userTimeouts[event.interaction.user.id] = System.currentTimeMillis() + timeoutUserSeconds * 1000
+				channelTimeouts[event.interaction.channelId] = System.currentTimeMillis() + timeoutChannelSeconds * 1000
+
+				val (text, time) = textGeneratorProcess.generate()
+
+				log("Generated a message for ${event.interaction.user.tag} in $time seconds.")
+
+				respond {
+					embed { description = text }
+				}
+			}
+		}
+
 		kord.launch {
-			delay(1000L)
+			withContext(Dispatchers.IO) {
+				textGeneratorProcess = TextGenerator.load()
+				log("Text generator loaded, preparing to begin the broadcast.")
+			}
 
 			// Send a notification in every channel every 4 hours
 			while (true) {
+				// 20 sec interval to prevent people from overloading the bot.
+				delay(20_000L)
+
+				// Do not waste the precious processing power if there are no chats to send a notification in.
+				if (targetChats.none {  it.shouldSend() }) continue
+
+				val text = withContext(Dispatchers.IO) {
+					val (text, timeTaken) = textGeneratorProcess.generate()
+					log("Generated a text in $timeTaken seconds")
+					text
+				}
+
 				targetChats.forEach { chat ->
 					if (chat.shouldSend()) {
 						runCatching {
-							chat.send()
+							chat.send(text)
 						}.onFailure {
 							log("Failed to send notification in ${chat.id}: $it")
 							// Next attempt in no less than 5 minutes
-							chat.nextNotification = System.currentTimeMillis() + 1000 * 60 * 5L
+							chat.nextNotification =
+								System.currentTimeMillis() + 1000 * 60 * 5L
 						}
 						saveState()
 					}
 				}
-				delay(1000L)
 			}
 		}
 	}
@@ -168,7 +230,6 @@ class UseLinuxExtension : ULBotExtension() {
 			defaultValue = 240
 
 			choices += mapOf(
-				"10 minutes" to 10L,
 				"30 minutes" to 30L,
 				"1 hour" to 60L,
 				"2 hours" to 120L,
@@ -218,11 +279,11 @@ class UseLinuxExtension : ULBotExtension() {
 			return channel
 		}
 
-		suspend fun send() {
+		suspend fun send(text: String) {
 			val channel = getChannel()
 
 			channel.createMessage {
-				embed { description = "Remember to use Linux!" }
+				embed { description = text }
 			}
 
 			// This accounts for the possible delays (at most 5 minutes)
