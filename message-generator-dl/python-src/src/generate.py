@@ -1,3 +1,11 @@
+########################################################################
+# Run this script to begin generating texts.                           #
+# This script is used under the hood by TextGenerator.GeneratorProcess #
+########################################################################
+# Accept env variables:                                                #
+# MODEL_SAVEFILE, VOCAB_SAVEFILE - file pathes                         #
+########################################################################
+
 import json
 import os
 import sys

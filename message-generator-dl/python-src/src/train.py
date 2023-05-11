@@ -1,3 +1,12 @@
+################################################################################################
+# Run this script to train the model.                                                          #
+# This script is used under the hood by TextGenerator.train()                                  #
+################################################################################################
+# Accept env variables:                                                                        #
+# MODEL_SAVEFILE, VOCAB_SAVEFILE - file pathes                                                 #
+# RESTORE_STATE - if set and not an empty state, will load the previous state before training. #
+################################################################################################
+
 import json
 import os
 import sys
