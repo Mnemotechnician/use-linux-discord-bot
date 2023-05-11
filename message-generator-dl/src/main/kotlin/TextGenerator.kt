@@ -100,7 +100,7 @@ object TextGenerator {
 				.apply {
 					environment()["MODEL_SAVEFILE"] = modelFileLocation.absolutePath
 					environment()["VOCAB_SAVEFILE"] = vocabFile.absolutePath
-					environment()["RESTORE_STATE"] = continueTraining.toString()
+					environment()["RESTORE_STATE"] = if (continueTraining) "1" else "0"
 				}
 				.start()
 				.waitFor()
