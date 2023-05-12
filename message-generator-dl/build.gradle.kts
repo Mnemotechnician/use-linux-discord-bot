@@ -38,7 +38,7 @@ tasks.create("prepare-python-files") {
 	doLast {
 		val outputDir = layout.buildDirectory.dir("python").get().asFile.also { it.mkdir() }
 
-		val files = File("python-src/src").walk().filter { it.isFile }.toList() +
+		val files = layout.projectDirectory.asFile.resolve("python-src/src").walk().filter { it.isFile }.toList() +
 			rootProject.file("Pipfile") +
 			rootProject.file("Pipfile.lock")
 
