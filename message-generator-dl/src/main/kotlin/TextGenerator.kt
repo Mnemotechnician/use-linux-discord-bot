@@ -171,8 +171,11 @@ object TextGenerator {
 					logFile.readText().let(::println)
 					println()
 				}
+				val exitStatus = if (process.isAlive) "" else {
+					"Process exit code: ${process.exitValue()}"
+				}
 
-				throw IllegalStateException("An error has occurred. The log is printed above.", e)
+				throw IllegalStateException("An error has occurred. The log is printed above. $exitStatus", e)
 			}
 		}
 
