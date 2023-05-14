@@ -17,9 +17,9 @@ object TextGenerator {
 	val vocabFile = workDir.resolve("vocab.json")
 
 	// TODO: synchronize with common.py
+	const val BATCH_SIZE = 20
 	const val SEQUENCE_SIZE = 120
 	const val MESSAGE_TERMINATOR = '$'
-	const val STARTING_TEXT = "Advert: "
 
 	private var filesCopied = false
 
@@ -77,11 +77,13 @@ object TextGenerator {
 					val text = it.bufferedReader().readText()
 					val lines = text.lines()
 						.filter { it.isNotBlank() }
-						.map { STARTING_TEXT + it.trim() + MESSAGE_TERMINATOR }
-						.map {
-							// Each line must have a length that's divisible by 30
-							val expectedLength = it.length + (SEQUENCE_SIZE - it.length % SEQUENCE_SIZE)
-							it.padEnd(expectedLength, MESSAGE_TERMINATOR)
+						.map { it.trim() + MESSAGE_TERMINATOR }
+						.sortedBy { it.length } // To optimize the lengths
+						.windowed(BATCH_SIZE, BATCH_SIZE, true)
+						.flatMap {
+							// Each batch of lines must contain lines of equal length
+							val padLength = it.maxOf { it.length }
+							it.map { line -> line.padEnd(padLength, MESSAGE_TERMINATOR) }
 						}
 
 					out.bufferedWriter().use {
