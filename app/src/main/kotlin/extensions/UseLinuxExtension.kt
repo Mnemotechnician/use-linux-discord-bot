@@ -125,7 +125,7 @@ class UseLinuxExtension : ULBotExtension() {
 			}
 		}
 
-		publicSlashCommand {
+		publicSlashCommand(::GenerateArgs) {
 			name = "generate"
 			description = "Generate your very own message telling you to use Linux!"
 
@@ -149,7 +149,12 @@ class UseLinuxExtension : ULBotExtension() {
 				userTimeouts[event.interaction.user.id] = System.currentTimeMillis() + timeoutUserSeconds * 1000
 				channelTimeouts[event.interaction.channelId] = System.currentTimeMillis() + timeoutChannelSeconds * 1000
 
-				val (text, time) = textGeneratorProcess.generate()
+				val phrase = arguments.startingPhrase.trim().takeIf(String::isNotEmpty)
+				val (text, time) = if (phrase != null) {
+					textGeneratorProcess.generate(phrase + " ")
+				} else {
+					textGeneratorProcess.generate()
+				}
 
 				log("Generated a message for ${event.interaction.user.tag} in $time seconds.")
 
@@ -253,6 +258,14 @@ class UseLinuxExtension : ULBotExtension() {
 		val target by channel {
 			name = "target"
 			description = "Channel to remove from the list of notified channels"
+		}
+	}
+
+	inner class GenerateArgs : Arguments() {
+		val startingPhrase by coalescingDefaultingString {
+			name = "starting-phrase"
+			description = "The starting phrase. Chooses a random one if not specified."
+			defaultValue = ""
 		}
 	}
 

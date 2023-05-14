@@ -138,6 +138,8 @@ object TextGenerator {
 				environment()["VOCAB_SAVEFILE"] = vocabFile.absolutePath
 			}
 
+		val defaultRandomPhrases = listOf("Advert! ", "Advert: ", "advert. ")
+
 		/** Initialised when start() is called. */
 		lateinit var process: Process
 			private set
@@ -152,10 +154,13 @@ object TextGenerator {
 		/**
 		 * Generates a pair of (message, time in seconds).
 		 *
+		 * If [startingPhrase] is not supplied, a random one will be choosen instead.
+		 *
 		 * [start] must be called first.
 		 */
-		fun generate(): Pair<String, Double> {
+		fun generate(startingPhrase: String = defaultRandomPhrases.random()): Pair<String, Double> {
 			try {
+				process.outputStream.write(startingPhrase.toByteArray())
 				process.outputStream.write('\n'.code)
 				process.outputStream.flush()
 

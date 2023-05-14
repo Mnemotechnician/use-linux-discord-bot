@@ -21,22 +21,27 @@ fun main() {
 		'g' -> {
 			val process = TextGenerator.load()
 
-			println("Press enter to generate 5 entries")
+			println("Type a phrase or press enter to generate a phrase.")
 			println()
 			println()
 
 			var count = 0
+			var phrase: String? = null
 			while (true) {
-				val (text, time) = process.generate()
+				if (--count <= 0) {
+					phrase = readln().takeIf { it.isNotBlank() }
+					count = 5
+				}
+
+				val (text, time) = if (phrase != null) {
+					process.generate(phrase)
+				} else {
+					process.generate()
+				}
 
 				println("Text: $text")
 				println("Took $time seconds")
 				println()
-
-				if (--count <= 0) {
-					readln()
-					count = 5
-				}
 			}
 		}
 		else -> {

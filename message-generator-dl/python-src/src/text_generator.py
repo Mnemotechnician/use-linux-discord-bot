@@ -59,14 +59,14 @@ class TextGenerator(tf.keras.Model):
         # Return the characters and model state.
         return predicted_chars, states
 
-    def generate_message(self) -> (str, float):
+    def generate_message(self, starting_phrase: str) -> (str, float):
         """
         Generates a message.
         :return: A tuple of the generated message and the time in seconds it took to generate it.
         """
         start = time.time()
         states = None
-        next_char: tf.Tensor = tf.constant([STARTING_TEXT], dtype=tf.string)
+        next_char: tf.Tensor = tf.constant([starting_phrase], dtype=tf.string)
         result = ""
         length = 0
 

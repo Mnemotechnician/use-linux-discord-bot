@@ -40,12 +40,12 @@ model.load_weights(savefile)
 
 generator = TextGenerator(model, id_to_char, char_to_id, 1.0)
 
-sys.stderr.write("Generating. Press enter to generate a text.")
+sys.stderr.write("Generating. Type starting phrases to generate inputs.")
 
 while True:
-    input()
+    phrase = input()
 
-    text, time = generator.generate_message()
+    text, time = generator.generate_message(phrase)
     print(text)
     print(f"{time} s")
     print("")
