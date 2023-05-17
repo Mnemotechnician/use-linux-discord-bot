@@ -16,13 +16,21 @@ fun main() {
 				'n' -> false
 				else -> error("Type y or n.")
 			}
-			TextGenerator.train(continueTraining)
+
+			println("Specify the number of superepochs - training repeats. Default is 1.")
+			print("> ")
+
+			val superEpochs = when (val line = readln().trim()) {
+				"" -> 1
+				else -> line.toIntOrNull() ?: error("Not a number.")
+			}
+
+			TextGenerator.train(continueTraining, superEpochs)
 		}
 		'g' -> {
 			val process = TextGenerator.load()
 
 			println("Type a phrase or press enter to generate a phrase.")
-			println()
 			println()
 
 			var count = 0

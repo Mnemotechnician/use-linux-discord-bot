@@ -16,9 +16,10 @@ object TextGenerator {
 	val modelFileIndex = modelFileLocation.resolveSibling("model.ckpt.index")
 	val vocabFile = workDir.resolve("vocab.json")
 
+	val startingPhrases = listOf("Advert: ", "Linux advertisement: ", "AD: ", "")
+
 	// TODO: synchronize with common.py
 	const val BATCH_SIZE = 20
-	const val SEQUENCE_SIZE = 120
 	const val MESSAGE_TERMINATOR = '$'
 
 	private var filesCopied = false
@@ -60,54 +61,69 @@ object TextGenerator {
 
 	/**
 	 * Train the model associated with this generator and save it.
+	 * The model will be trained for the number of epochs specified in common.py [superEpochs] times.
 	 *
 	 * Must be called before loading it.
+	 *
+	 * @param superEpochs The number of repeats (training and saves) to perform before finishing.
+	 *      Each superepoch shuffles the starting phrases in the dataset; default is 1.
 	 */
-	fun train(continueTraining: Boolean) {
+	fun train(continueTraining: Boolean, superEpochs: Int = 1) {
 		require(!continueTraining || (modelFileIndex.exists() && vocabFile.exists())) {
 			"Cannot continue the training: no saved state detected."
 		}
 
 		preparePythonEnvironment()
 
-		// Copy the dataset to the temp directory as well, formatting it properly
-		val dataset = pythonDir.resolve("train.txt").apply {
-			outputStream().use { out ->
-				TextGenerator.javaClass.getResourceAsStream("/train.txt")!!.use {
-					val text = it.bufferedReader().readText()
-					val lines = text.lines()
-						.filter { it.isNotBlank() }
-						.map { it.trim() + MESSAGE_TERMINATOR }
-						.sortedBy { it.length } // To optimize the lengths
-						.windowed(BATCH_SIZE, BATCH_SIZE, true)
-						.flatMap {
-							// Each batch of lines must contain lines of equal length
-							val padLength = it.maxOf { it.length }
-							it.map { line -> line.padEnd(padLength, MESSAGE_TERMINATOR) }
-						}
+		repeat(superEpochs) {
+			// Even if the user wants to start a new training process,
+			// The state still has to be restored for the consecutive trainings to be effective.
+			val shouldRestoreState = it != 0 || continueTraining
 
-					out.bufferedWriter().use {
-						it.write(lines.joinToString("\n"))
+			// Copy the dataset to the temp directory as well, formatting it properly
+			val dataset = pythonDir.resolve("train.txt").apply {
+				outputStream().use { out ->
+					TextGenerator.javaClass.getResourceAsStream("/train.txt")!!.use {
+						val text = it.bufferedReader().readText()
+						val lines = text.lines()
+							.filter { it.isNotBlank() }
+							.map { startingPhrases.random() + it.trim() + MESSAGE_TERMINATOR }
+							.sortedBy { it.length } // To optimize the lengths
+							.windowed(BATCH_SIZE, BATCH_SIZE, true)
+							.flatMap {
+								// Each batch of lines must contain lines of equal length
+								val padLength = it.maxOf { it.length }
+								it.map { line ->
+									line.padEnd(
+										padLength,
+										MESSAGE_TERMINATOR
+									)
+								}
+							}
+
+						out.bufferedWriter().use {
+							it.write(lines.joinToString("\n"))
+						}
 					}
 				}
 			}
-		}
 
-		try {
-			ProcessBuilder("pipenv", "run", "python3", "train.py")
-				.directory(pythonDir)
-				.redirectError(INHERIT)
-				.redirectOutput(INHERIT)
-				.redirectInput(dataset)
-				.apply {
-					environment()["MODEL_SAVEFILE"] = modelFileLocation.absolutePath
-					environment()["VOCAB_SAVEFILE"] = vocabFile.absolutePath
-					if (continueTraining) environment()["RESTORE_STATE"] = "1"
-				}
-				.start()
-				.waitFor()
-		} catch (e: Exception) {
-			throw IllegalStateException("Failed to execute python in a virtual environment!", e)
+			try {
+				ProcessBuilder("pipenv", "run", "python3", "train.py")
+					.directory(pythonDir)
+					.redirectError(INHERIT)
+					.redirectOutput(INHERIT)
+					.redirectInput(dataset)
+					.apply {
+						environment()["MODEL_SAVEFILE"] = modelFileLocation.absolutePath
+						environment()["VOCAB_SAVEFILE"] = vocabFile.absolutePath
+						if (shouldRestoreState) environment()["RESTORE_STATE"] = "1"
+					}
+					.start()
+					.waitFor()
+			} catch (e: Exception) {
+				throw IllegalStateException("Failed to execute python in a virtual environment!", e)
+			}
 		}
 	}
 
@@ -140,8 +156,6 @@ object TextGenerator {
 				environment()["VOCAB_SAVEFILE"] = vocabFile.absolutePath
 			}
 
-		val defaultRandomPhrases = listOf("Advert! ", "Advert: ", "advert. ")
-
 		/** Initialised when start() is called. */
 		lateinit var process: Process
 			private set
@@ -160,8 +174,10 @@ object TextGenerator {
 		 *
 		 * [start] must be called first.
 		 */
-		fun generate(startingPhrase: String = defaultRandomPhrases.random()): Pair<String, Double> {
+		fun generate(startingPhrase: String = startingPhrases.random()): Pair<String, Double> {
 			try {
+				if (!process.isAlive) throw RuntimeException("Generator stopped")
+
 				process.outputStream.write(startingPhrase.toByteArray())
 				process.outputStream.write('\n'.code)
 				process.outputStream.flush()
@@ -173,7 +189,7 @@ object TextGenerator {
 
 					return output to time
 				}
-			} catch (e: Exception) {
+			} catch (e: Throwable) {
 				System.err.apply {
 					logFile.readText().let(::println)
 					println()

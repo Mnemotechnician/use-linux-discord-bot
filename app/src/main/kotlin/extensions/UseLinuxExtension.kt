@@ -144,6 +144,11 @@ class UseLinuxExtension : ULBotExtension() {
 					fail("You must wait $timeoutChannelSeconds seconds before using this command again in this channel.")
 				}
 			}
+			check {
+				arguments?.invoke()?.startingPhrase?.let {
+					if (it.length > 128) fail("The starting phrase is too long.")
+				}
+			}
 
 			action {
 				userTimeouts[event.interaction.user.id] = System.currentTimeMillis() + timeoutUserSeconds * 1000
@@ -159,7 +164,12 @@ class UseLinuxExtension : ULBotExtension() {
 				log("Generated a message for ${event.interaction.user.tag} in $time seconds.")
 
 				respond {
-					embed { description = text }
+					embed {
+						description = text
+						if (phrase != null) {
+							description = "$phrase $description"
+						}
+					}
 				}
 			}
 		}
