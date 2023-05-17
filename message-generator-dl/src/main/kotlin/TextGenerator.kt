@@ -16,7 +16,8 @@ object TextGenerator {
 	val modelFileIndex = modelFileLocation.resolveSibling("model.ckpt.index")
 	val vocabFile = workDir.resolve("vocab.json")
 
-	val startingPhrases = listOf("Advert: ", "Linux advertisement: ", "AD: ", "")
+	val startingPhrases = listOf("Advert: ", "Linux advertisement: ", "AD: ")
+	val trainingStartingPhrases = startingPhrases + ""
 
 	// TODO: synchronize with common.py
 	const val BATCH_SIZE = 20
@@ -87,7 +88,7 @@ object TextGenerator {
 						val text = it.bufferedReader().readText()
 						val lines = text.lines()
 							.filter { it.isNotBlank() }
-							.map { startingPhrases.random() + it.trim() + MESSAGE_TERMINATOR }
+							.map { trainingStartingPhrases.random() + it.trim() + MESSAGE_TERMINATOR }
 							.sortedBy { it.length } // To optimize the lengths
 							.windowed(BATCH_SIZE, BATCH_SIZE, true)
 							.flatMap {
