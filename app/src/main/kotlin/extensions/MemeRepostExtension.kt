@@ -124,7 +124,7 @@ class MemeRepostExtension : ULBotExtension() {
 			nextPostTimestamp = state.nextPostTimestamp
 			sentMemeLinks.addAll(state.sentMemeLinks)
 			subscribers.addAll(state.subscribers.mapNotNull {
-				kord.defaultSupplier.getChannelOrNull(it) as? TextChannel
+				runCatching { kord.defaultSupplier.getChannelOrNull(it) as? TextChannel }.getOrDefault(null)
 			})
 		}.onFailure {
 			log("Failed to load state: $it")
