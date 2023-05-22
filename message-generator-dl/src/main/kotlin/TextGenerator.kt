@@ -2,6 +2,7 @@ package com.github.mnemotechnician.messagegen
 
 import java.io.Closeable
 import java.io.File
+import java.io.PrintWriter
 import java.lang.IllegalStateException
 import java.lang.ProcessBuilder.Redirect.*
 
@@ -16,8 +17,7 @@ object TextGenerator {
 	val modelFileIndex = modelFileLocation.resolveSibling("model.ckpt.index")
 	val vocabFile = workDir.resolve("vocab.json")
 
-	val startingPhrases = listOf("Advert: ", "Linux advertisement: ", "AD: ")
-	val trainingStartingPhrases = startingPhrases + ""
+	val startingPhrases = listOf("Advert: ", "Linux advertisement: ", "Linux news: ")
 
 	// TODO: synchronize with common.py
 	const val BATCH_SIZE = 20
@@ -81,31 +81,36 @@ object TextGenerator {
 			// The state still has to be restored for the consecutive trainings to be effective.
 			val shouldRestoreState = it != 0 || continueTraining
 
-			// Copy the dataset to the temp directory as well, formatting it properly
+			// Copy the datasets to the temp directory as well, formatting it properly
 			val dataset = pythonDir.resolve("train.txt").apply {
-				outputStream().use { out ->
-					TextGenerator.javaClass.getResourceAsStream("/train.txt")!!.use {
-						val text = it.bufferedReader().readText()
-						val lines = text.lines()
-							.filter { it.isNotBlank() }
-							.map { trainingStartingPhrases.random() + it.trim() + MESSAGE_TERMINATOR }
-							.sortedBy { it.length } // To optimize the lengths
-							.windowed(BATCH_SIZE, BATCH_SIZE, true)
-							.flatMap {
-								// Each batch of lines must contain lines of equal length
-								val padLength = it.maxOf { it.length }
-								it.map { line ->
-									line.padEnd(
-										padLength,
-										MESSAGE_TERMINATOR
-									)
-								}
-							}
-
-						out.bufferedWriter().use {
-							it.write(lines.joinToString("\n"))
-						}
+				PrintWriter(outputStream().bufferedWriter()).use { out ->
+					// These phrases are supposed to teach the network to write coherent sentences
+					val learningPhrases = TextGenerator.javaClass.getResourceAsStream("/train-learning.txt")!!.bufferedReader().use {
+						it.lines().toList()
 					}
+					// These phrases are used to train the network to generate advertisements
+					// They all begin with a starting phrase and end with the message terminator
+					val phraseLines = TextGenerator.javaClass.getResourceAsStream("/train-main.txt")!!.use {
+						it.bufferedReader().lines()
+							.map { startingPhrases.random() + it.trim() + MESSAGE_TERMINATOR }
+							.toList()
+					}
+
+					(learningPhrases + phraseLines)
+						.filter { it.isNotBlank() }
+						.sortedBy { it.length } // To optimize the lengths
+						.windowed(BATCH_SIZE, BATCH_SIZE, true)
+						.flatMap {
+							// Within each batch, all the lines must have an equal length
+							val padLength = it.maxOf { it.length }
+							it.map { line ->
+								line.padEnd(
+									padLength,
+									MESSAGE_TERMINATOR
+								)
+							}
+						}
+						.forEach(out::println)
 				}
 			}
 
