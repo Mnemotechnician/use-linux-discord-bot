@@ -5,6 +5,8 @@ import java.io.File
 import java.io.PrintWriter
 import java.lang.IllegalStateException
 import java.lang.ProcessBuilder.Redirect.*
+import java.text.BreakIterator
+import kotlin.system.exitProcess
 
 /**
  * A kotlin wrapper for an AI text generator in Python.
@@ -20,7 +22,7 @@ object TextGenerator {
 	val startingPhrases = listOf("Advert: ", "Linux advertisement: ", "Linux news: ")
 
 	// TODO: synchronize with common.py
-	const val BATCH_SIZE = 20
+	const val BATCH_SIZE = 40
 	const val MESSAGE_TERMINATOR = '$'
 
 	private var filesCopied = false
@@ -82,6 +84,7 @@ object TextGenerator {
 			val shouldRestoreState = it != 0 || continueTraining
 
 			// Copy the datasets to the temp directory as well, formatting it properly
+			println("Preparing the dataset...")
 			val dataset = pythonDir.resolve("train.txt").apply {
 				PrintWriter(outputStream().bufferedWriter()).use { out ->
 					// These phrases are supposed to teach the network to write coherent sentences
@@ -102,12 +105,10 @@ object TextGenerator {
 						.windowed(BATCH_SIZE, BATCH_SIZE, true)
 						.flatMap {
 							// Within each batch, all the lines must have an equal length
-							val padLength = it.maxOf { it.length }
+							val padLength = it.maxOf { it.codePointCount(0, it.length) }
 							it.map { line ->
-								line.padEnd(
-									padLength,
-									MESSAGE_TERMINATOR
-								)
+								// Manual padding because String.padX counts unicode code points
+								line + String(CharArray(padLength - line.codePointCount(0, line.length)) { MESSAGE_TERMINATOR })
 							}
 						}
 						.forEach(out::println)
@@ -212,4 +213,12 @@ object TextGenerator {
 			if (started) process.destroy()
 		}
 	}
+}
+
+private val breakIterator = BreakIterator.getCharacterInstance()
+fun String.unicodeLength() = run {
+	var count = 0
+	breakIterator.setText(this)
+	while (breakIterator.next() != BreakIterator.DONE) count++
+	count
 }

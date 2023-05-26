@@ -25,20 +25,32 @@ restore_state = bool(os.environ['RESTORE_STATE']) if 'RESTORE_STATE' in os.envir
 
 # Read the dataset
 text = sys.stdin.read()
-lines = text.splitlines()
-vocabulary = sorted(set(text))
+# Tensor of lines of unicode characters
+lines = tf.ragged.constant(list(map(
+    lambda line: [char for char in list(line)],
+    text.splitlines()
+)))
+# The first characters, a-z and A-Z, must come in pairs
+vocabulary = list("aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ")
+# The rest of the vocabulary is sorted and inherited from the input
+vocabulary.extend(
+    list(filter(
+        lambda char: not char in vocabulary, # Only retain non-letters
+        sorted(set(text)) # Individual characters from the text
+    ))
+)
 
 char_to_id = tf.keras.layers.StringLookup(vocabulary=vocabulary, mask_token=None)
 id_to_char = tf.keras.layers.StringLookup(vocabulary=char_to_id.get_vocabulary(), invert=True, mask_token=None)
 
-all_ids = char_to_id(tf.strings.unicode_split(lines, 'UTF-8'))
+all_ids = char_to_id(lines)
+
 dataset = (
     tf.data.Dataset.from_tensor_slices(all_ids)
         .map(lambda x: (x[:-1], x[1:]))
         .batch(BATCH_SIZE)
-        .shuffle(1000, reshuffle_each_iteration=True)
+        .shuffle(1000, reshuffle_each_iteration=False)
         .prefetch(tf.data.experimental.AUTOTUNE))
-
 
 model = TextGeneratorModel(
     vocab_size=len(char_to_id.get_vocabulary()),
