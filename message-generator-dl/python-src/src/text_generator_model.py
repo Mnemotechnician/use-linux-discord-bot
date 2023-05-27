@@ -3,7 +3,11 @@ import tensorflow as tf
 class TextGeneratorModel(tf.keras.Model):
     def __init__(self, batch_size, vocab_size, embedding_dim, rnn_units, dropout_rate=0.0):
         super().__init__(self)
-        self.embedding = tf.keras.layers.Embedding(vocab_size, embedding_dim)
+        self.embedding = tf.keras.layers.Embedding(
+            vocab_size,
+            embedding_dim,
+            mask_zero=True
+        )
         self.gru1 = tf.keras.layers.GRU(
             rnn_units,
             return_sequences=True,

@@ -24,6 +24,7 @@ object TextGenerator {
 	// TODO: synchronize with common.py
 	const val BATCH_SIZE = 40
 	const val MESSAGE_TERMINATOR = '$'
+	const val MASK_TOKEN = '\u0001'
 
 	private var filesCopied = false
 
@@ -108,7 +109,7 @@ object TextGenerator {
 							val padLength = it.maxOf { it.codePointCount(0, it.length) }
 							it.map { line ->
 								// Manual padding because String.padX counts unicode code points
-								line + String(CharArray(padLength - line.codePointCount(0, line.length)) { MESSAGE_TERMINATOR })
+								line + String(CharArray(padLength - line.codePointCount(0, line.length)) { MASK_TOKEN })
 							}
 						}
 						.forEach(out::println)

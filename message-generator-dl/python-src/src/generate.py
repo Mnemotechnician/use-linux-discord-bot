@@ -26,8 +26,8 @@ vocabfile = os.environ['VOCAB_SAVEFILE']
 with open(vocabfile, "r") as file:
     vocabulary = json.load(file)
 
-char_to_id = tf.keras.layers.StringLookup(vocabulary=vocabulary, mask_token=None)
-id_to_char = tf.keras.layers.StringLookup(vocabulary=char_to_id.get_vocabulary(), invert=True, mask_token=None)
+char_to_id = tf.keras.layers.StringLookup(vocabulary=vocabulary, mask_token=MASK_TOKEN, oov_token=OOV_TOKEN)
+id_to_char = tf.keras.layers.StringLookup(vocabulary=char_to_id.get_vocabulary(), invert=True, mask_token=MASK_TOKEN, oov_token=OOV_TOKEN)
 
 model = TextGeneratorModel(
     vocab_size=len(char_to_id.get_vocabulary()),

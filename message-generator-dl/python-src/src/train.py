@@ -31,7 +31,7 @@ lines = tf.ragged.constant(list(map(
     text.splitlines()
 )))
 # The first characters, a-z and A-Z, must come in pairs
-vocabulary = list("aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ")
+vocabulary = [MASK_TOKEN, OOV_TOKEN] + list("aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ")
 # The rest of the vocabulary is sorted and inherited from the input
 vocabulary.extend(
     list(filter(
@@ -40,8 +40,8 @@ vocabulary.extend(
     ))
 )
 
-char_to_id = tf.keras.layers.StringLookup(vocabulary=vocabulary, mask_token=None)
-id_to_char = tf.keras.layers.StringLookup(vocabulary=char_to_id.get_vocabulary(), invert=True, mask_token=None)
+char_to_id = tf.keras.layers.StringLookup(vocabulary=vocabulary, mask_token=MASK_TOKEN, oov_token=OOV_TOKEN)
+id_to_char = tf.keras.layers.StringLookup(vocabulary=char_to_id.get_vocabulary(), invert=True, mask_token=MASK_TOKEN, oov_token=OOV_TOKEN)
 
 all_ids = char_to_id(lines)
 
@@ -69,7 +69,12 @@ model.compile(optimizer='adam', loss=loss)
 if (restore_state):
     model.load_weights(savefile)
 
-history = model.fit(dataset, epochs=EPOCHS, callbacks=[])
+history = model.fit(
+    dataset,
+    epochs=EPOCHS,
+    callbacks=[],
+    use_multiprocessing=True
+)
 
 # Save the model and vocabulary
 model.save_weights(savefile)
