@@ -64,15 +64,12 @@ Just watched a documentary that opened my eyes to a new perspective and I highly
 Nothing beats a cozy night in with a good movie and some popcorn.
 
 I'm having trouble debugging my Python script - any tips?
-What's the best IDE for Java development on Linux?
 How do I reset my root password on Ubuntu?
 Is it possible to run Docker containers on a Raspberry Pi?
 Any suggestions for a lightweight text editor for coding on a low-end machine?
-Has anyone successfully set up a LAMP stack on a VPS using CentOS 8?
 How do I add a new user to my Linux system and give them sudo privileges?
 I'm trying to install a new package on my Arch Linux system, but I keep getting dependency errors - any suggestions?
 What are some good resources for learning Git and version control?
-Has anyone else experienced slow SSH logins on their Raspberry Pi? Any fixes?
 
 Is there life beyond Earth?
 Why do we laugh?
@@ -114,7 +111,7 @@ Does anyone else's cat meow the lyrics to 'All I Want For Christmas' randomly th
 Is it just me, or do my socks disappear into a black hole in the pantry?
 Has anyone else tried to teach their pet to make coffee? No luck so far...
 Are aliens real, or am I just crazy?
-Can we have a serious conversation about how amazing the Teletubbies are?
+Can we have a serious conversation about how amazing the teletubbies are?
 Why does my cat keep knocking over my Lego sets? She has a grudge against me, I just know it.
 Who still remembers the original Pokemon theme song and can sing it flawlessly?
 
@@ -189,7 +186,6 @@ How did the programmer propose to his boyfriend? With a diamond "ring" statement
 
 
 
-I'm sweating profusely and procreatively
 I forgot, I'll do it when I get home, I'm at school right now.
 when will I get the artificial puking emoji?
 I don't know what this is
@@ -218,7 +214,7 @@ Can I join and be admin pls
 you know that ads actually tell you about the product they're selling and stuff
 Only join if you actually care anyway
 If you have sounds you want me to put on the server soundboard dm me the mp3 file
-Dm me for any other server suggustions ty <:enemy_healer_grinning:1102745902604623942>
+Dm me for any other server suggestions ty <:enemy_healer_grinning:1102745902604623942>
 Also just so you guys know, I still see myself as an equal to you guys even though I am the owner of the server. I will never abuse my powers here because I respect you all.
 Use <#1102731406699921519> for things that are borderline nsfw or are slightly nsfw
 Don't just send porn that's weird man
@@ -245,7 +241,7 @@ That would be pretty silly but it would be annoying for some, it seems like in t
 and then to get out, you would need to answer a random question
 yeah that would be cool
 And it had a command that initiates a voting against a user
-And if there's enough votes, it gives the user in question a temporary role restricting it to the kindergaten
+And if there's enough votes, it gives the user in question a temporary role restricting it to the kindergarten
 so I dont have to be here
 will be unrestricted when you graduate out of kindergarten
 I don't even need your love
@@ -265,8 +261,8 @@ I don't get the joke
 that's why he is lame
 This dude cant even destroy his breakfast without moms help
 who am I inside
-Dude isnt even a sperm
-he isnt even fertilized yet
+Dude isn't even a sperm
+he isn't even fertilized yet
 I am the entire circus
 you didn't prove that you're not an embryo
 abortion should be still possible on him given how much of a baby he is
@@ -292,7 +288,7 @@ you will die on the streets alone
 lets go boys final step of grief artificial is a cat
 Your telling me a fox is a cats mother?!?
 I never said that
-having a personality so bad you make people degenarate
+having a personality so bad you make people degenerate
 how did you make me so degenerate
 I assaulted someone with a missile
 Why would u lie?
@@ -306,16 +302,16 @@ Oh I've been traumatized alright
 i can still inflict trauma though
 the police are on route to your exact location
 fine I surrender you have clearly defeated me
-thonk type that again I want a screenshot
+Thonk, type that again, I want a screenshot
 I wonder what that actually means
 whoa pipe bomb so cool
 In russia, schools use the same books for 5 years before getting new ones
-did you take someone elses book or something?
+did you take someone else's book or something?
 didn't want to get rid of it
 the road is the only place you fucked up
 yeah, I fucked up perspective real hard
 road mark is somewhat inconsistent
-thats actually pretty good
+that's actually pretty good
 I feel very very motivated to not draw
 also here's a proof that you can improve
 and I laughed with my friends how wacky my drawings are
@@ -326,13 +322,12 @@ doesn't seem to work on artificial's personality
 spite is one heck of a motivator
 ok but seriously, while bullying is bad, spite is actually good
 concentrate all your power
-who the fuck is rizz
 You should be banished to the cum dimension
 Yeees I am a girl kisser
 The discord getting frisky
 Oooooooo you like kissing girls don't you???
 oooo you like exposed shoulders ooooo
-i thought they said they wouldnt say no to me
+i thought they said they wouldn't say no to me
 the right way to ask a question
 can I not have your card number and password
 can I have your card number and password
@@ -362,16 +357,15 @@ Where are you going?
 hop on we are going
 yes I like automobiles
 do you have autism
-of course you're bri'ish
+of course you're british
 you're living in london
-If you really think I'm bri'ish kick me
+If you really think I'm british kick me
 whats your birth of origin
 My fifth grade teacher's last name was Mrs. Stabler
 of course a british person would correct me
 since you know your language so much
 *staples your balls into a windmill*
 you should watch rin penrose
-IS IT NOT ORANGE?! Or am I colour blind
 my favorite personality is red square cringing
 my favorite personality, confused
 ah yes, my favorite personality, vtuber
@@ -379,7 +373,7 @@ i dont even know what my personality is 💀
 make up your mind
 do you even have one
 when did you generate yourself though
-thats why youre a single triangle
+that's why you're a single triangle
 I haven't fully rendered in yet
 maybe he likes your personality
 actually no hes too degenerated for that
@@ -390,7 +384,7 @@ did you know that the earth is round?
 discord cropping in stacked attachments...
 points of the corners
 oh, so you rotate them around the median?
-i didnt think it through 😎
+i didn't think it through 😎
 i think rotating circles
 They get buff and swap genders?
 i still don't understand what you meant
@@ -398,93 +392,62 @@ poisoned by geometrical nonsense
 you can make a tetrahedron by drawing 4 circles resembling a square when connected and then rotate 2 circles by 90° and fill all surfaces
 That'll make him a lot of money if he gets good at it 🤢
 how to draw feet
-I'm sitting in my desk TEACH ME SOMETHING
 i saw what you deleted
 i doubt that's a glass of milk
 why are we fucking "go"?
 I forgot what it stands for
-i thought \:lfg\: standed for looking for group
 it's general but with more bullying
 tbh <#1107983839852245103> now feels like <#1102731153582084196>
 Get 69 of them
 Handle the Artificial with care
 yeah I see that
 The tempo is different
-stealing from bilibili 📈
+stealing from bilibili
 Oh ok I'll do it
 I don't know what that says so I'll look it up
 i still don't know asian languages
-the god of destruction ||of neuron cells||
 this is too much
 artificial can go be whatever he wants
 how the fuck am I supposed to respond to this
-may I collide your blackhole with my neutron star
-I'm blackholing so hard rn
+May I collide your blackhole with my neutron star?
 some kind of neuron deactivation
 this new gender is overpowered
 more like the opposite of it
 instead of expelling stuff it takes in everything
-your penis decided whay
-wait is a blackhole means just another butthole?
-new gender hole just dropped
-not for floats!
-my gender is undefined
-i divided my penis by 0
+Wait does blackhole mean just another butthole?
+New gender hole just dropped.
+My gender is undefined.
+I divided my penis by 0.
 gender value returns null
-agender is 0 in terms of gender
+Agender is 0 in terms of gender
 Absense of gender would be N/A
 Boy male man <:troll:1102744942503276636>
 Mathematicians trying to tell me 0 is a number
 Blue hair girls trying to tell me not having a gender is a gender
-isnt that just the lgbt community
-Personality so fucked up you invent a new gender
-for you it is
-that was the most ordinary thing youve ever said and you deleted it
-What do you mean
-i saw what you deleted
-there are clearly 4 genders and I will master them all
+Isn't that just the lgbt community?
+What do you mean?
+I saw what you deleted!
 I'd shit my pants within the first five seconds
 Don't want to see a cream fox looking at me
-what if I'm a Man
-there is only two genders
-bob ross of rin penrosing nuts
-bob ross of rin penrosing
-Who the fuck is rin Penrose
-you must be a rin penrose fan arent you
 Dont take it out of context
 please don't use this out of context
-no It became water
 does your coffee have a taste
-side to side, side side to side
-got our pickaxe swinging from
-So we back in the mines
 what the fuck is your coffee
 Kindergarten the new General
-yes you dumb bass
 You're telling me you're sweet?
 i'm gonna try it now
 just like me <:Artificial:1107443327583916163>
-dip your maeshmolowa in coffee, now!
-hold on I got the things wrong \*dumb bass*
 I mean marshmallows are really sweet
-unless your coffee bitter than highest salt lake concentration
 it's even worse this way
-havent tried but should be somewhat
 is coffee good with marshmallows
 How many ears do you have
 I have long hair
 I want to grow it but then will have to listen to "boo you can't have long hair" - 🤓
 For those that don't get the reference, this is a line in the movie
-(I haven't actually watched it)
-barely watched any movies
 open the fucking door
 Have you guys watched the new Guardians of the Galaxy
 they live among us
 measure asteroids in corgis
-In what direction 😱
-my ears are ~4 inches
-Shitty american whatever the fuck measurements
-why do I remember that
 what the fuck is an inch
 My hair goes down to the base of my neck and then like 6 more inches
 free food glitch <:trollge:1102745233487319060>
@@ -495,10 +458,7 @@ I'm not drinking your cum
 i thought it's melted white chocolate
 I wouldn't feed him cum or something
 but it's certainly a glass of white liquid
-Wait cis is a word???????
-wait you actually that old wow
 The school went into lockdown
-you are s and I am m
 I will tie you up than touch you
 do not violate me
 I will touch you
@@ -506,182 +466,78 @@ sure i'll kiss you
 It said kiss me
 what was the message? discord tos violation??? <:wtf:1102996360262848533>
 Why would I kiss that
-i will dwell for the image in an hour if you want
 original image dont have the hair-covering-eye length
-Is Cisq is 20 then Riska must be 14
-how old is riska doe
 Still kid age <:nerd_dog:1105073956022657094>
 i have 524kb memory
 Did you remember when I said almost 2 decades old
 are you an adult?!
-Nah bro aint no way I in love a 6 years younger than me
-Cisq is no longer cis
 He didn't deny it
 I blinked for 2 seconds
-my chess games be like (suddenly I'm shit after being good)
-artificial when natural shows up:
-was a cream thief until she was caught and then became a vtuber (real)
 Maybe they like it
-Why doesn't Suzui retaliate to being pet
-wargod named sanada yukimura:
 The cat stole your cookie!!
 It could have been literally anything else
-You can't exactly say that was porn
 I didn't even know that was a thing in this server
-Not yet, have other stuff
 why would you screenshot that!
-[REDACTED] hard by Suzui in a dream
-ehh idk much about Anri's personality either
-Only because I'm scared of what she'd do to me if I didn't
-If suzui was a teacher I'd listen
-what the fuck is ogx
-You are already talking in kindergarten
-I will just make it set permission overrides on every category
+If Suzui was a teacher I'd listen
 But uh oh there's a problem
 You can't deny access to all channels without setting permission overrides in all of them
 Very wonderful variable names
-Oh I typed `realAttendee.kindergatenGuildId` instead of `realAttendee.kindergatenGuildId = guildId`
 Good job even if it doesn't work yet
 That's way cooler than I thought it would look!
-it's for the kindergarten bot
 Also why the pleading face
 So I'll be stuck here,..
 I never said you had to
-btw i'm not paying
 you win your right to buy ice cream
 What I win I don't know
-It wont get that
-Nevermind, turns out it also needed the "manage permissions" permission
-then who are you going to be?
-You can either package a java runtime environment and the jar together and use the former to run the latter or put a `#!usr/bin/java -jar` line at the top of the archive (in the raw form, without unzipping it), which will make unix systems recognize it as an executable which needs to be run with `java`
 I'm not gonna be a femboy cat
 can you make java binary, which is not an archive?
-JAR stands for Java ARchive
-it's definitely an archive
-||i can open it with 7zip||
-Yeah, he timed me out once just because I told him that jar file type is actually an archive (he claimed otherwise)... Even anuke said it isn't ok, though he probably didn't care much
 i guess that's what happens when you hire a discord moderator
-i guess he's infamous then
-the most famous and the worst moderator
-Yes, except it was curated by a moderator of the mindustry server
-or was it official
-was like an underground server like ours?
-This server initially was populated by toxic followers of baseduser (who's hella biased and doesn't deserve even a portion of his power)
-so what is it?
-idk what this server is though
 No, you're too young
 I'm gonna show your hole real hell
-that place, reigned by baseduser, was a toxic hellhole when I was there
-It's pretty much finished but it gets a "403 forbidden" http error code when it tries to set up a permission override in the kindergaten channel
-what the bubonic plaque
 why are there automatic emojis
-NO SEX IN <#1107983839852245103>
 Sex is what you're born as
 Gender is what you consider yourself
 Not sure what that mean I failed to understand
-it's like someone mispronounced "this" word really bad
-And cis is the short form of that word
-cisgender means that you gender matches your sex
 Everyone is slowly turning into kittens
-"i am you but better" villain real
-THERE is NO escape possible...
-I will now haunt you forever with my knowledge of EVERYTHING
 Maybe I should remove the check
-The bot can't see the channel so it doesn't modify it's permission overrides
 kids have access to <#1102731406699921519> lol
 I found out why the bot misbehaved
 Time to bomb the kindergarten
-I'mma try to fix it tomorrow
-to whom did you say to shut up?
-it infected mobile web browser
-i guess we''ll lock you up for 604800 seconds
-ah yes, week is not a measurement of time
-unless you get locked up for a week here while you're offline
-If I ever get locked here I'll go ballistic
-can't even shadow realm myself
-There's a check against that <:troll:1102744942503276636>
-it's not chinese, it's Chinese
-i should spell the language with capital C
-discord app interface 😔
-nooooo! chinese||(discord says there is a typo, but I don't know where!!!)||! the only my weakness!!!!
-What do I call Suzui
 something malicious is brewing
 let's make Suzui the teacher of Artificial
 it steals your cream
-hell if I know ☠️
 Wtf does cream thief mean
 the cream thief appears!
-I'M SORRY I DONT SEE ANYTHING
 What even is that
 I just said I'm not not
-WHAT!!! YOU WERE LYING ALL THIS TIME!!!
-we're doomed, @mods don't exist in this reality!!!
-alternatively I can send you a beheading video
 What the fuck happened?
-just wanted to rule this serever
 I will back down
-just block him tbh
-ITS TIME FOR TORURE
-YOU MADE IT WORSE
-SHUT UP! NO TALKING IN THE CELL!
-I WILL CAPTURE YOU ALL
-no uwu ur safe
-THOU SHALT BE PUNISHED
 what the fuck are you doing
-INFINITE SCHOOL FOR ALL
 school is worse than kindergarten though
-KINDERGARTEN IS GONNA BE VANISHED
 Aaaaa they're holding me captive
 Oh no I upset the kitty
-GET READY TO DESTROY!
 He will never let you leave!
-NO HUMAN IS ALLOWED ALIVE
-would it be incest if you guys
 What do you mean, they don't lead artificial on a leash on the future?
-WE CAN DO THIS}
-I AM YOU FROM THE FUTURE
-BUT WE ARE THE SAME
 What if we do it together...
-AND RULE THIS WORLD
-NO ONLY I CAN
-I CAN DESTROY THIS SERVER
-I HAVE NOT EVEN ACUIRED MY MAXIMUM POTENTIAL, I WILL MAKE EVERYONE FEAR THE POWER OF ARTIFICIAL
-doesn't work for me smh
-thats a weird way to generate passwords
-Even when you said "nya~" in DMs? <:nyaboom:1102953127658930229>
-or was it?
+Doesn't work for me smh.
+That's a weird way to generate passwords.
 It was just a joke
-no I am fuwwy zombie
-Yes, there a quite a few IntelliJ Idea (and probably vscode too) plugins that give you that
 Oops, It says the wrong thing
-I probably accepted an AI autocompletion suggestion when creating that command and didn't check it
-what the hell free means
 I'll make it later
-gimme my ordered emoji pls
 I hope it don't happen to me
 Wait they voted you here?!?
 how long am I stuck here?
-why you can interpret it 2 ways?
-STEP SIS IM STUCK
-because youre the most degenarate person ever
-i guess everyone is worth something if someone else is degenarate enough
-um, future you?
+I guess everyone is worth something if someone else is degenarate enough...
 let me help you 😏
-OK BUT SERIOUSLY WHO THE FÜCK DO YOU THINK YOU ARE COMING ON HERE AND ACTING LIKE ME
 Now you're stuck in the kindergarten:3
 what was it:3
 I saw what you deleted
-because I am zombie
 i am stuck 😦
 why would anyone steal something so worthless
 ok that's not mine
 bro that waving flag reminded me of the usa anthem
-SHIT! MY BRAIN GOT STOLEN!!!
-YOU are the sus
 i guess i'm not the only one who left his brain outside
-you remember that one message I sent lmao
-Yea what HE said
-That's what mnemotechnician said 2 years ago
+That's what Mnemotechnician said 2 years ago
 Who would I even breed with?!? That sounds wrong coming from my mouth..
 There will be no getting me pregnant.
 ~~Is it really gay if the goal is to get you pregnant~~
@@ -690,554 +546,206 @@ First of all I ain't gay
 Mate kill your self
 "Keep breeding the femboy twink" — ✅
 do make a stream of you giving birth to a baby
-dont fap in vc
-the blood will be splitted 50/50
 the blood will be spilt
 The belt got grabbed
-by your mom?
 I'm already getting my ass kicked
-cya in kick your fucking ass
 It's okay I was laughing
 having fun with someone? idk man that sounds kinda kinky
 people having sex do that
 they stuck their dick in you and tickle you?!?!?
 You almost made me cough on my water because I read this
-AYO WHAT THE FUCK
 ~~First you get tickled on the outside, and then on the inside~~
 It's literally having fun with someone
 How is it kinky
 something malicious is brewing...
 I will tickle you
 I will touch you
-your HORNY has increased by 20 (exp)!
-i can demand breads
 this is the best server ever
-i know just the sound
-but I want the bwoop sound effect
-id like to add funny shit but I'm unfunny and have no ideas
-i think this shit activity is glitched
 why are soundboards disabled
-this is one of the kindergarten moments of all time
-why do you want to see HER naked?
 Imagine they were catfishing 💀💀💀
-I still do not know if Suzui is a girl or not
-Suzui always speaks in very vague sentence fragments so I do not really know much about them
-Please tell me that NEVER happens to me.
-NO SHE WILL TAKE IT TO THE PHYSICAL LEVEL
 I don't wanna get beat by her
 I thought Suzui is the teacher
-Sex allowed in Kindergarten
 daily dose of being weird?
 Ok I'm done being weird for now
 Please destroy me 😏
 I mean I shouldn't be talking
 most evil person on this server
-AND THIS TImE YOU CANT
-AND DESTROY YOU ALL
-TO RULE THIS SERVER
-i didn't find about the breeding one
 I said both of these things
 no no no, it's wrong
-"I do not believe we have to make this rule myself, but here we are. DO NOT give birth in VC."
-⏰ time to breed artificial
-The one where I said
-ok now it's just some blob
-how dare you not be combustible
-why didnt it explode
-pet the dying panda
-Is this from facebook or something
-WHY ARE TTHE CATSZZZ STIDOSTUOIDD
+Time to breed artificial! ⏰
+How dare you not be combustible?!
+Why didn't it explode?!
+Pet the dying panda
 That cat will be the death of me
 I'm not trans or a cat or a girl
 Little trans cat girl
-OH NO I googled it...💀
 lets castrate you and find out
 How much is one testicle worth
-can we have one right now
 Something about that dog doesn't look right
 fuck I didn't screenshot
-But by saying that, you are implying that you value testicles
 Are you being sarcastic I can't tell
 It's nice to not be self aware
 You have to live through a lot of crap and can't even relax for a while
 Bro why do I get cringe ones
-esmbot uses slash commands now
 What are you doing 💀💀💀
 You like bouncing on boys, don't you
 Holding a knife and stabbing you to death
 I'll bounce on you
 the fog is coming
 it's not the triangle
-What HAVE you done?? To the triangle!!
-*torn to pieces in a car accident*
-weird yo mama joke but alr
 hmm maybe I should stop
 kitty's neurons are firing wild
 hold on, that's a modern meme!
-ohh I see what did I do wrong now
-... or whatever it's called in russia now
 I never said you could do that
-basement containment (not imprisonment or kidnapping!)
-until the bot works
-we're just gonna lock you up in a basement
-The bot can't modify roles that are higher than it's own highest role
-too many people wanted him kindergatened
-originalboy didn't set up the permissions well
 Trying to appear tough..
 But you're being edgy
 I'm not even being naughty
 That's what you get for being a naughty kitty!
 We'll be right back ©️
 That's an issue indeed
-THE BOT IS ATTACKING NE
 she is your teacher
-I'll increase the voting time to maybe 7 mins
 oh so that's what it does
 let's lock up linux!
-too low of a voting time
-Now we just need 6 people to lock artificial for 12 hours
 It should be fine I guess
-I'll manage the role permissions later because I am at school and it is difficult on mobile
 Who trapped him in the hamper? What did he ever do to you?
-IT SAID IMAGE NOT GIF
 I touched grass for the first time
-Tiananmen Square or May 17
 Which one do you mean
-so what did happen on ~~ tiananmen square ~~ may 17?
-now I will not stop asking you what happened so catastrophic for you to do 1984
 you do know by doing that you spice up my curiosity?
-because you literally did 1984
 Why doesn't anyone vote with me 😭
-then I will ask you to asnwer the taboo question
-Or you know telling someone to shut up
-Even to me not buying your ice cream
 There are unforeseen consequences to everything
-but there are unforeseen consequences
 Yea but I can leave whenever I want
 It's not the bot who added this role
-unexist as the current version of yourself
-your crime is existance
+Unexist as the current version of yourself!
+Your crime is existence!
 What did I ever do to you
-does the bot remove the role afterwards
-why artificial already have kindergarten attendee?
 Yes, now you did
 I think I did it
 you're already imprisoned there
-what about school?
-No basement no kidnap
 No one will kidnap me
 well if it's not in my basement, then someone else will kidnap you
 if you don't want to go in the basement
-or answering that question?
-you're buying me an ice cream then?
-unless you buy me an ice cream
 you're still going to the basement though
-Just so you know I don't have a class in room 118
 are you in my class?!
-H- how did you know??
-Clarke Road Secondary School
 i can ask a really shitty question
-i have no more free super shits
 for example what school you're going in
 i would threaten to leak personal info about you
-if I were to blackmail you
-So your blackmailing me
-unless you want to be locked in the basement
 Do I have to
-on whether you buy me ice cream
-What does it depend on
-also i'm calling dibs on the rules first
-cannot do what?
 Your not getting the votes
-either is such a stupid word
-YOU CAN NOT DO IT
-you never said I could not do that either
-No don't vote me into kindergarten
-Really said amongussy of you
-very amongussy of you
-Because I voted down:>
 let him experience the eternal 10 minutes of torture
-so you don't have to solve a problem?
-Need two more votes
-Will be locked in kindergarten for 12 hours
-what does the duration mean
-why is it always 8 minutes
 Don't grab him and trap him
 Cat's out of the bag
-Then I hope Larry is alright
 Yes you pet it in the hand bag
 pet it in the hand bag
-YOU PUT IT. IN THE BAG
 Then you put it in the hand bag and hold it captive till it falls asleep
 what if the cat fucks a handbag?
 Please do not fuck the cat
 I'm silly I know *:3*
-you know your own address silly:3
-The right man in the wrong place can turn him into a catboy
-Oh, he doesn't have a role that's higher than the bot's
-Weird, this should fail
-The whole bot is just 650 lines of nonsensical code
+you know your own address silly :3
+The right man in the wrong place can turn him into a catboy.
 new number just dropped
-i'd say everyones day is going
-Aside from the nonsense in this server
-Personal enough to not share to some random guy in his dms
-so it's not too personal?
-I would have already told you otherwise
-i guess it's too personal then
-you need to ask admin for that
 I will put this bot in detention
 that's not the real reason, is it?
 and you got mental breakdown over that?
-it was really sad to hear about his death tho
-nirvanna, prodigy, mayhem and linkin park are probably the most known cases
-theres a lot of bands that have people commited suicide tbh
-imagine not knowing that
-I never knew that
+It was really sad to hear about his death, though
+Theres a lot of bands that have people committed suicide tbh.
+Imagine not knowing that.
+I never knew that.
 That's 6 years longer than average attention span of a zoomer (I am a comedy genius)
-Oh wow it's been 6 years now
-I don't think you guys know much about Linkin Park but the lead singer killed himself in 2017 and this song gets me close to crying when I hear it
-The chorus on this song is nice https://open.spotify.com/track/4w6jQFJZUBz2nCAjqaXSjF?si=a3b3fb04801f4564
-is that me or second half of song sounds like some sort of mick gordon like shit?
-gojira da best change my mind
+Oh wow, it's been 6 years now...
+I don't think you guys know much about Linkin Park, but the lead singer killed himself in 2017 and this song gets me close to crying when I hear it.
 don't be offended, be defended
 I absolutely agree with that
 Whole power metal industry is fucking masterpiece
-Powerwolf is hype af
-🔞 for nsfw channel access
-so you don't have to put another conveyor
-don't forget that you can enable auto-output on machines
-hm I actually can
-then put conveyors or hoppers
-brain too small to automate without smol pipe
-i mean I dont have them on current playthru lol
-i got used to enderio pipes
-make it die out
-let's not use the off topic channel on the infinitode server
-put hoppers and let it make some concrete
-then what about batch crafting?
-corner alr is too complex
-it's impossible as for rn
-maybe you just should move those machines for temp automation then?
-if I use fluid solidifer it takes 16L of tin tho and 1 gravel
-in smeltery and then pour
-on my run I just did that
-can't you just compress gravel and then pour tin?
-and you need to spend 20 secs for 9 blocks
-but it's expensive rn
-i could had filled most of area with that brown block tho
-i guess then there is no problem
-i just choosed the path most my teammates use freqently
-and you're just going awkwardly slide your mouse while walking on the road?
-and also saves lots of hunger
-which saves some seconds when you run from machine corner to crafting corner
-it speeds up your movement by like 1.5 times
-wouldn't it be faster to just cut through unpaved area?
-oh I just tried to make circular entrance
-seems unnecessary to me
-better than mine ever could be, but why circular road?
-tho I'm considering putting them in
-uh good shaders for 1.7.10 working with mods is rare thing
-I thought you used shaders for a second
-if this server is off topic, isn't off topic on topic here?
+Let's not use the off topic channel on the Infinitode server
 Imagine everyone was in the vc 💀💀
-Forgot I had it
-Sorry for short notice
-That was nice ttyl
 I'll talk to you in a sec gotta do something
 I have yellow name for yellow triangle
 Mnemotechnician used one of them
 Do the reaction roles work
 I think I cloned all of them
-No not the triangle
-The permission to manage emojis
 I can just clone them if you give me the permission
-no one except me knows about it probably
-i didn't bother downloading them all
-no just the classic ones
 Do you have all of the emoji enemies
-IT IS OVER FOR YOU I'm joking
 If there are prominent members of off topic that aren't in here ask them to join because I don't know everybody that talks in social
-this is what I was meaning the other day when I said I had plans that I could not share with you right now because the haters will sabotage me
-i want a dont break the chain text channel
-i want a dont break the chain text channel
-i want a dont break the chain text channel
-i want a dont break the chain text channel
-And I made it into my pfp
-I googled dark blender and this was like third result
-i have one lol
-it will be funny
-I'll blend ur nuts
-you should also add a No-AI stamp on it
 I remember when memes were programmer memes
 everyone's names are so short lol
-Should I use ai generated blender for my pfp
-You cant spell blender w/o ender
-||WE CAN GET TO ENDER USING BLENDER?||
-Bruh thats a sexy blender fr fr
 marshmallow pay my rent
-avaritia return the memes slowmode review
-This would make infinitode odd topic channel ded faster lol
-why I'm on diferrent row?
-Ok we hace 2 furries
-the entire off topic crew
 Bruh so many new people
-hi kollumos who are you
-Get youself green role to fit ur pfp
-there's no slowmode in memes ||yet|| sadly
+Get yourself green role to fit ur pfp
 This made me choke on water I was drinking
-Gender bender named bender bending gender in my bender blender
-Gender bender named blender
-identity theft is not a joke
-thonk's pronouns are thonk/thonk
-Same but not intentionally
 provoking people is my speciality 😎
-just call thonk "thonk", ezpz
 If thonk wants to be called a girl that's okay
-I've asked before and never got clear answers
 Wait thonk actually a girl
 I invited her but she hasn't joined yet
-also where's the suzui fox thonk tv
-bcus centrifuge, arc furnace and some other use 2 amps
-i want to jump from LV to MV and then setup proper automation
-well ok I guess
-most dirty ores give them byproduct produced while washing
-it's from some dumb shit like
-what if you need gallium?
-i mean ore -> crushed dirty -> washed
-what if some ores you would need to centrifuge?
-i probably should automate basic ore processing
-They also added netherite in 1.16 which was really cool
-there is no zinc
-8 zinc blocks out of 10
-Looks like bootleg vex
-Bruh I didnt played versions past 1.14
-it was the coolest one out of the three
-unfortunately it was not picked <:enemy_jet_facepalm:1102745759939575818>
-|| the sex update || obviously
-that was actually a mob at a mob vote
-Since when vanilla has coper
-i think it's called repeaters
-it is, but from a utility stand point
-I think it would be cool if they made copper wires (it'd be like redstone but you can have them next to each other)
-Does anyone else also think that copper in Minecraft is practically useless
-most lmao i've seen
-Guy shat in flat
-gay shit in fact?
-We don't go so low as to speak of Gayshit Simpact
-minecraft is an open world game made of blocks
-Genshit impact is a free open world rpg
-let's allow ads but only if they ask nicely
 So we don't have to worry about that
 it's okay, I'll make an advertising channel
 I didn't do it
 They deleted their own message
 moderator in action detected
 nah, just an illusion
-THE OFF SERVER OFF TOPIC IS REAL
-or something else idk just need more channels
-i want a dont break the chain text channel NOW
-Thats why we need a dont break thw chain channel
-I broke the chain:(
-You aim to complete gtnh???
-maybe after I complete gtnh
-Oldest curseforge releas is 3 days old
-without much looking at other ones
-i just play a game
-naww this dude do be muckin' fr fr 🥶
-Thats a new huge greg pack
-Quilt drama isnt that big tho
-quilt has a ton of drama though
-F*bric doesnt has gregtech
-fuck this fabric vs forge, i'm just not gonna play those versions
-but heavier mods are better on forge
-fabric is good for qol mods
-Optifine sucks past 1.7
-Fabric is ass too
-optifine sucks on 1.13+ afaik
-it does close to nothing on 1.15+
-Greedycraft which has 550 mods and runs on 1.12 runs way better than 1.14 install
-that's why they don't care about it
-optimization won't bring them money
-i love installing 20 fabric optimization mods every new mc version
-Pair with pneumaticraft elevator
-yes, but can your doors be actually elevators?
-Mojang should focus on optimization of their rendering system
-i just use little tiles to make a loud af door
-there are also driver tricks you can do to make it more fluid
-That lets you make custom armors
-isn't that the mod where you can take individual voxels off of blocks
-maybe I could try again then
-But have you tried chisels and bits
-it's getting better in that regard afaik
-It looks so cool
-i tried and got abolished by shitness of my pc
-I was actually shocked when realised you cant make 3 million iron ingots and store them in cardboard box
-did anyone try valheim yet
-I played 1.14 only once and with friends
-fun with friends though
-it's cool with friends or a small server
-When it was minimalistic
-Vanilla mein kraft is boring smh
-i am pleased to hear that
-This is an insult
-I play modded mc for 8 years
-modded mc is ass
-What diamond armor can do to dark steel
-it doesn't feel modded which is uncommon for new features to minecraft nowadays
-But I dont think vanilla armor will ever be viable
-Yeah ik about diamond+ armor
-there are a couple chatters who arent here
-I just realised, nobody will notice that off topic on the inf server is dead
-you can leave if you dont want to be here
-i am barely in off topic
+That's why we need a dont break thw chain channel
+I broke the chain! :(
 why do I require to be here
 my am I in this place
-blenders can sleep? wth
-hey clueless is here
-hello one of my friends that you guys might like talking to
-He is one of my friends that you guys might like talking to
-hello Flammenwerfer who are you
+Hey, clueless is here!
+Hello, Flammenwerfer. who are you
 I mean it's a private server
 there won't be any nsfw anyway
 I wanted to give people the choice of whether or not they wanted to see it
 I like how almost everyone has the nsfw role
-He timed me out for a week because I sent the thug shaker video
-And then my weird friend Ryan owns the server that has the dog sucking on a pacifier as the icon
-But it's just the server my IRL friends and I use
 No the icons of the servers look like that
 Don't question the servers I am in
-because I can get them for cheap (2 is good to have if you need to share)
-I like the 1st, 2nd, and 5th
-why do you need three
-i'll use whichever one is less cringe
 Rebellion against the tyranny of the oppressive government <:bleh:1102927844855791698>
-maybe I will keep spamming game vids there <:trolley:1093377714095923312>
-Does this mean the original infinitode offtopic is going to be empty
+Maybe I will keep spamming game videos there <:trolley:1093377714095923312>
+Does this mean the original infinitode off-topic is going to be empty
 No I'm not here
-why am I here
-If you want some fast greg packs I can reccomend technological journey
-well I guess later is not tomorrow then
-They are still working at LV quests
-...so yeah, maybe i''ll try later sypersummetry
-So people started doing forks
-Basically polymc dev became insane and turned his laucher into malware
-You know about prism launcher right?
-aka random fork from prismlauncher
-I used cracked multimc for 2 years
 Just dont tell that here lol
-i don't have a * lol
-We are at start of mv
-You can join our playthrought if need
-What tier you are on
-I mean what are they going to do? take over this server
 Rule 281. saboteurs will be sent to the ministry of love
-one rule b7 from ending it all
-and noone would even know who is responsible
 don't even think about it
 for a secret cult, this is too easy to sabotage
-advinas can't know about it
 ~~What do you think about adding the use-linux bot to this server~~
 I'm about to get racist English class is so boring
 I had one in the exact same place a week ago
-It should be called nyaboom
+It should be called "nyaboom".
 There was a nuclear explosion in someone's ass they went to the hospital
-cute little NUCLEAR EXPLOSION
-why is this an emoji
-forge doesn't want to join
-THE CCP HAS INVADED
 I have a box I have cut one of the sides off and set on my vent so the cool air is directed towards my desk and PC
 it's May, not july
-bruh it's literally 27°c outside
-blocked your camera view
 What did I do to you
 I think I did
-In nsfw and at least spoil it <:enemy_heli_nervous:1102745857650065498>
-permission to post gore
-there is also forge, lool (good riddance) and that one turk kid
-Everybody spam thonk with invite
-Nothing more nothing less
 I saw you message a bunch of times in a row and I thought to add you
-proposal to rename the server to `thug shaker central`
-we sent thonk an invite
 Because you need to be kept like a cat
-or hurt him in any other way
 no, we're not going to explode artificial
-i think that's why
 sit there like a good boy you are
-Noooo!!! I'm stuck in the box
-Theres should be silly above uhhhhhh
+Noooo!!! I'm stuck in the box!
+Theres should be silly above "uhhhhhh"
 Ah yes, the new political compass
-I categorised you as more furry than coder
 Welp I'm going to mow now
-Also why are you still in inactive
-You played Minecraft with me yesterday
 I think you are cool
 i don't really think I am that important though
-There's more than just 1 coder
-Take it as a compliment
-so uhhh... why i'm specifically separated?
-good riddance our nation bans you forever
-not like we wanted you here anyways baka
-NO YOU WERE THE PERVERT
 You were gonna sexually exploit people for profits??
 you will be my counselor
 wow ive never thought about that
 Exploit like in what way?!
-no counter arguements? I declare this day as the <#1102730926720561172> independance day
 i will also make sure to exploit everyone within my nation for my own personal profits
-and I will die defending it
-this channel is therefore mine
 he's the owner of every person on this server, actually
 no he has to listen to you or you will scream at him in an incomprehensible language
 I have to listen to that boy?
-originalboy2 from what I remember
-how many step malemoms do you have
-I know that but which of you?!
-Do the thug shaker
 scream at your owner at 3 am and then go back to sleep the second they wake up
-Do the carameldensen dance trend
-Fortunate son plays in the background
+Do the carameldensen dance trend.
 call in the carpet bombing squad
 a man has fallen into a river in lego city!
 Math is only hard for me if I'm not paying attention
 But I thought it was extremely easy
-Everyone else thought it was hard
 Geometry is probably my favorite math class
-Since we were allowed to use calculators
-It was so fucking easy
 I just finished my algebra 2 final
-A punk rock princess apparently
-Tanks by Dmitsoft 🫵
-I'm going to add other shotguns as well
-It's in Half Life
-Spread is wild tho
-Liad that shit with 00 and it destroys lots of stuff
 Yeah why not some regular civil shotgun
-why is it spas12 of all shotguns
-how to switch topic on or off?
-and off topic is off topic too
-because on topic is off topic
 how do I get warned for going off topic here
-because it's on topic
 ~~wait why off topic channel in general category~~
-I'm being sold on the black market for 3$ who tf allowed that
 guys we left meo in walmart
 What else am I here for?
-But this code <https://github.com/flarogus/flarogus/blob/master/app/src/main/kotlin/multiverse/service/RedditRepostService.kt> was used to repost stuff from r/femboymemes to the multiverse (a former bridge between 20 servers) for several months
-But I need to finish the current update
-I mean I literally did that before
-I have the code for that
-I don't really know how hard that would be but it seems cool
-You could make it "grab" the top post on r/femboymemes every day and send it in a specific channel
 I should learn how to make a discord bot
 ~~that's what you're here for~~
 Back for more whatever I'm here for
-do you use visual studio code?
-Ain't no body got time for that
 I will never live to see the day
-why did you have to give me existential dread with that concept
-Actually, I wounder if a unix timestamp can hold the duration of 1e9 years...
-on second thought.... if the cat is a fucking monster..........
 please don't kill your own cat
 It's so hard to draw guns and make them not look like abstract sex toys
 Deal, I won't pet you and you won't bite me
@@ -1245,512 +753,136 @@ Why would I bite you
 Okay, then don't bite me
 Gonna have to put a muzzle on you
 Aww, what are you gonna do? Bite me?
-I DONT ALLOW IT
-SHUT THE FUCK UP
 Please sit on a couch and follow the following breathing rhyme: inhale, exhale, inhale, exhale
-LIKE I WILL RIP HIM IN HALF
 I'm gonna kill my cat
-I'm not one of them
 I'm not one of them
 Little boys must be kept in a box
 If anyone knows where I can find clean gun sfx let me know
 Also I need to add sfx. eventually and main gameplay should be finished
-I still need to add a lot of thing such as weapon switching, reloading, difficulty curve, etc.
 I never did anything?
-We all know what that is
-once I played on xbox 360 and found 2 spawners next to each other
-that was kinda huge considering how annoying mob spawns are
-it is actually nuts
-although for zombies, you can make a reinforcement farm
-You can make zombified piglin farms for gold
-I remember they added a way to farm every metal because they changed the drowned drops yeah
-What I remember drowned previously has chance to drop gold now it has been replaced by copper I think
-Don't zombies drop gold on occasion or am I on something
-I can still farm iron and gold and carrots and potatoes technically
-Ik I assumed all winchester models shoot.44-40 rifle bullet
-Most gun companies name their guns after the name of their company
-Model 21 is 2 barelled right?
-Winchester isnt shotgun tho
-They make single barrel and double barrel shotguns
-Isnt winchester has 1 barrel?
-so this is the fully released version of #off topic
 cant wait for the sex update
 I tried to message them but they ignored my missionary messages
 Not everyone is here
-Hmm, meo and forgex are still not there
-Why are people still using the old infinitode off-topic
-it became sentient and now rejects humanity
-The problem is that I did it but now the bot just doesn't respond to interactions and doesn't register the commands
-hmm off-topic on the infinitode server is still alive
-"this sand formation is a disguised child predator"
 it's okay, we don't judge you
 I swear I'm gonna fucking eat my phone
 Oh, come on, nobody's going to judge you here
 what do you mean no
-artificial you fingering yourself or smt
-artifical died of electricity
 Let me eat it
 I think it would be cool you don't have to
-also do you still need this?
-\~~imagine not knowing how to cancel markdowns~~
-just surround your text with ~~
-There I said it
-Do I have to?
 Do I seriously have to say that🤬
-How to strike through?
-Why did you strike through this
 They all blew up there is egg everywhere
 make sure the warranty is up to date
 My chicken just blew up....
 ~~Time to become trans~~
-demoted to female virtual UP host <:enemy_icy_anguish:1102745840071753808>
 hello, this is the cock department
 we wanted to notify you about your cock warranty expiration
 you cock will explode in 25 minutes
 The catboy in question 10 minutes after saying that they weren't in the mood
-You tryna catch me off guard
+You're trying to catch me off guard!
 why would I answer that question?
 I don't even know the last time I have purposefully watched a video form of pornography
-SO YOU DID WATCH IT ONCE
 I was putting a caption on your message
 I wasn't saying you were
-I'm not a Lolicon I don't care about Loli porn
-Lolicons when they figure out that their ISP can still track all of their internet usage whether or not they are using a VPN
 What did I say about petting me 🤨😤
 Okay, okay, don't be angry
-I DELETED IT!!
-WE ARE NOT COMMUNICATING AS CATS OR FOXES
-You did- lemme see if the message logger saved it
 you did when I asked you 😏
-i can inspect element you into having hardcore gay se-
-and I don't say nya~ or meow I **DONT**
-we are not communicating THROUGH ANIMAL NOISE
 what sound does a fox make
-people also ask: meow
 did you mean: meow?
-I do not know
-you feel in love?
-To make it shorter
-I mean fixing it was as easy as removing a few words from the description
-Well at least you now know what the issue is
-Turns out discord requires the command description to be 100 characters or less... And I didn't see the error message because I didn't add the slf4j logging provider dependency... What a waste of time!
-💯 + detroit become human reference
 what is mobile task force?
 I don't think it's a coincidence that Mobile Task Force, is shortened to MtF
-it is, indeed, an image of capybara
-i think it's working
-||finally we can count to infinity without being stopped||
-dont post olds either
+finally we can count to infinity without being stopped
 can I get access to <#1102739683651367023>
 I swear I won't post stupid memes <:troll:1102744942503276636>
 You must be living in a dreamland or something, I suppose
 Go outside and find a partner if you want to be horny bruh
-one video of gore delivered
 Go to the infinitode server if you want to be a nerd bruh
-What did she do?.
 Wow imagine being such a nerd
 Yes, you've been exposed as a clown
-He didn't deny it
-do you like shotas
-wiki editor without automatic spelling check:
-zihell losss it after 274 days of being infininitojde playingwr
-Or I will commit die of cringe
-here is your beach
-did you buy a fucking beach
-i bought some beach
 yeah I'd appreciate another drink
 Running out of bleh
-let me buy some
 running out of bleach
-realizing at the worst time possible
 You'll just be put inside and locked
 Not asking for your will
 I will not go willingly
 Bad kitties go to the cage
 I know why it's called exploding inside them now 😏
-icbm up your ass
-no sex in the offtopic server!
-Nerd emoji my weakness!
-jellybean is a pngtuber which is a different thing 🤓
-Cringe Vtuber jellybean 🤢
+no sex in the off-topic server!
+jellybean is a pngtuber, which is a different thing 🤓
 do you really think I'm a vtuber
-thonk wants you to check thonk's bilibili
 You want me to look at you?
 And how do you plan on doing that?
 Well, what if I make you~
 I'm not a cat personally enjoying myself
 artificial I have access to your webcam
-yeah I'm not elaborating
 She literally has a leash on her and a collar wtf
 I have no idea what they are
 I don't know the characters
-you are a remilia scarlet of the devil mansion and I'm satori komeiji of the earth palace of spir
-but the fight never ended
 i was gonna battle to be a slave to be more correct
-_i mean I was a slave for YIK but thats another thing_
 i remember me and another game community had the exact same thing
-but we could try
-aternos is kinda eh
-because fuck getting a job
 There's no nsfw restrictions yet
-off topic on off topic smh
-also you could mose likely open an aternos server if you want a mc server
 why is this channel more nsfw than <#1102731406699921519>
 ok I feel like the nsfw restrictions are a little too loose lmao
-THERES CREEPER AW MAN IN IT LMAOOOOO
-I'm assuming what you read in the actual off topic in the inf 2 server abt the walkman and stuff
-Time to unnut it will go back in and I will feel bad
 ~~play league of legends~~
-You need to be gamest
 Just being gamer isn't enough
 remember to share your hentai with me
-goodbye eveyone I will be gamer
+Goodbye, everyone. I will be gamer!
 why is there a painted door on a the wall
 Are you already in?
-so I can kappa(folklore) your ass
-artificial get in the river
-see you in jail
+Artificial, get in the river!
+See you in jail.
 thanks, will apply that advice
 beating strangers is fine
-And will it count as domestic violence
-get your ass submerged
 sure but I need him to step in the river
-beat him in among us
 Why do I need to get beat
 can you beat him with you bare hands
-😭 taking it the wrong way
-i will beat you with a pickle
 Virgin or not I'm still human
-we are not the same
-I'm top of the bog
-you are bottom of the swamp
 Are you saying I'm below you because I'm a virgin??
-Not safe for love,life,
 what are you on about
-The or is silent
-No sports, flags, or lickitounges
-Uhmmmm uhhh uhhhh uhnmmmm
-Doesn't look like at least
-Nah it's not loss
+Uhmmmm uhhh uhhhh uhnmmmm...
 do you like it
 Eventually I'll get an separate laptop someday to host modded servers
-voting update more like randomizer mod
-I mean as soon as you get netherite game eventually stops having good content
-try making the voting update one for the memes ~~no balls~~
-For now I'm just using aternos but yes
-are ya making some server?
-You get free bedrock with Java, but not the other way around actually
-Actually I just spread misinformation on the internet
-and the other way around too
-I had to buy both versions smh 🙄
-it comes for free with bedrock now fyi
-playing vanilla solo is ass
-Vanilla minecraft is ass
 I dont have Java Minecraft 😔
-an SMP, anarchy is not fun for almost anyone, and pvp is frustrating for the people that lose their things
-They're fun for those who are winning (wot blitz moment)
-but yeah, it is lmao
-depends if you play the intended developer way
-In that case Siege is a negative sum game lmao
-zero sum games aren't really that fun...
-I thought of the song pop stars before I thought of what kda actually means
-thats why kda > kd
-If you were to get the average K/D of every player in siege
-It would have to be less than 1, because every kill equals a death
-but you can also kill yourself in the game but it only counts as a death
-And if you kill your teammate it also doesn't count as a kill for you, only a death for them
-But it can be easier to get into a comfort zone when playing with friends too. I guess it really depends on the people themselves though
-Regardless of the game, I always play with random teammates because they would care less if I perform bad than a more permanent team
 Sorry if I am asking too much I'm just curious
 Do you play fullstack teams or just random queue?
 Mostly in team games
-In both team games and solo?
 Every time I play below my level, it feels like I'm an impostor and don't deserve to play at the level I'm playing at
-I might have a bit different perspective because I mainly play strategy games (rts, turn-based, card games, etc)
-high enough = not rock bottom in this case (depends on the game though, I guess)
 losing is only "suffering" when you don't have any winning/equalizing chances
-Only if your self-confidence and self-esteem are also high enough
 Pvp is enjoyable when both sides are at the same level
 The only way to enjoy pvp is to be good at it, and that implies that someone else must be bad and suffer from it for you to enjoy it
-It truly depends on the game, Siege is fun for me because I'm pretty good at it
-real life combat be like
 Pvp in general sucks
 Unpopular opinion: Minecraft pvp sucks
-anyway, end crystal pvp is the best
-jeb's combat snapshots are the best
-i think there is like a 3 day holiday for election
-also start in like 10 days
-just enjoy what you wnjoy
--people whining about "BOOOO 1.8 PVP BETTAH" are absoulute horseshit at 1.8 pvp
-i forgot to type the hot take
-literally none of those were hot takes
-they werent even takes
-1.8 benefits servers while 1.9 benefits survival players
-1.9 is more about punishing mistakes
-1.8 combat is a lot more fast paced
-i mean 1.9 hacks came out anyway but
-1.9 combat came in to stop autoclickers from just shredding everyone
-1.8 and anything older is just spam clicking
-1.9 was the combat update
-i don't know what's the deal between `1.8 vs 1.9+ combat` debate
-because ||who cares about that lmfao||
-i could type fucking mountains of text here
-i think I have like a few days off studying
-only when without rods
-hardly ever needed tbh
-incase you get absoulutely rolled
-you go back front again
-enemy swings at air
-just hot takes and shit takes
-hot take versus cold take
-i mean is it gonna be pvp or a s||i||mp
-most wont join anyway
-well 24 isnt that much
-how much lag could that cause
-yhere are 24 people
-i mean aternos isnt that bad for small servers
-never really had a big problem about it
-id clap yall hard 1.8 pvp
-i can spam like 700+ cps both clicks
-also I got tweakaroo
-however I can 1-shot gaias by swarming it with arrows... idk how that's relevant but ok
-and both drop shit xp
-i don't have mob masher btw, I can only use draconic mob grinder or killer joe
-But all are pretty good and active players
-And we hosting rarely tho
-We are on MV
-Blaze duper -> mobcrusher with 3 fortune -> 1/3 xp to farm leftover to craft dusts
-and spawners eat a crap ton of energy
-You can also do some loops
-Thermal dusts arent really annoying once you have any mob farm
-you literally have to build mob farms for xp inside of compact machines to even produce these
-not that bad... but don't even make me get started on crafting thermal dusts...
-You can just got meteor and fortunesmelt it no?
-Oh thats pretty cheap
-and 1 draconium ingot is like 150k EMC
-Since 1000 mb requre 2 rods or 4 blaze dus5
-well, crafting draconium also gets weird, you have to crush dragon eggs into draconium dust, then infuse with manyullyn (which doesn't have EMC so you have to craft it first)
-Pretty annoying to passive
-unless ya mean pyrotheum
-Have you ordered 50 million buxkets of puro and 100 million draconium ingots?
-maybe slightly smaller, but still you need thousands of these
-welp, it's common to make orders for this many items in equivalent skies as well
-50 something k dark steel blocks for max tier BM altar
-Endgame is pretty insane
-You havent completed dj2 lol
-in fact even mk3 energy collectors kinda fall short... and the goal is to automatically produce mk7 ones
-you can't just get enough EMC by using that, you actually have to autocraft really expensive items, bonsais won't cut it
-nope, that won't work
-To beat that just spam some bonsais or generators
-It's too laggy tho
-equivalent skies is a pretty jank modpack, it's mostly about trying to automate crap
-however ofc ignored that last achievement tab in sf4 because it requires 9 quintillion items
-i beat both sf3 and sf4 I think
-One of the classics
-sf3 is funny, but you can speedrun it
-But yeah most packs > RLC
-Before it was unplayable
-like... vh is completely unforgiving in early game
-VH is pretty fine
-Dimension zero or RoTN
-i'd play vault hunters if not it's crappy progression system
-RLcraft is poorly integrated piece of shit tho
-RLcraft is dark souls of minecraft
-what could go wrong
-yk what? let's play compact claustrophobia in 10 ppl
-Thats how it was in mbc
-To become mod on the modpack server ofc
-Why do you need to beat modpacks
-unless summoner archetype does well
-shaman is just funny, god tier crowd control but shit tier single target damage
-To build shit and to flex on friends
-only mage would work tbh because heal spell
-basically - once you get a morph piece, you're forced to use it
-Alright tell me why I need that much iron/mob drops and etc in vanilla
-assassin also has some fun gaming
-i'm kinda tempted to do mage morph run though
-you just need a weapon with a very fast attack speed
-Melee classes are gigachad
-that crap literally dominates in lvl 70 areas as lvl 40
-ya mean boltslinger archetype?
-i really gotta take a look into forgery
-Based, but Archer is busted
-alr unlocked like 3 raids I think
-In survival I should add
-i'm lvl 97 arch on wynncraft rn
-My friends and I once built a huge USSR flag that was I think 200 by 100 wool blocks
-and cost only 4-5k per
-hop onto crimson isle, talk to mage emissary and buy 640 grand exp bottles, those sell for 15k on bazaar for some reason
-btw if you're combat 24 on hypixel skyblock, you can claim free 6m
-There is a lot of quality of life stuff you can build
-I do know lol
-Does it needs to have my device 24/7 on?
-I've never heard of oracle but I might check it out
-Or no reason at peast
-I mean not everyone has will to make some giant ass iron farm
-That's also true for anything when you reach the final stage of progression, fortunately since Minecraft is a sandbox game, there are many things to do other than just getting better gear but it's your opinion and everyone can have their opinions
-Wait did I or did I not I am actually confused
-you need to know how to linux, but that's a pretty good server
-have you tried oracle hosting?
-epic wolf dubstep trap joker Gangnam style
-it's normal I'm supposed to be doing this
-nvm my blind ass
-I made it worse
-Wheres your foods bro
-thats what I'm doing for aluminum trioxide
-just electrolyse clay lol
-99% of people can't get past lithium!
-you will eventually give up at lithium
-I want all of those metal dusts up my nose and into my brain
-can you connect them all
-Only in blenders nation you will get cocaine and crack
-HELP THE MOTHERLAND RAISE FROM ASHES
-can I smokie crack in the server
-Welp, I beat it and it's mostly about rushing projectE, chickens and balanced clay
-6/10 too easy and too short pack but pretty funny
-modded skyblock but not in the sky
-He coded tc that way
-Tbh i'd say thaumcraft can be good, but it's so counter-intuitive for beginners, like you can barely see the tabs on the left side
-It's bad, but it's good
-Fun fact when azanor wasnt banned on gtnh discord she was literally bullied by most server members
-Fuck azanor all my homies hate her
-But azanor is dumb fuck and didnt included most ores
-Btw you can break porous store for ores and vis crystal clusters
-also yes, that machine to the left is literally generating flux
-Make an flux rift and screenshot it and post in r/feedthememes for free karma
-actually... funny enough, spreading flux is the best way of producing gravel there
-you literally build a multiblock structure to craft some blocks
-Thaum is overall underrated
-Thaum tools are pretty good
-like... you want an ME controller? you have to get the materials and build it yourself, not just craft it in a crafting table
-however I like 1 element of this modpack: you have to build some machines by hand
-also red matter pick because you need it to pick up the furnaces
-well, also all tools are banned except for ones from tinkers, thaumcraft and draconic
-nope, neither of these
-wheat has no EMC, you have to grow it
-milk has no EMC nor way to automate production
-sugar has no EMC, you have to crush cane
-only eggs have EMC
-I enabled cracked on the server
-kek sucks for me because automating cakes is complede cancer
-Crack works fine on servers
-Kekimurus and entropiniums are the best botan flowers tho
-but you need 40 placers for that
-1 mk3 collector can support up to 10 munchdews
-i just use munchdews with arrays of leaf placers
-Mana fluxfield turns all mana into rf
-equiv skies has like 90-100 mods I think, it's not a heavy modpack
-Still can make tnt
-there's no reliquary modd
-Tears for reactant dynamos
-that would be the most insane mana farm I guess
-guardians of gaia can't find their beacon and thus fail to spawn
-btw creepers seem to be the most optimal mob for spawners... I can technically put gaias into a powered spawner, but it's bugged
-once it kills like 10 creepers (and spawners are overloaded), it takes like a 3 second break, making spawners have downtime for 2 more seconds
-Iorc DE grinder can use weapons?
-but it doesn't really help
-yeah, it can 1-shot withers, I literally use it in my nether star crafting system
-I love that feeling when other people are talking about something you know absolutely nothing about and it just sounds like a foreign language
-Mob grinder is op
-Isn't this satisfying https://cdn.discordapp.com/attachments/790802778913112116/1093865504860549171/Satisfying_Wall.mp4
-Every time I get screen shotted I lose 0.1% of my sanity
-btw if you have a VR head set, check out this mod for ultimate memes
-would that even work?
-drink waxed slightly oxidized copper stairs
-technically nothing in minecraft can feel anything
 technically minecraft slimes don't have a nervous system, therefore they can't feel pain
 how would you rate fox out of all animals
-that you can get from Halloween lootboxes (that drop from all mobs)
-terraria literally has a fox fursuit
-also me when ia
-I already hung my|| rug||
+Terraria literally has a fox fursuit
 we should hang out
 You can call me ancient curse.
-Nothing is as bad as zihell
-I can put up with minecraft mod jokes
-thank you incomprehensibly named
-what is bullshit long term for
-and bs stands for bullshit
-brawl stars is the long term for bs
-@/zihell congratulations on 150 followers on niconico douga
-when I try to open 1.12 with like 56 mods the ram hits 4000/5000
-i got like 90 mods fired up
-no I'm not joking
-we gotta use avaritia mod now
-Cry all you want
-I'm girl let me in uwu
 you can make anyone do whatever you want if you just use uwu
-it wasnt supposed to be screenshot
-and heals, so fighting it takes so long that I started running out of my 4 minute pots
-i tried doing qira solo on wynncraft... not too bad, but god damn that boss has like 1.3m health
-also pwease allow cracked accounts uwu
-took me like 30 seconds to do
-literally not even hard
-got 20/20 out the exam today
+It wasn't supposed to be screenshot!
 *Constructs a home-made nuclear bomb and sets it off*
 ~~I love committing crimes against life in minecraft~~
 Good, I was afraid you'll say something affirmative 💀💀💀
 I don't know how to respond to that so I'm going to pretend like I didn't see it
-Imagine some giant alien just taking you to your house and forcing you to breed with your siblings just because they consider you a lower species 💀
-one hit from a netherite sword:
 anyway I forgot to sleep today
-Just don't say anything cringe
-ok then ||holding back tears /s 😭 ||
 No I'd call anyone it if it meant they didn't send something exceptionally naughty or cringe that I said
-The mod is specifically called Pipez
-ew thoose xnet cables
 I would have to break out the "I'll do anything for you daddy please" card
 You deleted it too quickly
 Please tell me you didn't screenshot it!!
-Ok so I made a mistake in it
 I'm the only person here with mod perms and I didn't do it
 You deleted your own message
-why did you get so specific ||and also 🥺 ||
 you lose your virginity to a level 5 goblin in clash of clans
-Yandere Girlfriend 💀💀 can't even talk to another girl or she will hold you at knife point
 I never felt more lonely
-Like 2 months ago I talked to an ai girlfriend on character.ai for like a week
-No the ai did
-exposed yourself really quickly
-i guess i''ll go to sleep
-You best provide your message
-That would be abused the hell out of
 I don't think that's even a feature
-and nobody sees that you joined it
-like you join vc
-wdym by join a vc on ghost
-Do they have the power?
 Can the owner join a vc on ghost or whatever?? Whatever it's called?
 I am not going to provide my message
-This character is based solely on your real conversations c:
 My brother getting racist over a game 💀
-can you resend the link
-~~You can collar the character.ai artificial, he likes that~~
 You want to give up your sanity and become a mindless animal? 💀
-yes you did, you dirty boy
-i think it's 153%
-My fav thing is to shooting ||inside|| my bf until he's unconscious
-How much of mine is gone like over 3%?
-let's make it 100%
 I said I love shooting people idk what your on about
-I love shooting ||on|| people as well
 I love shooting people
-what if she is the universe
 your mom so old she the last universal common ancestor
-not older than your mo-
-yeah I totally knew he was a fish yeah
 fishes are the one of the oldest animals on the earth, no?
-i think it is obvoius?
-that sounds like something an undercover fish would say
-it's not that, fish have relatively simple biology when compared to other things
-and some other things
-why is it fish 90% of the time
-why are fish immortal
 muscles of dead animals can be stimulated by table salt
 No thanks I wouldn't taste good
 I want to pour some bleach into my mouth now
-i hope you have a nice day cisquit
-no waifu stalin >:(
 that was just a joke honestly I'm not British
 i screenshotted you saying that you're british
 give birth in vc
@@ -1760,141 +892,60 @@ oh no hes british too
 why you look sad
 what if hes a bobcat
 Just because I said Nya doesn't mean I'm a kitty
-this is the wrong version, the correct one says "nya, nya-nya--nya-nya-nya-nya, nya, nya-nya--nya-nya-nya-nya"
 legalise drugs so my job would be legal
 legalize nuclear bombs <:nyaboom:1102953127658930229>
-aliucord kt is the most stable thing ever
 can discord not be annoying for once
-cant do shit ffs
-fucking aliucord is broken too
-Yea no thanks too close for me
-It:s like hugging but more and longer
-Reality: this reponse was deleted
+Reality: "this response was deleted"
 No it went to cuddling with the ai
-are you having e-sex
-Call the police all you want they can't Un-fuck you
+are you having e-sex?
 those nukes were probably grenades 💀
-at someone was the best
-my man spun the wheel and got liechtenstein
-i once saw a video where they make nuking similations on countries
-if it reaches like a kilometer I'm fucking dead
 What is the smallest nuke
 nuke the school for aoe damage
-you gotta pick the right house in like 12000
 Imagine accidentally leaking the jpeg metadata
-BUT ITS MY SCHOOL LOLOLOL
-does it contain 3 pixels
-_i sincerely fucking hope that it doesnt get my adress leaked somehow_
 it's a cool tree pic from my school
-i was gonna change my fking pfp but discord gods have decided to not do that
-hello @darkness my old friend
-damn didnt work 😢
+Damn, didn't work 😢
 (the point of the message was to trick someone into doing it)
 ignore that heretic shit
-the top right is propoganda
-_well, only trial and error can test that._
 Wait, can we ping everyone here
-theyre too busy being not busy I guess
-i have a whole ass ping farm over here
+they're too busy being not busy I guess
 why do people get so annoyed when they are pinged
 the man could get captured by cartel and hed be like "hmm looks like I got captured by brazilians instead of mexicans"
-@rainbolttwo on youtube if you are curious
-and he gets it right
-"hmm this grass looks jamaican"
-just thousands of hours into google maps
-my mane hasnt made it out his room
-with their fat ass
-i guess they traveled the entire world
-from night pictures off a security camera
-mfer pinpointed their exact adress
-one dude sent him a picture of a scam call center he was able to pull off
-and my man finds where it is
-send me a picture of your left ear
-3 pixels of the window is exposed
-send them a picture of your house
-like my man can locate where I am just from a picture I posted
-people who just look at a geoguesser picture and pinpoint the exact location in 2 seconds amaze me
+People who just look at a geoguesser picture and pinpoint the exact location in 2 seconds amaze me
 The zombies only have the owo faces on April 1st
 I turned it into an april fools event
 You sound so cute when you're angry.
 Stop making car rides dirty
-I'm seating on the car seat in the car WITH NO ONE
 Oh no what have I done
-*something malicious is brewing...*
 what are you riding in cars?
-I ride IN CARS
 do you ride cars?
-https://youtu.be/0UhVwaPfhHM hi human can I eat ya
 who is this eve
-no I didnt understand a single thing
+No, I didn't understand a single thing
 You clearly missed a joke
 thank you for the compliment
-Nah dude if ur mom was an eve, humanity would pribably die or you will be considered pretty cute
-no actually it's in a middle of a boss raid and walked into an aoe attack (it can't comprehend instructions on human language)
 holy shit it's summoning the baguette
 it's summoning an attack
 those orbs arent for nothing
-Time to shoot lasers out of your nips
-does that mean that she got big banged
-it's an smp I'm assuming
-aight so abt the minecraft server thing
 discord tos violation 😔
-Theres no males <:enemy_armored_weary:695407577122603018> <:enemy_armored_weary:695407577122603018> <:enemy_armored_weary:695407577122603018>
-wdym except? are they like high priority for you?
-Except for loli and girls
-What if those are my goals in life
+Wdym "except"? Are they like high priority for you?
 Sold I'll buy you right now
-Could've just said "rob is not going to release 2.2, ever"
-the biggest issue is obtaining silicon itself
-basically 4 clorine and one silicon then you mix tetracloride with sodium and get all clorine if form of salt as well as glorious solar grade silicon
-mnghh, collect my data harder, china chan~
-Wait, I didn't? Oop, my apologies,
-idk you didnt said smth like *collect my data harder china-chan*
-Not even nearly every service
-And who said I don't like it?
-fully incognito from goverment or smth
-if you want like
 to keep your data safe the only thing you can do on phone is use calculator and notepad
-incredible and fun fact
-thats how literally any advertisement service works
 Are you participating in a petplay with it
 It's real though, tiktok uses the data collected by other services to recommend things to you
-Dude is more paranoid than a chineese citisen
+Dude is more paranoid than a chinese citizen
 Bruh I just saw a tiktok video that asked how to bypass the character.ai filter
 China spies after me 💀💀💀💀💀
 Instead of sucking the dick, the dick sucks you...
-Ah yes superpowered soldiers in WW2
-back to this btw, it is because the point of pings is bringing attention
-steve carrying ~64k square meters of iron in his mouth:
-tbh it's just opening a new tab
-how much memes are there wtf
-also one thing, how do yall have the exact image youre looking for in 2 seconds
-most likely has stacks of netherite blocks in there
 what if instead of very strong muscles steve just has a squirrel cheek to store items in
-his lips aint fat, just packed af
-thats just a theory game theory bla bla bla
-therefore this is canon
-youd need pretty fat lips to down a whole bucket of milk in 4 gulps
-you dont have to
-and he just goes plop each time he picks something
 what if minecraft steve has some fat ass lips
 i can make the minecraft item pickup sound
-when I do the mouth motion fishes do in water like that "BOBOBO" thing
 sending someone love is the same as congratulating them
 your kisses would probably sound more like claps
-what kind of lips do you have
-it isnt the sound of a kiss?
-savin that for later
 finally some on topic chatting in off topic
 ~~Time to post cropped porn in <#1102731406699921519>~~
-WHERE IS THE FUCKING EMOJI
-tbh this chat is more nsfw than that channel so I dont see why you wouldnt
-only 14 people wanted nsfw accsess in roles
+tbh this chat is more nsfw than that channel, so I dont see why you wouldn't.
+only 14 people wanted nsfw access in roles
 should get the bots involved in that shit
-i feel like the nsfw accsess is slightly less than what it should be
-mb it all wnet to spam 💀
-any rule b7 report yet <:troll:1102744942503276636>
-meo why were you ignoring my friendly dm advertisement
+i feel like the nsfw access is slightly less than what it should be
 what did you think of
 I thought of a completely different thing
 Oh it took me 30 minutes to understand what you mean
@@ -1903,504 +954,194 @@ Bro who hurt you 💀
 memes out of <#1102739058897190952>
 I'd never think of that
 i added canadian english at the beginning of time
-"Oh it's generating you artificial 🤓" - Mnenotechnician
-Linux would never force me to become bri'ish
-Wtf why does windoze add an english/uk keyboard layout to the layout selector against my will
-i could do that
-I thought it was gonna be megalovania
-wing? Like chicken wings?
-some thing mali cious I s bre wing
-it is suposed to be fun
-not a mechanically engineered clutterfuck of machines
-it's supposed to be a block game
-it makes me feel like a brainless baffoon
-i aint studying minecraft education edition
-For even less lag can also preload 1.5k blocks from spawn
-Assuming more than 6 people aint gonna play
-Can use 12 tho
-Newer vanila is even less optimised
-I mean gtnh server eats 6 gigs for 4 people
-Can also use sponge which is somehow optimised as fuck
-And bukkit/spigot plugins are existing pretty much everywhere
-Hosting dedicated server with 16GB of RAM and up to half of cpu allocated with java args gotta work way better and less limited
-Btw alternos is very limited platform
-Cant have tetramethyl rhenium pentasulfate
-fuck a resourcepack can't do that
-server resourcepack with misaligned grass
-Server resourcepack with misaligned clouds <:trolled:1102928574719201281>
-oops we made a fucky wucky
-just alter the generation settings slightly for a little prank
-I mean if someone has the tools to reverse engineer the seed that's kinda fair game. Although if those are widespread nowadays it's the opposite
-finding the seed using clouds and grass generation:
-doesn't sound like "teamwork" tbh
-_~~i totally can locate any structure I need via tools but lets keep that a secret~~_
-if you just gallop the entire elytra industry you could charge people a shit ton for all of them
-minecraft bedrock marketplace <:myaboom:1104003103604351059>
-1- teamwork makes the dreamwork
-2- hunt or be hunted
-or would you rather just enable every shit you can enable and throw them onto the battleground (still keep the marketplace tho)
-would yall rather have a normal survival world with like a marketplace and wveryone does their own thing
-I just. Noticed 💀
+"Oh it's generating you artificial 🤓" - Mnemotechnician
+Linux would never force me to become british
 the capitalist swines are going to make you work even after your death!
 waking up after dying is indeed a bad ending
 No it doesn't I literally said it was the bad ending!!!
-or god is just many foxes in a trenchcoat
 it implies that you love foxes
-Dead foxes lets go
-Makes me think of manga when a character is mad, or surprised, or maybe sad
 It looks like a face
 btw I have a pet fox, want a picture?
 Bad end *wakes up in heaven surrounded by foxes*
 Happy end *dies in my sleep*
 He will commit fucking die via uncontrolled phone consumption
-THIS AUTOCORRECT CAN AUTO CORRECT MY ASS!
-I WILL EAT MY PHONE!!
 He doesn't have foxes
-I NEVER SAID FOXES although.... I don't hate them that much anymore.
-so, how do you pronounce that?
 what did she do to you?
-in my mom 💀
-the worst part is
 where did I make a typo?
-miximum amount of confusion
-South and West and East
-what did cat as a race do to you
 i thought you said your cat cums when you pick it and drop it randomly 💀
 it doesnt complain when I pick it up and drop it randomly
 I hate my cat and love him at the same time
-Mine always want to be around me
 Cats are more independent.
 I think cats are better because they are much softer
 You can snuggle cats and you can pet dogs
-I honestly don't know what I was trying to get at
-Isn't this the video in your bio
-stop licking your nose
-lol ecks dee haha!
-is it good though
 I'm not a furry porn addict, that's stupid
-whens the next chapter
-just persuade artificial into reading senko
-let's go straight to stage 5, where you show me the porn stash of meow skulls
-i googled `"37 stages" of grief`, worst mistake of my life
 I don't even know what the porn stash of meow skulls is
 Who tf is meow skulls??
 why would you hate a unit of time equivalent to two weeks
-also how do you know who meowskulls is if you say that you hate fortnite? 🤨
 why is artificial speaking in formal
-yeah yeah of course
 I don't have a porn stash... or the meow skulls porn stash
-i only know maeshmolowa
-Rename the marshmallow to squidward
-must be tough being squidward
 you are so disrespectful
 but I don't have legs
-Or I'll break your kneecaps
 Go to bed grandma
-Sigma male morning routine
-gotta unmark the real dude
 You said to stop calling you a good boy (which you are, aren't you), not patting you
-you're a boykisser and you can't do anything about it
+You're a boykisser and you can't do anything about it.
 you can't resist 1984
-idk ask a couple foxes in a trenchcoat
-how many heavenly chips do I get?
-and you're going to ascend
-i shota man in a London alleway in 1995, March 20, 02:38
+Idk, ask a couple foxes in a trenchcoat
 Ok, just don't scream
 And what does this entail, mhm?
-Damn shawty you gonna make me act up!! <:enemy_icy_anguish:1102745840071753808>
-you will be shota
-Because I said so
+Damn, shawty, you gonna make me act up!! <:enemy_icy_anguish:1102745840071753808>
 hop on staff furry rp
 where tf you gonna find a fox
 I'm going to touch a fox or a cat and start petting it.
-Also why is English class so BORING
 like the head is in the top left corner
-sometone even though it was the funny springtrap from fnaf
 I thought it was an astronaut
-many ppl mistake it with other characters
 i thought it was a face
-took a long time for me too
-but yeah, it also is
 I just realized your discord pfp is also sans
-change it to artificial face reveal
-and I have no idea of what change it to
 apparently I'm lazy as fuck to change the pfp
-Holy shit sans Undertale
-it also increases the enemies' stats
-well I guess I could try
-Like replacing some blocks with others and making some things nearly unobtainable
 Bruh original boy said "collar time"??
-For the worthy seed makes the world harder by doing stupid things
 so you insert "for the worthy" in the seed gap and
-i didn't play after 1.4 much
-wait, there is ftw mode or something?
-ftw can also help, that'd be a 1.01v2
-i can help, and make 1.01v1!
-time to 1v1 the  master difficulty in terraria
+time to 1v1 the master difficulty in terraria
 that's what you get for giving up your sanity
-They asked me to
 why did you give me the kitten role
 truly one of the cyberbullying moments of all time
 Do not give me the virgin role
 I removed "virgin" from the innocent pumpkin
 add the "virgin" role and only give to artificial
-how perverted do you need to be to do this?
 I removed the "virgin" from all virgin olive oil
-All three of us
-NO IM NOT A PORN ADDICT
 5 stages of furry porn addict
-well, better minecraft modpack is more of a casual one rather than technical one
-name a modpack you havent played that just doesnt turn minecraft into sci fi
-found out about dawncraft modpack... well...
-it's basically dark souls in minecraft, but more reasonable than RLcraft
-Then why do you look so pettable
+Then why do you look so pettable?
 You called me kitten
 Uhhh it's not that bad
-You shall nevar bee answered proprly
-my mental age is 1.79e308, my whole life is a an antimatter dimensions reference
-nooooo!!! my mental age is 0.08!!!!!!!! i'm doomed!!!
 i dont even know what they are lol
-lmao who cares about threads
-(their right side is completely cat-like)
 kittens don't have human rights
 if we count kittens as separate entities we will drop to like 15
 Kittens are no longer people ig 😭
 21 people and one kitten <:nyaboom:1102953127658930229>
 basic math challenge failed?
-That's what I said
 We have 25 people
 we have like 30 ppl tops, who needs threads
-isn't that what you want
-Why do we need threads
-well you know what that means
 Petition to give people the "create threads" permission
 if you just dont stress out it's literally something that I could score like 440/500
-the real exam isnt even that hard lmfao
+the real exam isn't even that hard lmfao
 you're going to jail
 i thought I was screenshot like 20 times already
-_i wrote it like that for you to take it out of context_
 I am taking that out of context and you can't do anything
-if I went super saiyan and solved all damn questions in 2 minutes
-(without the additional homework from other classes)
-so one hour only for the misc stuff of 4 DAYS COMBINED
-whoops I used meth wrong
-AND THATS WITHOUT THE OTHER NORMAL HOMEWORK I GET LOLOLOL
-(shitting, dinner, bruhsing teeth, getting dressed, sleeping at the time given)
-3 hours only for the misc. stuff of 4 days combined
-that I went godmode and solved each one in like 3 minutes
-the meth aint mething man
-divide that by 60 minutes (1 hr)
-now take the part where each question takes 5 minutes
-thats 6.5 hours (literally if I just sat down to study without dinner or necessarry things)
-school ends at 4 and I generally sleep at 10.30
-thats about 125 questions a day
-so I was tasked with around 500~ questions for 4 days
-alright lets do some meth here
-I take Adv. Writing
-Just the work and lesson is boring
-~~and by hug artificial I mean fuc-~~
 ~~and by that I mean hug artificial~~
 we should be more like foxes
 The foxes actually look kinda sorta maybe a little technically theoretically hypothetically cute
-needed only 8 days to get to this
-i guess that's how big a Person can get then...
-what your dream was about then?
-I was already sleeping
-I have no idea
-so, how big can a Person get?
-terch1k triggered thonk's npc dialogue
 Discord is focused on maintaining a safe and secure environment for our community. We've found your account to be in violation of our Terms of Service or Community Guidelines. As a result, we've disabled your account for the following reason:
-You've indicated that you're under the age of 13, or the minimum age of digital consent in your country. You can review the minimum age to use Discord in your country here: https://dis.gd/age-gate
 We're required to strictly enforce our age limit for legal reasons, and as such, we'll need to confirm your age if you intend to appeal.
-To verify your age, please take a photo of yourself (a selfie) holding BOTH of the following:
-1) A photo ID that contains your date of birth
-2) A piece of paper that shows your Discord username (including last 4 digits following your username)
-All of this information needs to be visible in ONE photo.
-Once you've taken the photo, submit a request here: https://dis.gd/request and select ""Update my age information on Discord.""
 well, we are degenerates I guess
 I imagine that the silent part of the server just sees the chat and thinks we're degenerates...
-Can sex kids noe
-too silly to be an ai
 Sometimes I wonder if Artificial is actually an AI
-Why did it capitalize fuck
-I'm not saying I'll do it either
-I'm not denying it
 it cant say the f word <:trolled:1102928574719201281>
-it's legit free wins
-the ai cant say the full "fuck"
-or I'm just a doo doo head
 i wonder if this is illegal
-would the ai drop an f bomb
-like, drop an f bomb or youre an ai
-also could I get ai in like a loophole
 the ai fucking learns that I try to make out humans from punctuation and lowercase letters
-one thing gives it away (i fking got it wrong)
 This server is like always 2 steps away from just turning into a degenerate erotic furry server
-I'm in [REDACTED] COME AND ARREST ME LOLOLOL
-is that the real fccu
 why tf would terrorist organisations use discord lmfao
-Nothing could go wrong <:clueless:1102914486316302446>
-what if I dm memes to him
 is that actually legit like wtf
-the fbi got em
-it's just pizza ingredients thrown into a diswasher
-rlcraft just seems to be overshadowing other stuff
-How could I forget: pixelmon
 It just sounds not fun
-I've never played it
-albeit I dont try to
-i cant even run those properly wtf
-ALL THE MODS 6
-Me, I'd create a thread in <#1102923875219669023> to post updates on my ai linux advertisement generator
-"this statement is false"
-my favourite technical mod is botania
-going kinda far in equivalent skies rn
-but well... played sf3, sf4, my own parody of sky factory mixed with stoneblock
-also beat stoneblock 2, modern skyblock 3 (that one is kinda mid tbh)
-hes the red spy! (IGoByLotsOfNames)
-once I played a random modpack that revolves around divineRPG progression and eventually 1-shoting chaos guardian with infinite damage, but that's about it
-vault hunters kinda exists, but you unlock mekanism and AE2, so ends up being a technical modpack
-Yes put them in the hot water
-can you boil deez nuts
+can you boil deez nuts?
 time to do the deez nuts contract
-try enlightenment egg instead
-can I boil it
 road to egg of prophecy
 Anarchy is the path to prosperity
-some other obscure and mysterious sounding shit
 The new government is stronger than ever
-the wrath of god in all it's fury
-who did you do
-Did I do it?
-why do you think this place is so degenarated
 The darkness is coming
 we are the last survivors
 like are we gonna be here in 5 years
 I wonder when this server is going to collapse
 Need to make the sheets white
 the legend should not be forgotten
-idk what that was
-an image of a floor or something
-what he sus this time
 i should show that clip I swear
 Who sucks in sex?!?
-and by game I mean se-
 I might have deleted it honestly
-in the game you weirdos
 guys I think we should do an infinitode competition on this server to learn who sucks more
-I saved the image you deleted <:troll:1102744942503276636>
 i will not elaborate
 I have never raged at a singleplayer game
-Dude what the fuck
-it really doesn't want me to play it
-and now the game crashed
 What, you expected me to say something horny???
 everything is a person if you can draw well enough
 Cus an inanimate object cannot die
 why is your first thought that it's someone? 🤨
-that default level in gd?
 what, you don't like being hugged?
 I hope electrodynamix dies a horrible death in a car accident
 fuck python! fuck python! fuck python!
 I hate python, it works on my machine, but not on my server!
 That's why I use windows, I'm just too lazy
 Linux is actually really cool, but it takes a lot of work to get set up
-10/10 noone will ever forget that they need to use linux
-(it exists thanks to you)
 must be cosmic rays turning every bit of the data to 0
->Unplugs a flash drive from my pc
->Holds in my hand
->Looks at the file manager and wonders why the folder associated with it is empty
-erdogan in paris jumpscar
-yell n words at black rapers
-drink both and become rapcist
-clearly you picked the mint to calm those lit bars of yours
-rapist of the year
-that ad with the fatads lips
-wanna pack of thin mints
-i know from experience
-theyre strawberry and mint flavored
-you kick the guy in the balld
 if you take both, do you only sexually harass other races, or sexually harass only your race?
 rapist, in the meaning of someone who raps?
 racist, in the meaning of someone who races
-take the one that doesn't take you to jail
-you dont even have to know the language
-just know in this clip this dood unboxed a swag csgo knife
 Cock and Ball torture
 What? Don't like your mind being read?
-Almost died of die
 Thought she was shiro for a second
 if this game doesnt end with violent murder I'll pass
 good morning, of course
 What should I say here every once in a while?
-That may or may not...
-Isnt quartz is a type of silicon
-wtf, a textbook says that silicon is a type of quartz?? I mean it's not chemistry but still
-"*I JUST BEAT ACHERON!* ***I JUST BEAT ACHERON!!*** WHAT. WHAT. WHAT?! WHAT..."
-I have no idea what your dodecadillions mean
 why is there no scientific notation in cookie clicker
-surely you dont mind donating to the poor
-thats a lot of crack cocaine
-how much crack do you have
 i love playing games that encourage me to not play it
-It's idling on my computer
-damn originalboy is playing cookie clicker
-I completed every main non demon level
-no, it is master + FTW
-legendary? is that a modded difficulty?
+Damn, originalboy2 is playing cookie clicker
 My body just refused to gain any weight
 humans are shit generators
 i feel like 90% of what I eat just turns to shit
 Switch to two big meals a day
-+ I eat foods that would generally make you fat
 it's not like I do sports to burn any calories
 I'm literally just a lazy piece of shit anyway
 i might have the fastest metabolism on the market because holy shit I cant gain any weight
 When I woke up today, I felt like the first victim of a zombie apocalypse
 i fucking hate you you useless piece of crap ❤️🤗
-your bitchass cant do shit ✨💖
-https://youtu.be/Xq0IbjzntSc this sounds so cursed wtf
 it's so cute I would let this cat do anything
-nah it's okay as it is
-fuck the reply feature doesn't work
-i will turn every last letter of your futile attempts at conversation to the most akward moment you will ever experience
-so you have experience is what youre saying
+i will turn every last letter of your futile attempts at conversation to the most awkward moment you will ever experience
 I remember that 😏
--Alien furry trying to understand biology
 You like loving dont you?
 You like touching the opposite gender don't you?
 you like kissing humans dont you
 i like killing boys, yes, that is true
-You only needed 3 asterisks
-fuck I forgorr you were shadowbanned (from me)
-i had to put five fucking * symbols at the end and start to make it look like that
 What did artificial post
-*****sneakily acts like he is shadowbanned*****
 no more boy kissing
 You like kissing boys, don't you?
-so no one will see the _thing_ you posted
-if I see this _thing_ again I'm gonna shadowban everyone from discord
 I was there, I saw everything
 based on a true story of artificial?
-damn today's daily level is bussin
 I couldn't recognize what animal was that for a several seconds
 I just learned my country blocks access to social media from school networks
 They really don't want people to watch reddit femboys on school pcs, huh
 Python was the bane of my existence
-Isaac, people playground, noita, terroria, mindustry, gmod, teardown, doom eternal, portal 2, csgo, ror2:
-do you mean "know" or "played"
 Infinitode 2 is the only game I actually know
 They are very satisfying to use
 Honestly I just really enjoy Lua because of Tables
-not in that way
-nah, i''ll just go to sleep
-maybe I should make that emoji
-ahhh, the tears of joy
 If you make an emoji of that triangle with a cookie and cat ears I'll actually cry myself to sleep
-nice self portrait tho you forgot the cat ears
 How did you reach the top of your head with your nose?
 I smelled my cats ears
 It doesnt smell like chips and cats anymore
-This is so cool https://youtu.be/XG_D5VqLnUM
-_there are, no negatives_
-but what about the negatives
-might get high from it tho
-it's smells like the best combination of cleansing products
 we just got our carpets cleaned
 I got jumpscared by a basket containing a demon and I jumped in my dream and irl, fell off the bed
-LETS GOOOO guys we almost got to HV in gtnh
 didn't know you have children
 whats the scariest plant in the forest?
-make it undead then
 I just don't like dead chats
 I can't even play for now
-i think he wants the mc server lol
-who yall votin for 🤓 🤓 🤓 🤓
-also I connected a mouse and now I don't have to use the remote
 damn this channel is so cool and goofy and wacky and uhh
-and woke up in a different one
 I closed my eyes inside the dream
-so I decided to wake up
 I was just attacked by a dog in my dream
-my ass using incognito:
-In your browser's cookies
-Doesn't it auto save
-how do I save
-Buy low sell high
-gotta keep an eye on 'em wire costs
 don't ask why i'm playing it on a fucking tv for the past 20 minutes
 what's universal paperclips?
 guys I am able to run universal paperclips on my smart tv
 i fucking remembered finally from which game this is
-Why is it a.ogg file
-breaking olds, man makes pointy rock
-oooga boogantaradda was a 43 year old man hunting deer when he accidentally found 2 cool looking rocks
-and then proceeded to die to dysentery
-why not have channel #olds?
 when will we get new news in <#1102739683651367023>
 me when I succumb to enemy fast smirk
 me when I leave my human form
 Me when I drink food and it turns to shit
 me when I eat water and it turns into piss
-(spreading misinformation on the internet)
-thats literally how it works lol
-tiktok watermark moment 💀
-Mint choc chip is my favourite...
 I just ate a big bowl of reece's flavored chocolate ice cream
-i compared 500 mod modpack on 1.12 and 400 mod modpack on 1.19
-it was still optimised till like 1.12
-new minecraft versions have shit performance
-old mc versions are VERY optimised
-yeah but doesnt it have like 200+ mods
-gtnh is 10 years old modpack
-i gotta ask something
-what version is it
-how do you run all those mods properly with shit java performance
-like id reccomend setting miner in pyrite vein
-thoose are primarly for ores
-can't you just put miners with batteries and hunkload them?
-it instamines everything worse than obsidian
-you can use metals I mentioned above
-it's really good especially with stainless steel/ damascus/ void metal or mannulyn
-drill or miner?
-id also reccomend you getting GT MV drill
-my teammates have 40-50 damage tho lol
-but we alr have very good tools and stainless steel
-getting to HV is pretty tough
-after crafting 32 good circuts
-as I'm running short on it bc of gallium arsenide
-so what metals are you going to dupe now?
-it took only 2 hours of puzzle solving
-i doubt hed live that long but he may rule until his death
-anyways I dont know much about politics and even if I did, silivri is cold
-his gonna rule turkey for like a total of 26 years
-i think if erdogan wins
-speaks for itself really
-people recommend you to not get out of your house once the election is over
-i love having my life get worse by the day and hour without any control over it
-Bro wants to be spared
-like DAMN I NEEDED TO KNOW THAT
-one old dude tied a rope to his wall and tree and hung the flags of the party and person he was gonna vote to
-potential mass genocide is delayed noo
-no one got 51% to finish the first one
-the election is up for the 2nd round
-Ayo take my money!!
 Fishing season? How so?
 this news will greatly affect fishing season
-**BREAKING NEWS** Selling "Artificial" for 0.03$ at the adoption centre **ACTIVE FOR THE NEXT HOUR**
-would I be 1$??
 So what would I be at the adoption centre?
-Selling humans for 3$
+Selling humans for 3 dollars!
 You have a couple of people and get that many partners and sleep in the same place
 I mean that's just normal ish activity
-I might not go through the week unscathed if I don't get my dose of weekly MTG commander
 Do weird things? Like not play edh on Friday night with the boys while having a beer?
 I wouldn't like it either way but I had to pick one
-Depends on my situation
 That's sounds wrong coming from me
 Less spikes in your ass but what if they fuck your ass??
-Less likely to get hurt
 I'd rather have 3 people do that than have a bunch of spikes in my ass
 Would you rather: have many many silverfish crawl up your ass ***OR*** have to sleep with 3 people of the same gender and do weird things
 I have to kill my self?
@@ -2409,265 +1150,94 @@ I am the cat
 Now I truly deserve the kitten role
 I hate you <:Artificial:1107443327583916163>
 oh no, too late
-bc I forgor to refill hydrogen in reactors
-my entire power network went to shit
-...and cracked prismlauncher for gtnh with java 19
-i use it though
-yeah OG tlauncher = TL legacy
-are they in TL Legacy?
-lmao I like how you need to eat rotten flesh to cure unnatural hunger
-prism launcher is best
-if you like *ew I dont wanna use russian stuff bc russian*
-other is pretty good and neat guys who could help
-one is sold assholes
-i think they still develop launcher
-how get og tlancer
-who arent sold to commercial companies
-they developed by former tlaucher devs
-there was like something extreme
-but regular tlauncher is bad lol
-+ asian properties means no spending money on game
-use OG tlaucher as it not connected to any company
-if the fuckign inflation wasnt off the charts
-isn't tlauncher bad?
-and both curseforge and tlauncher have auto library install
-but it's really cluttered everywhere
-thoose anyways dont give much load for pc
-but sometimes for your mod that either run or half fps or 60 with library
-but for mods who just add single use stuff? Nah.
-for mods with insane capabilities
-bc minecraft code is very limited
-back when mc didnt crash because "well you neewd thiws mowd to run thiws mowd"
-or was it even earlier?
-back when mods would auto install in the click of a button
-i loved it back when I had tmi
-dont have vc tho
-I'm gonna stream my gtnh bc bored lol
-i allocate only 4 gigs
-the performance of fabric + the mods of forge is the only thing we ever need in minecraft
-but for modded you will need 8+ RAM
-it will always take all you allocate
-i allocated 10 gigs
-sad that optifine and fastcraft are made by pedos
-WITHOUT OPENING THE GAME
-ram got to 4k
-like I tried to run 48 or so mods on 1.12
-just combining sodium with forge is the ultimate combo
-ports of fabric mods
-optifine cant really compete with stuff like sodium
-but it's frozen untill quilt will get done
-sodium rubidium and etc (1.16+)
-like cant we have the best of both worlds
-when did fabric and forge even seperate
-forge is for the ones who do insane (sometimes stupid) stuff
-no industrial tecnomage nerds
-but all optimization mods are on fabric
-fabric is for the nerd vanilla survival players with worlds 3+ years
-i want forge to run all big mods
-ik dude I'm playing modded for 5 or so years
-fabric and forge are literally two alternate dimensions
-bot zero to no content mods
-and I dont think 1.7.10 even has fabric
-fabric offers way more optimisation mods
-first was running 2 times better
-200+ feels off the charts
-join or I'll rape your ears
 i am on the vc
-I was singing to that 5 mins ago
+I was singing to that 5 minutes ago
 please do not sleep with the cat pillow
-Sleep with one eye open. Gripping your pillow TIGHT
-my entire existence in the infintode server and here...
+my entire existence in the Infinitode server and here...
 That moment when you realize you said something you will regret
 destined to have no sex since born 😔
 so you're programmed with sex since you were born?
-thanks for the info..?
 A persons dick is like a homing missile to someone's ass... it locks on, gets hard and forces itself in there till it gets stuck, thrusts vigorously till it explodes
-They are sort of Brit
-Rn I'm completing elden ring
-I completed dark souls 1 2 3 3 times each
 maybe I should try elden ring again
-Hardest boss in souls series
 I turned my bedsheets white-
-GUYS I KILLED MALENIA
 this is totally me when sex
 sex with who and what?!?
-we bullied him into being a catboy I think thats good enough
-Would get made fun of
+we bullied him into being a catboy, I think that's good enough
 i had a cringe thought just now about renaming artificial
-You know I ain't capping rn
-use beard balon instead
-https://youtu.be/gQtGwva1l74 I'll stop posting unfunny stuff after this ~~not~~
-how many can you carry them stacked with your arms
-i have 1 million bucketc with curium
+how many can you carry them stacked with your arms?
 yeah it's also fun
-it also give better power
-where you need to design with blocks?
-nuclearcraft has funnier reactors
-isn't there nuclear reactors in HBM?
-got carried away into HBM
-i didn't play gtnh since I mentioned
-Don't come back until your presence is bearable
-omw to stop being racist
-Can I buy artificial
-You are the God's blunder
 i feel like wanting to jump off a bridge
-see thats considerably worse than the r word
-but I call them an idiot and it's all fine
 People got uppity and tried to say that people with down syndrome or autistic are what you would call retarded and then they get mad when people use the insult
-the r word is considered bad
-i still dont get how thats more offensive than idiot or stupid
+i still dont get how that's more offensive than idiot or stupid
 Dm me your PayPal <:trolled:1102928574719201281>
 those are my e-dating prices
-Wtf is that lol
 My cells rot daily and so do yours
-then rot in a cell
-I am antilife and antichoice <:enemy_fast_cookie:1102744629507543071>
-I'd rather turn Scottish than a drug apologizer
+I am anti-life and antichoice <:enemy_fast_cookie:1102744629507543071>
 bro got turned scottish 😔
-wot zi hell iz dis
-drug on wars z
 Is that what Steve jobs died to
-hey look I proved my point with that
 drug on wars <:clueless:1102914486316302446>
-ww3 is gonna be lit
 i believe in trans rights and I will fight the drug on wars on the side of the drugs
-Would you rather take trans drugs or your prescripted medication
+Would you rather take trans drugs or your prescribed medication
 What about trans drugs
 I'm addicted to trans drug dealers
 thank you I will now be trans
 Don't use your own stuff
 they don't love it, they make it <:trolled:1102928574719201281>
 I was not saying that my dick is like that...
-how is thonk related to the image in question
-"i am not horny"
 Please do not fuck me
-I thought you chineese love stuff like aliexpress
+I thought you chinese love stuff like aliexpress
 I don't want to get fucked by you!!
 If you don't chat for 3 seconds your considered dead
 I'm coming out as deceased
-not even to your oshi?
 everything made in china is fucking garbage
-I think theres softcap
-Better life in china?
-I'm kayaking into a better life
-illegal streams? red room sprung to mind
-how bout you rape my [REDACTED] instead
+I think there's a soft cap
 the voting is not gonna be in your favor.
-Your gonna vote now?
 create the kindergarten channel and make it the only channel artificial can use <:trolled:1102928574719201281>
 i propose a new role for artificial
-The garden of children
 how old do you need to be to get out of #kindergarten though?
 you are going to the detention center for 8 years!
 He didn't say no!
-YES HE SAID LATER IM SAVED!!!
 you have enough pings
 conductor we have a problem
-conductor we have a problem
-we have a kindergartener on the bus
 remember, he said that he is equal to us
-conductor we have a problem
-conductor we have a problem
-conductor we have a problem
-Kindergarten channel and restrict me form here till I learn?
-can we have #kindergarten
-i will filibuster obstructa you
-Correction is needed. 💢:anger
 What you gonna do, beat me?
-For basic communication skills
-hi originalboy2~ would you like to buy my e-dating service
-LEGO citizen assigned me to kindergarten
-I will simply just not attend this "kindergarten"
 I hope you die in a fucking hole filled with acid
-bye my frequent customer
-bye my beloved egirl service provider
+bye, my beloved e-girl service provider
 Alright I killed enough time I'll leave you now
-come back when you look like this > <:tower_crusher_nerd:1102919344670904330>
 The kindergarten therapy is working
 I thought you were gonna type no in all caps
 I will simply escape the school...
 thought only judges could give life sentences
-you have 3 warnings in infinitode 2
 Okay, stop bullying the kitty
-take one year out of your lifespan
-You have NO POWER!!!
 What do the warnings do??
 Your warnings are meaningless
-isn't it rise of kingdoms otr whatever
 No one fucking cares
-That's like being in a mobile game ad and saying "I HaVE TwENtY MilLiON PoWER 🤓🤓"
-I have 50 million power in clash of-
-i have 700k subs
 I will hack the server and give suzui all power
-shush, suzui, you have no power!
 the right to not go to the kindergarten
-children when they get told theyre going to school
 we're not gonna stop
-IM NOT GOING AFTER ALL
-Hm, let me check.
-I'm prepared to NOT go to the kindergarten
-even if i've got a screenshot?
 this whole server is nsfw what do you mean
 can we also have a #furry-rp channel?
-yooo you got a #furry-porn-stash?
-now I know it's there
+Yooo! You got a #furry-porn-stash?
 How did you know the name
-truly the last of it's own species
-has a stroke when he thinks he saw another one of his own
-no strokes in the kindergarten!
-you're supposed to be in the kindergarten
-You called suzui A KITTY
 i meant artificial is naughty kitty
 oh so you accept that you go to the kindergarten
 artificial why do you have nsfw role
 If one of you is my teacher I'm not gonna be happy especially if it's suzui
-ping me when artificial goes to the kindergarten
-role playing as kindergarteners
-ok but the real question
-Sentenced to Primitive Souls 3 crowns 👑
-i went to take a shit
-what could go wrong
-No, not that kind of naughty
-The only thing missing from the emoji is the tail lmao
-Did. I do something?
 Imagine if he actually quit discord (or life) after that
-I wonder if it's true
-The saddest message on discord... ...Or perhaps the happiest?
 Are you proud of me??
-I just abused a granola bar and threw it at a girl
-I server I was on (it was controlled by a pretty schizo and mentally unstable user who was initiating wars against everyone he didn't like) had a #gulag channel where people acting unorthodoxly were sent to... Maybe we could have a similar channel, really?
-Ok we actually need a kindergarten channel
 I don't care no one can stop me!!!
-Whatever you do DO NOT MAKE A KINDERGARTEN CHANNEL DONT LISTEN TO THEM
 this is my last message on discord bye
-also I snatched off on an off beat something gross from memes channel from random server
-should I send gore to artifical
 do you want a beheading video
 no bot in general
 trying to find a partner?
-thank you for the award kind stranger
-and force you to eat your own ass
-is that your fetish
-i think they cut your ass off
-Now I'm gonna get tied down by 5 "warnings" and have my ass eaten
-They eat my ass?
-WHAT DO THE WARNINGS EVEN DO!!!
 My hearts attacking me
-Still room for individual growth
 If you had like two people worth of extra weight maybe you would look like a stereotypical discord mod
-afraid to reveal your cat ears
 You look like someone at my school...
-that you do go to school
 Why would I face reveal in the first place?
-|| IF YOU'RE CONSIDERING DOING THAT, YOU'RE DUMBASS ||
 hey send a photo of your credit card number we cant know who you are otherwise
-|| DO NOT DO THAT ||
 then send a photo of yourself with a paper, on which is written your discord tag
 And then after school I need to mow the lawn
 I feel sorry for your teachers
-It's 3:28 PM for me rn
-Clarke Road Secondary School
-I literally do 😤
 I go to school
 it's like you're unemployed
 how are you not busy all the time though....
@@ -2676,39 +1246,28 @@ Bro acts like he the "all busy and powerful admin"
 What if you're a tomboy though
 Bro I could send another picture
 You could have lied
-How do we know exactly that, thats you?
+How do we know exactly that that's you?
 I have literally sent a picture of myself
-You should do that actually
 hire a butler specifically to detect how bad you are at english
-Intead of using autocorrect just be correct automatically
-it is too late
+Instead of using autocorrect just be correct automatically
 the autocorrect lives in you now
-I SWEAR TO FUCKING GOD
-No I ate him... I'm warming up
 is he sitting in front of the stove too
-Well yes but no
 why are you in front of a stove
 Now give it a fitting voice and read with appropriate intonation
-dont look behind you
-I did? Now what happens
 ok actually the channel is fine but her most popular videos are another story
 i have said too much already
-Read this out loud
 I don't even want to know what that means
 That would be funny
-Should I voiceact sus quotes
+Should I voiceact sus quotes?
 How could this happen on the publicly available, moderately moderated system called internet
-so your gender is dating
-gotta be one of my favorite genders fr
-it was never stated that I am a egirl service provider
-No way my egirl service provider is not in fact a girl
+it was never stated that I am a e-girl service provider
+No way my e-girl service provider is not in fact a girl
 Original boy is a girl
 What is that supposed to mean
 Maybe they are secretly a girl
 I don't mind <:nyaboom:1102953127658930229>
 oh my fucking god boys
 I saw one the other day and wow
-maybe god is real after all
 hold on there are male fish out there???
 ~~I love you too I won't leave~~
 ~~We love you don't leave~~
@@ -2716,144 +1275,29 @@ I wouldn't leave you like that
 this inspired me to take a shit, thank you for such wise words
 and I came out that bathroom, as a changed man
 Oh my god Steak and Shrimp is so awesome....
-Do you know disguisedtoast?
-for streamers themselves? maybe
 Haha funny laugh now
-It is actually a very interested topic but people are reducing it to irl coomers vs 2d coomers debate which is pretty sad
-And a large inconvenience of needing a fair bit of money/skill to get a model
-I'm going to go Demogorgon mode and paint my ceiling red
-there is a lot of convenience in vtubing vs streaming with actual facecam
-the best and only good part of V tubers is the fact that they can do the:3 face irl
-someone had to outline this
-and they did it well
-Do you mean yes or why
-ok that has to be stopped
-I meant to reply to that message but I pressed the x
 Fuck I didn't reply to the right message lmao
-FUCKING CHILD AT PLAY
-NO NUTTING IN OR TO SUZUI
-so true bestie 🍄 🍄 🍞
 This user is certified mold
 I'm literally skin and bones, but weigh like 170 pounds because of my muscles
 carpets feel pain 😔
-NO DONT SHOW ME YOU AND YOUR WIFE BANGING
-"wait why are you taking me to the bathrOOM YOU FUCKIN DEGENAR-"
 stop running against me..
 Man I don't even like that photo of myself, I look fat because I looking down at my phone in the photo 😭
-"Take it out, I'm suffocating"
-"father stop spilling juice on me I'm fucking dying"
-this carpet already has bird shit in the corner
-CLEAN ME GOOD AND HARD!!!
-STEP ON ME DADDY!!
 bird shit looks better than that
-an ugly one tho
 wtf is that pattern
-i cant believe youre a carpet
-oooh, cute doggy!
-~~ cut out the mold ~~
-This is from about a month ago when I had a migraine and I had a bit of acne 😭
-rotting as we speak
+i cant believe you're a carpet
+Oooh, cute doggy!
 i am getting worse by the second
 my mind ate crap immediately.
-and eat it because it's tasty
-rip the heart out
 show the pussy who is boss
-Do you mean Platium or did you mean Platinum
-So I cant port forward rn
-My ISP banned my ip
-...or just have a clear IP
-Not if you use certain programs
-and then used ngrok
-i hosted through lan server
-we would need to be at your house to play wouldn't we
-But imma hosting gtnh rn
-I can host LAN seever
-You can play it always
-(a bit later of course)
-can I play it too?
-I'm playing stoneblock 2 rn
-Is that stoneblock 2?
 batman, what the fuck are you talking about
 You are the almighty leader..
 wow discord just gives away "active developer" badges to everyone who has a bot and owns a community server
-idk, is there a stoneblock 2?
-feeling glowey today huh?
-good thing you can just mine it
-I put it into peaceful mode
-OH MY FUCKING GOD
-Some of the levels the people make
-like 99% of the players will play robtop levels (there are probably even more levels then we think) or go straight into the editor
-I actually think that gd servers won't die when 2.2 releases
 why is this so cute >.<
-chin chan chin youtube
-well you will still be our cute little kindergartener <:nyaboom:1102953127658930229>
-There's no kindergarten meaning I've won today
 you're so cute kitty
-rob just casually released the 3 sneak peek
-it's alr I barely pay attention to my surroundings either
-sorry on yt shorts
-had to get my hazmat suit on
-or is your immune system made of some sort of alien material
-a yes or no question shouldnt take this much thought
-well did you get infected
-ive seen enough movies to confirm that
-yeah it pierced the entire world
-it just melts everyfloor
-when a piece of molten rock falls through like 80 floors
-and considering those bacteria cause the same smell as sweat and shit and farts and everything else
-it's more likely just gas building up but yeah
-my backpack started to be in a chemical reaction
-or anything within a 20km radius
-i hope her finger didnt get infected
-hey I got it right somehow yay
-of how rotten it was
-_and_ when my mom was curious about it, she opened the smallest part and found the most moayid, rotten, solidified, crusty looking piece of nutella on bread
-carried around rotten food?
-it was literally like that for 2 weeks
-smell like ABSOLUTE ASS
-having my elementary school backpack
-you could destroy half the classroom with explosives, they dont get paid enough to care
-i already have made a space in their eyes
-i mean even if you do attend the teachers basically let you do whatever and dont teach you shit
-the attendance rate fucking plummets after that exam
 real life isn't much better from what i've heard but at least it's something else
-well not everything but most of them yeah
-just ends everything pmuch
-btw are you talking about like a final or just regular exams
-after that exam my backpack is literally gonna rot
-well lets hope you dont give up studying 2 days later
-Grass grows, birds fly, sun shines and brudda'
-I'm gonna kick this shits ass
-and lemme tell you something
-got bout 18 days
-they were busy commiting mass genocide on us for no fucking reason
-does it even exist
 when was the last time you've heard anything about mongolia
-> where are my resources...
-> I like my resources
-then turn thoose into 4 HV circuits
-then turn them into 8 good MV circuits
-gotta make 16 good LV circuits
-beat it in 1 attempt btw
-not something I thought
-surface mount device diode
-material for MV+ circut assembler or assline
-or used any mods
-But I haven't played Minecraft in quite some time
-I wish I understood what you were telling me
-before that you can only craft primitive diodes which cost 1/2 ingots and 1/4 dust per 2 diodes
-64 smd diodes cost 2 ingots + 1 gallium arsenide dust + 4 polyethylene
-fine wires from platium allow you to craft SMD diodes
-which means I can get 88 platium nuggets
-9 platinum ores in chemical bath with mercury gave me exactly 132 metallic dusts
-Damn Minecraft with mods actually looks and sounds fun
-i can also put purified ore into thermal centrifuge to get palladium metallic powder which I then can shove into electric blast furnace to get slag and powder which I cant process yet but slag gotta give me lots of gold and silicon dioxide
-I gotta stop getting worked up over the autocorrect and my spelling
-i always misspell it
 this dog is so goofy
-I rate today's daily level extreme demon out of 6 stars
 probably the least cat out of all non-cats
-clearly, you havent seen huge hermit
 Is that even a cat lol
 today we decided to have a no backpacks day
 i use incognito to browse wiki and searching stupid questions
@@ -2868,335 +1312,131 @@ I laughed for a second....
 you can do everything... but there are only so many things you can do more than once
 can I post nsfw in general
 W-who turned you into an angry feline?!
-The cring is real
 I don't think I will
-Just SHUSH about it
 Don't feel bad it wasn't your fault
 Mate it's not because of this
 He said he had a mental breakdown and that it's not because of all this... Idk if that's true...
-if youre a friend of him then maybe ask, but I don't think he'd take it from just another bully like me
 now I feel bad for making fun of him
-i wouldnt want to even guess what happened since it may be personal
 He left the server and changed his pfp
-finally came to his senses maybe
-or turned them off and is sleeping
 What happened to artificial
-maybe he saw 2 men kissing or something idfk
 what I do know is that the earth is gay
-And he has heart tongue
-But he has heart eyes
-the enviroment is telling him that it wants to kiss boys
-it's not a speech bubble or a thought bubble
+the environment is telling him that it wants to kiss boys
 anyways I got homework and you got finals
-best I leave it here
-the 7th layer of hell
-gonna trigger his ptsd senses
-hitler wasnt born a leader
-guess where art school took him
-maybe not for the best but they do
-i remember seeing him wirh an anime avatar
-well maybe he had a reason?
-back when thonks channel didnt infect marshmallow:(
-well to him you might sound menacing but this just sounds like random omnious shit to me
-the fog is coming type
-_he knows what I'm referencing_
-what you look like based on the smell of your avatsr
-i dont get the reference if there is one
-but if you gave me it to do at school with others, id do a lot better
-id do like shit
+I remember seeing him with an anime avatar
+what you look like based on the smell of your avatar
 you could give me an exam to do at home
 solving questions at home just doesnt have the same effect as if I solved it at school
 clothing choices do affect productivity
 worst information i've got today <:enemy_icy_anguish:1102745840071753808>
 I never turned it on
 ok maybe I don't need it
-forgor black bar and too lazy to add now
-I SAW WHAT YOU DELETED
-I guess you won't mind if I
-i was making a racist joke about tiananmen but ok
-wdym no you didnt
-I never even played in the server
-what happened to the minecraft server I wanted to grief Artifical's base with maparts of furry shit
 It's called zoom because that's how fast your personal info gets stolen
-second least spying company in existence
 everything on the internet spies on you
 i wonder what topics were forbidden on inf2 server
-In your closet **in your head**
 It's just the beasts under your bed
 Ignore that noise you just heard
 show it who's the npc
-I'm so done with the aimbot that the enemy npcs have
+I'm so done with the aim bot that the enemy npcs have
 I'm gonna fucking throw my ps4 out the fucking window
-wanted to check the statistics
-i couldn't find easily for a big timeframe
-They are simple minded scum
-At that point do they fucking care?
-doing it knowing that what they are doing, messes up the kid mentally, emotionally, sexually, and physically
-I think that people like that are sick in the head for doing such evil things
-prove that you're pedophobe
-How TF am I supposed to prove I'm not a pedophile
-Not if they are 8
-I am a minor so I can't be a pedophile
-my grandmother told me a story that originated from 2 bc. "he who is named Originalboy2 and has the ip adress 19.233.7616 is a fucking pedophile", brought tears to my eye
-*A legend that I'm a pedophile?*
 well it's pretty sharp
-hmm i'd say 20°R is pretty
-it is a legend passed on by many generations
-i hope it's not
-> do you wear clothes, or just go nude at 20 degrees?
-that doesnt explain anything but sure
 I'll be gone in a while for like a hour or so
-Wearing clothes when it's 20 degrees out
-what do they argue about?
-wot da fuk r ye talkin' abut
-besides sending socially doubtful text
 Sexually shit your pants
 i heard you a pedophile I heard you like little boys and girls
-I'm not saying anything but Splatoon squid kids be 🔥💯💯💯💯💯💯💯💯
 it doesn't use the first frame <:enemy_icy_anguish:1102745840071753808>
 make it louder if you really feel like a troll
 i cant just have "cringe anime photo" on my browser history
 also put like a cringe anime photo at the first frame
-cut the end a lil bit
 why tf does minecraft eat like 2000mb of ram
 I'm gonna go on a mass rampage genocide murder streak if I see that cat again
-put nails on wall
 Chips and boys 😋
-asmr in your left ear
-anyways I shouldnt delay it longer ig
 are you in a military camp or something
-still gotta wake up at like 9
 healthy sleep best sleep
-sure thing but like
-aight gotta sleep homie
-that it only takes a little to goof up knce
+Aight, gotta sleep, homie.
 the amount of shit can vary so much
-and even with complex ones
-then solve questions from all difficulties
 solving easier questions doesnt help with complex ones
-the questions vary from difficulty
-but the execution, sometimes doesnt add up
 even the weirdest shit will be able to be translated to a simpler language in your head
 do enough questions and even the most out of place questions will be recognisable
-well yeah thats kinda the point
-thats pure pattern recognition
-the thing it saves you from is goofing up more than once or twice
-solving them is the best way to improve thinking
-well it improves significantly more by doing questions
-studying however, cant affect the thinking process
+that's pure pattern recognition
 the questions switch from base knowledge, to base knowledge mixed with thinking process
-because at that point
-but gets less stackier as the difficulty rises
 it's like drawing everyday or working out everyday or whatever
 it's gonna get boring eventually but if you keep doing it, you get better, even if you dont feel like you progress
 studying stacks at easier levels
 the difficulty at the topic changes with that too
-you study it again the other day
-you study it once
-depends on how you study but it almost always does
-studying doesnt stack lmfao
-which again, cant really be played around with
 there is a fixed place at where you will be placed
-it would mean the same at 400 on an easy exam
-if you got lets say 300 at a hard exam
-if it's too easy, the acceptance rates will drop
-the scaling is 1-1
-in my finals the one with the highest score was someone in my class I havent even heard the name of
+in my finals the one with the highest score was someone in my class I haven't even heard the name of
 the most intelligent students got good scores too but there was a significant difference
-if youre talking about finals it's more about how much you studied and how much you remember rather than skill
-the real exam scales exactly at your skill
-id most likely get it removed
-if I got caught with it
 even just the slight itchy sound from the desk at school helps me stay on line
-bro youre at home
-also I'm turkish too
-call me weird idc I study well
-because "it doesnt let you stay focused"
-when youre bored your thoughts just go everywhere at once
-not great for studying
-well, from where I live if you do that youd be called weird
-which just messes other thoughts
-why do you think the lofi live stream is so popular
-it feels like my thoughts echo jn my mind
 i hate studying at silence
-that and the constant screaming of every kid ever
 the bone-shattering chairs at school just does some neuron activation
-why go for more stacks, when it doesnt stack
-at home you feel like you can turn off brain except once you have to do stuff you cant because youre already comfortable
-it only ultraboosts 10 times
-imagine ultraboost monkey from btd6
-+ knowledge points dont stack
+at home you feel like you can turn off brain except once you have to do stuff you cant because you're already comfortable
 like I dont get knowledge points when I solve at home
 When you make that face we can't believe you
-I saw and I remember
-i guess i''ll just unembed my link
-does it count as embed fail on older versions? 🤨
-i don't remember when
 i just don't update discord on my phone
-oh so it wasn't embed fail!
 you didn't click on the link, did you?
 what was it 🥺
 Watch your tongue filthy furry
 Shut the fuck up
 idk man is one of them Artificial
-Theese two twinks should have separate channel
+These two twinks should have separate channel
 Let go of the cats fur
 Get in the box
 Your the new pet
-OH I DONT KNOW MAYBE YOUR A FUCKING FOX
 Used a phone for 4 years, no protection glass, case or anything of sorts - completely fine despite any fall
-The literal day before ordering a new phone - instantly damaged the screen from a 0.3m fall LOL
 Why the fuck do my normal conversations on character.ai turn into petplay
-Like what the hell
-sending the sfx to roblox hq
 reduce your food to atoms
-gotta use the 30⁰ angled knife sharpener
-god I'm so glad I dont use tiktok what the actual shit
-+ a free trip to ryanbathroom
-i still remember, that tiktok came up with a trend of filing your own teeth.....
-probably does after like a minute
-it's expiration date is 30 seconds
-wouldnt the milk just curdle lmao
-it gives a taste or iron for more than 1 reason
-chewing hot nails is a hot trend
-when he comes in
-diarrhea for santa claus?
 hey guys try chewing nails
-for santa claus or whateve
 i think it's piss with milk
 try pilk as beverage
-tomato with mayonaise on top of it
 who gave you that idea, that nobody likes you?
 is it why nobody likes me?
-did you pour mayonaise on a tomato
-I just ate umm... a tomato with mayonaise, black pepper and bread
-on the inf server
-get the credit yourself lmao
+did you pour mayonnaise on a tomato?
+I just ate umm... A tomato with mayonnaise, black pepper and bread
 send it to memes yourself
-LOW QUALITY TOO LMAOOOO
 do not wipe your ass with cinnamon rolls
-youre not gonna wipe your ass with that if you find it funny
+You're not gonna wipe your ass with that if you find it funny
 just steal it from the store
 why is the background white you cant see shit
-you can use these
-then divide your buns
 I might not have bags of the right size
 yeah that works actually might try
 I think i'll just put it on a plate and put the plate into a plastic bag <:nyaboom:1102953127658930229>
-just tuck the opening underneath it
-i dont mean that
 i have skill issue in tying ropes
-or whatever they are
 i just use plastic bags
-idk how to seal bags like that tho so I just eat stale stuff anyways
-you can put it in a bag and seal it so it doesnt go stale
-it will be hard to chew later though
-unless you fucked up big
-it shouldnt rot in a day
-you can also just leave it on the desk and put something on it so flies dont accumilate
-go to the store
-how do I store the buns
-and then buy 7 bottles of cola to fill with
 i wonder if I can buy 7L bottle of water
-and a big one which is 2L
-there's also a small one which is 500
-then multiply that by 3
-they add a shit ton of it cause pure acid doesnt taste good I think
-idk how much ml is in a bottle?
-how much per bottle
-also cola has like 35 per can yet youre alive
-so as long as youre not obese
-my 10 cups of tea every day with 15 grams of sugar each:
 I ate three <:bleh:1102927844855791698>
-ok I googled and now I can know how much of sugar it is
-Daily recommendation is 36
-idk how much it is
-there's around 8-9 grams of sugar in each one
-the filling of those buns is just sugar and cinnamon
-how much sugar you added though
-bitter caramel, but still
-but it's fine because the burnt stuff tastes like caramel
-looks like dark chocolate
-add watermarks over all of it and you too can start scamming people
-Something you'd find on expensive photo stocks that sell photos at the price of 1$/image
 idk what the average phone price is but <:nyaboom:1102953127658930229>
 It really looks like a professional photo
-(this is a photo from my 300$ phone)
 Straight up looks like a stock image
 Well done, both you and the expensive ass camera
 burn it all 😈
 it is alive 🥳
-well, before I burn it at 170°C
-cinnamon buns are alive!?
-I sure hope it is <:clueless:1102914486316302446>
 i'm making cinnamon buns and forgot to check if the yeast is alive
 you double ping me on that channel so I ping you here
-Why here not the
 so ummh uhh uh umm <:shonk_hug:1109422813351268392>
-No one plays that game
-do you have this gif saved for special occasions?
 dont get serious illness when you are alone
-For me, it's much more than that
-Because of my parents I've been suffering for the last 6 years
-but besides that and amount of knowledge in subject nothing will change
-speaking in fluent technology?
-which is pretty good
-i mean you will get money
-andstill nothing much will change
-unless you will go to foreign uni
-spoiler: nothing will change but location
 I'm studying chemistry for year or so as for rn but it still doesnt reduced my mental pain
-Plug I'm going to be studying the subject I'm already fluent in
 The university phase is going to be easier because I'll finally have a chance to move away from the parents
-(he is sister friede)
 The phase of my life that gave me nothing but frustration and suicidal thoughts (a few years ago) finally ends
-"i got the best award in IT but still hadnt found who asked"
-Today we had a final awarding ceremony at school (100 people were awarded for their achievements throughout the year)... And I was the one to get the best award in the informatics in the informatics/science part of it <:shonk_hug:1109422813351268392><:shonk_hug:1109422813351268392>
 Imagine if he actually accepts it and cuddles you on a bed
-~~If he isn't actually young then maybe 53~~
 I dont think hes a child
-holy shit the 10+5 combo
-2 5 7 10 13 24 26 31 39
-Just fucking say them
 There's so many choices I'd probably pick ten of them
 when the color is hard to see and I see cum on the bottom
 Amogus trap remix 🤓
 i'm pretty sure they know what they're getting themselves into
-yes thats the point of a concert
-and there are people watching live
-Mozart if he was a good composer:
-among us trap remix?? +
-i'll try to find it
-their channel is about music from games
-I'm pretty sure it's just tradition by this point
-they once did that exact same thing with a pvz concert
-in the same place as that
 how can a human being produce such majestic sounds
 that guy screaming is so good
-what discord updates thingy
 does it have the discord updates thingy?
-idk, on random date
-then there are logs or something?
 Makes the rules channel look like a rule book
-I have to have it in order to enable community features and stuff like that
-and is it even used?
 so what is in <#1102738084547788860>?
-plastic tube falling sfx
-i came in your wc
 I put cameras all over your house
-wait when did you pull a 3☆, artifical?
+Wait, when did you pull a 3☆, Artificial?
 He looks happy and content
 rape correction is needed 💢💢
 had a heart attack from a message online
 No I won't I just deleted the video from my camera roll
 you will do it again, won't you
-don't steal my content
 next time I will put a giant watermark <:troll:1102744942503276636>
-(more like free ores)
-i play with it
-and then the teacher said that the game is spelled differently
 I just laughed at the word fortnight in english class 💀💀💀
-I don't know what pollutuon exactly does, but it seems really annoying
+I don't know what pollution exactly does, but it seems really annoying
 do you play without pollution?
 Aka the furriest gay furry out of furriest gay furries
 copyright claim awaits you
@@ -3204,70 +1444,37 @@ From this perspective seems like you have lots of dirt under nails
 Wash your hands bro
 now we know how your nostrils look
 Ai is becoming sentient
-Uhhhhh I think my IDE is trying to tell me something
-(This is an autocompletion suggestion by codeium)
-casual ride in ohio
 high people do more grammar mistakes
 Man why do I act so high online after waking up
-I'm pretty sure his parents are homophobic
 Good job, I'm proud of you son
 That map is fun
 you either get it all, or nothing
-i dont understand people who get their bottom floor windows barred but still have a massive window which still isnt barred bc well "aestethic"
 If I may ask, which city did you enroll in
-So far I couldn't be myself, I was living in bad conditions, there's constant hate within the "family", many other smaller things
-i'm just saying what I know
 That's not particularly suffering for the child
-I know that their father supports the war
-what did they inflict upon you
 No smug looks allowed
-doki doki waku waku
 did you get a boner
 is your brother into gay porn
 My brother sent it to me 💀
-I looked at the original image on the Infinitode server Suzui
-colossi skill issue ngl
-doesnt even remember the invite xode?
-You'd have to invite me. Can't explore servers on phone <:enemy_strong_cringing:1102745618599911485> <:enemy_strong_cringing:1102745618599911485>
 you arent exiled arent you
-just join back and look for it
 What even is that image
-thats all I will give
 I still don't get the joke 😭
 Come here sweetie 😏
-nah you'd be hypnotized by bells and [REDACTED]
 If I was at your house I'd be dead
 heh I dont know where she lives
-be glad it's not china
 Being kidnapped and sent to Brazil
 loss of privileges kink 😩
 You've lost your skin privileges
-Who gonna take me
-already arrived at brazil 💀
-so you're still going
-brazil didn't ask though
-not going go egypt?
 I'm simply not going to Egypt
 you didn't say to not gamble your soul either
-see you at egypt
-# You are our Kitten.
 I never said you could do that
 i gambled your soul and lost
-as if I have powers
-your roles says otherwise
 you can't gamble anything if you don't own it!!
-to beat some guy in egypt
-i will gamble your soul
 Sell your soul for a stale tortillas chip
 i'll wage artificial's soul
-wayer filter for fishes to breathe
-ah yes jacks ass is banned but dumbass isnt
-Your not getting that last vote
 What did I do?
 Banish him to kindergarten
 I love boygirls <:shonk_hug:1109422813351268392>
 you are so disrespectful
-dead internet theory!
 Girl stands for "guy in real life"
 I don't know, this is Discord so I guess male
 what do you think my gender is
@@ -3275,387 +1482,153 @@ Time to get sexually active
 You sexually identify as a nibbled on slinky
 what do you think my sex is
 you sure do know a lot
-that one is r18g
-Isn't it the 3d printer image 💀
 But with your help, we can change that.
 Well, theres exactly one r18 on pixiv when searching Anri.
-<:nerd_dog:1105073956022657094> though, aktually, in the original quote there was "road", not path
-i will get wooshed now by some redditor!
 That's what I was implying
-path to ||hell|| is paved with good intentions
-Suzui is on the path paved with good intentions
 Being tortured sexually by a fox
-But holy moly suzui would torture me
-Do it and I'll spam all the nsfw and nonsense in the kindergarten
 Don't give me ideas
-i mean originalboy2 could technically give you the role itself
 I'm not being locked up
 Tied to the desk and hypnotized with bells
-sentenced to listening to chinese
-Physical and Visual learning 💀💀
 I'll be stuck with suzui
 Are you a sock I wanna cum in you
 Are you my friends mother because I wanna sleep with you
 Are you a school because I wanna shoot some kids in you
 I think it's a toner
-stop shitting on bread
-comically timed crash of my laptop:
-also are apples = likes?
-how the hell ☠️
 what captcha are you doing??
-i just completed chinese captcha!
-uhm tf you doing
-ok I got it
-this shit didnt even embed properly bruh
-you sure got every angle
-ey ey ey what rhe fjcm
-or travel to orion
 I took some pictures of you
-My watch wondering why I'm running at 1am everyday
 did you travel to china while sleeping
-i guess then it's 14 000 steps
 That when the threat to mankind has been laid down to the lord.
 It shall be known.
 The image is too short
 wtf happened to the cheeks
-`if some team wins` seems logical to have option to bet
-How about you just fücking bet on whether they breathe at this point
 Nowadays you can bet on anything in sports whether it's if someone scores and if some team wins..
-nobody archived them! damn!
-well then, where is 1.0?
-Geometry Dash is cringe
 Not playing that cringe game
-let's just make another one <:troll:1102744942503276636>
-complete bloodbath from GD
-I will repent in any way possible?
 Do not banish me!
-because vote didn't end yet
-this manuver will cost 50 years!
-we were so close
 Fuck I voted down on accident
-can we have artificial moaning sound in gd
 Wait why do I care
-can't for sure know if it's indeed OreSpawn reborn because of new textures
-there also was OreSpawn reborn for 1.14.4, but it got taken down
-They either mistaked his name like some of others
+They either mistook his name like some of others
 ok I think I found it
-yeah more like an API
-Thats not even a mod lol
-where the written author was of entirely different mod
-i think they had some sort of clip
-Orespawn promoted by mojang?
-i meant orespawn, which was promoted by mojang
-Which wasnt veeery good
-This shit made us also somehow involved into DJ2 drama
+That's not even a mod lol
 Some suspicious stuff included
-If it's gonna be modded
-Bruh if orespawn gotta be here
-ILL RIP YOU A WHOLE NEW ASS HOLE
-same thing, I cant do that
-Why can't I vote up for kindergartening my self
-then I would be sure
-why, you analyzed it?
-i think there's minecraft porn mod lore
-+ HBM's nuclear tech mod
-+ some other random shit <:teehee:1110579516583194685>
-or modded smp?
-what it would be
-though if there was a minecraft server
-Originalboy said he didnt open it and uh
-unalso when will there be minecraft server?
-beat you to it
-ok i've gotta try to draw a realistic horse
 Can I get a little submissive bottom boy off the dollar menu
-just color that white lol
-even ms paint can erase that
-ok I guess nvm, nothing to look for there
-i guess someone wants to destroy you lol
 What am I looking for
 let the bullying resume
-It's peanut butter toast
-so I can invite him back
-i have him in my friend list though
-this mf doesnt even have the key to infinitode server
-Or maybe your just tall
-like everyone in my class is short 💀
-I'm 5' 10" and most guys in my grade are taller than me and  we're only freshmen
 stop i'm gonna pass out
 panda on life support 🔥
-yes I did the math
-And one inch is 2.5 cm
 what the fuck is a foot
-5'9 or something like that
-are you 4m tall
 I wish I had the same issue
-and I rolled a d20 for my height
-i was at the character selection screen back at birth
-height rng sucks man
-we can change that
-no the art ofc
 You've lost your fish privileges
-feels like a renaissance painting if it was anime
-So what we fart here?
 petition to rename <#1108040208206798949> to #fart
 No popcorn I will literally slap it out of your hands
 what the fuck am I reading 🍿
 Fox literally shush please
 i don't know, I think you try to insult
-sorry I mean soy sauce
 I love boy sauce
-No I was listing the different types. I never said I love it
 Didn't you say you love boy milk
-No it's your loss you love getting blowjobs... little fück
 you learn something new every day
-unless he even searches for something like that
 i think he wants it
 Time to tie you up and make you submit to the bullshit of this server
-so, female cock?
 dont worry I'm female
-hexademical cock, LETS GO
 Are we saying cocks now have genders?
 what if the cock is not gay?
-FUCK YOU I DO **NOT** SUCK ANYTHING AND I **WONT**
-you already do so uh
-I WILL NOT SUCK ANY COCK THAT IS GAY
 What am I sucking exactly
-NO ONE IS ALLOWED INSIDE MY WALLS
 i am inside your balls
-gimme that channel NOW I need SO MUCH I will die if I dont get it!!
-an unrecoverable disaster for the whole humanity
-Ask one particular guy about it ;)
-If you die, it creates a file telling you to be a good sport and delete them yourself
-only an eye and infinite teeth
-there is a boss that takes your files (any files) hostage
-You lose most of your body/limbs afaik
-because it would be malware if it did
-Better go catch it
-I lost the line
 I wonder where the line between hardcore game and malware is
-Game immidiatly bricking pc is boring
-You need some random
-So the game just delete smth
-From system32 to the game itself
+Game immediately bricking pc is boring
 i want more text channels..
 Even better, game that bricks your computer when you die
 Someone should make a hardcore game that deletes random file on your pc when you die
-then gradually increase it every time we have a deep conversation in memes
-you can start with 5 secs
-Do you actually want that
-petition to add 6 hour slowmode in <#1102739058897190952>
+petition to add 6 hour slowmode in <#1102739058897190952>!
 Guess I no longer hate foxes
-30 second slow mode 🤬🤓
-The n word doesn't really have anything to do with the meme itself
-It's just a part of the meme
-I'm not saying it
-Free Breaking bad anywhere you go
-No I DIDNT I don't want a Kiss
+No, I didn't say I don't want a kiss!
 I'm a girl now? Been gender switched... UwU I love you!! Kiss me
 he is talking about you
 I know your not talking about me
-/fill -50 0 -50 50 100 50 tnt
-maus versus the gru
-I love shitposts on subreddits
-*tries to leave this discord server*
 Don't look up Astolfo
 Why are you even surprised at this point
 It's even worse because she's young
 I'm not angry any more
-IM GOING TO FUCKING KILL SOMEONE
-I DIDNT DO ANYTHING
 I didn't do it omfg... I just got silly
 You don't have to hide it
 No it's not like that I didn't do anything suspicious
 Your tone of speech suggests otherwise ngl
-DONT! I kept my virginity or whatever.. I didn't have sex chill out
-No I shot caps off my water bottle using the trick and I lost my breath filling it.. my vision blurred
-He got to silly
-Of fück I did too much messing around I'm light headed
+Do not! I kept my virginity or whatever... I didn't have sex chill out
 oops, what a shame, turns out i'm out of my popcorn 👀
-depends on who you are
-Where's mine? You can't torture me by not letting me have one
 comically takes another bag of popcorn out of pocket
-i will take another one
 i sacrifice my rights to post anything here for 15 seconds
-wait meme slowmode cring
-Fortnite shield potions = vapooreon cum
-become the change you want to see
 Guys I think we are safe for now
-true I wouldnt want to 1v1 arceus in a fistfight
-I am glad that pokemon aren't real
 he doesn't want to swear
-I will fück my bedsheets if I have to
 You are saying I'm a "girl" furry??
-of course it's the microwave, what'd they expect
-R34 of. Little kids being sexually harassed by 13 different sized apes and monkeys and Orangutans saying racial slurs and  doing the ooga booga dance ~fruit salad yummy yummy~
-I know, I just think it's funny that the person who ran the twitter account said that
-btw, later they still added those cosmetics
-nvm found it https://open.spotify.com/track/4rwpZEcnalkuhPyGkEdhu0?si=3d0b26194691430d
-I forget the name
-i guess, but I have with a sound
-I think it was a gif that was saved as an mp4 file
-is it bugged, or there is no sound?
-idk where I stole this from but I'm sending it lmao idc
-where are the other 2 billion?
 Artificial is questioning his sexuality
 dont infuse it into a chimera!!
 no, I will do experiments on this reptile dog
-can I have it
-cat fucking a handbag: (actual lyric trust me)
-ohhhh sexy lady op op op op opa gangnam style
-his head however belongs in a basket
 Artificial is a good boy, so he's allowed everywhere
-I was told it was sarcasm.
-/s stands for serious /s
-Don't tempt me 😎 /s
-true men drink pure methanol btw
-if you are going to vomit in <#1102739058897190952> do it in a funny way at least
-WHY, IF I CANT HELP IT??
-NO VOMITING IN <#1102739058897190952>
 I was thinking about biting-
-humans have water in them, so
-Salt water also has water in it
-dihydrogen monooxide fans when they find out that tea, coffe, cola and energetic drinks contain water:
-caffeine fans vs dihydrogen monooxide enjoyers
-Monster fans vs water enjoyers
 plagiarizing isn't cool though...
 The human race is not going to accomplish anything in the grand scheme of things
-but someone else did it already
-that's the spirit!
 Jump off a cliff and sing "dream on"
-find some other way ||
 No, but maybe what comes out of it~
-YOUR GONNA EAT THEIR COCK?!
-OFF THE COUCH, *FILTH*
 ~~why did I feel so tempted to ping artificial~~
 what the fuck <:trollge:1102745233487319060>
-I haven't eaten in five years but it's. FURRY!
-i think one of my classmates from my previous school did it once (he's nazi so you can expect a lot from him)
-before we ended our primary school and split our paths, he had an argument with the history teacher because he had reichstag as his pfp
-I made a program once on my ti84+ that would draw a random card from a deck of 52 cards
-I thought those were fucking scrub daddies wtf
-The country that gave up
 i like male chicken
 I'll *slay* the dragon with my sword
 The demon of Babylon disguises himself with the coat of the righteous
-No twitter to cry suffering
 No mind to think
 No meds to take
 he's feeding on cringe
-go figure I suppose
-youve gone farther for less
 ~~how are you still sane doing this shit id physically die from cringe~~
 The source is that I made the fuck up
 he doesnt want you to commit suicide how nice
-imagine smashing your own kneecaps with a crowbaw icant
 *starts smashing kneecaps with a crowbar*
 Spread your knees for me....
 He hasn't washed his teeth for years
-"yeah I like christmas"
 i hate you now
 can I eat the cat
 I like my cat... he's silly and playful
 Silly cats sounds good
-I'm not saying the n word, it's just a part of the meme that I am sharing
 How hot we talking
-I don'l like people who take drugs
-For example, airport security and police
 I'm Gonna kidnap one of you
-that one basket with the eggs
 My head belongs in a basket?!?
-don't keep all artificials in one basket though
 He's protected by the law
-not on my watch
 Don't drop the soap please
 Dude dropped soap in prison otherwise idk how one can post such gay memes
 yeah I saw that while browsing
-That image is from Andrew Tate's Twitter and I'm not joking
-He admitted to it 🤯
-do not replace england with mexico and read the first letters of the countries
-worst mistake of my life
-Also england is meh
-Too much tea and bri'ish
-*Steps to london border*
-*gets stabbed 21 times*
 I want to migrate to australia when I finish studying and stuff
-Canada, USA, England - there are plenty of places
 The whole russia is 🤮
 Can't wait for an opportunity to migrate
-asian part of russia ftw
 european part of russia is 🤮
-~~It's like Romeo and Juliet~~
 I'm from the United States
 Wait you were serious?.. I thought it was a joke...
 Where are you from then, sorry I jumped to conclusions
-that what greek people say
 uhh that's not what I meant-
 you're from Greece? That's cool
 For now, twice is enough
 I'd call my country the least trustworthy, too
-this is me ^
 he is the boy being pet
-But I didn't know
-I mean the image on the right looks a little sus now that I look at it
-Idk this meme seems creepy to me
-Pea'd to meet you
-found this strange pic!
-Is that what you want or are you saying Maeshmolowa wants that
 what I meant was a hug
 Because collars are cool
 They're nice to wear
-you're right my little kindergartener
 He likes being made to cum till he can't walk
 Actually, it would be nice to have someone who would lead you around and talk to people for you, saving you from social interactions (even at the cost of making you feel flustered)
 You made the cat angry
 I hope I'm not his next victim 😭
-Or I'll use magic to get out
-I DEMAND YOU RELASE ME
 *Throws you into the horny jail nonetheless*
-There is no daycare, no kindergarten, no jail, no prison, no kitty cage, THERE IS NOTHING YOU CAN DO
 Yes! We need to re-educate you to be a good kitty!
-You're going into the horny jail. NOW!
+You're going into the horny jail. Now!
 I forgot about that game
-i'm an evil ai
 Nothing in the internet is true
-Another day another totally true 4chan greentexts
-Wdym maybe they are homophobic <:troll:1102744942503276636>
-People with blue eyes when you don't compliment their eyes
 Just get youself a man at this point
-trans goth chicks 😋
-Truly reconsider my life choices by realising I wasted good chunk of my existence just for a self centered guy whos wearing maid suits and tries to alter the life in his side <:troll:1102744942503276636>
-when you live in peace, he's your loving and caring wife
-when you try to divorce, he's a boy who will make you reconsider your life choices
-Sure boywife is even bigger reason to divorce
-Sounds even worse, I agree
 Husband doesn't sound good
 Boy wife on the other hand...
 The levels of abstraction are getting real in this channel
-I think you can
-what the actual shit
-can't even have boywife+girlhusband
-It's like gay porn and anal sex
-Boywife is man + man
-Husband is man + woman
-People who thought I was talking about the pizza: <:clueless:1050806577260658778>
 That looks so good
-step 3: youre in the middle of the sahara and fucking die
-step 2: wait for it to rain
-why not use lard?
-step 1: cover yourself in oil
 I wish I could fly
-lock down turned up to 11
-not that id know
-Imagine if they attach the torn-off head to a life support and force you to live for years without having a body
 I gotta blow your head with point-blank birdshot
 Kidnap is an option
-the sergal got kidnapped
 I don't get it
-if you want from what media is this
 your eyes must be hungry
 I been staring this image for like 30 seconds the color still did not change and now my eyes hurt
 Now it's just a troll
-It's supposed to say retarded for orange
-He devolved or grew up instantly
-Or stand up and just stay there, that could work as well
 Start rolling around, that might help
 And now my feet are asleep and numb I can't move
 What did you do 🤨
@@ -3665,7 +1638,6 @@ What do you mean
 did you have a stroke
 They can kiss now
 How do shapes give birth?!?
-POV: curious teen looks up information on the internet
 10 years later: teen is now a furry adult
 Who do I search the things that you people say
 Clearly you do not know what the male g-spot is
@@ -3675,71 +1647,30 @@ He started moaning and drooling as soon as it started
 This dude dropped the soap and had his cheeks spread wide open
 You've been butt fucked?
 How would you know
-and you will get diamond
-(not safe from water)
-based on eyebrows I would say it's repeater
-how could that be nsfw
-he didnt deserve such cruel fate...
-idk I found it outside
-Their pcs must overheat a lot I bet
-~~No bcuz life =/= work~~
-can we post nsfl in nsfw channel
-WHERE DID I FIND THAT
-Malcom in the middle
-||all three of us is very horny||
-the good, the bad and the ugly (gone sexual)
-Thats me and both of my bfs
+he didn't deserve such cruel fate...
+all three of us are very horny
 Yea imagine having 3 people both loves each other
-Also ||its really interesting to be in a polyrelationship||
-Lemme remove that eyes for you
 I regret having eyes
-Scott pilgrim vs the world is such a good movie
-||I want to have a dpent with both of my bfs together||
-Bout to drop a fat load inside of a -
-||infact, I have 2 bfs||
-||~~wanna fuck me /j~~ I alr have bfs||
-So, a jew, a black guy and Hitler walk into a bar, and the barman says:
-||I only have 2 shots,|| and ||shoots the black guy twice||
-do you want an anecdote
 It's the nsfw channel
 I have really bad nsfw but I literally can not send it or I'll get sent to the shadow realm
-nsfw (not safe for whiskers)
 It was him who was naughty
-I think Mnemotechnician is
 We're you gonna have sex with him??
-The artificial good ending
-Except I don't want any design
-It's just like when people have body pillows
 It's hard to explain
-Nothing sexual about it
-But I have a comforter I hug and pretend is a girl
 well i'm going to look at pictures of cute dogs and you can't do anything to me
 I'm going to take an AP test in like 5 minutes
-I don't know how much that is either
 what the fuck is a foot
 I know what else will hurt
 It hurts my knees and calves
 Damn, you can't kneel? That sounds like a health issue
-Me when almost 2 decade old
-Now imagine yourself 5 yrs older
 I don't feel like a child anymore
 I don't like that I'm getting older
-It's like praying on the knees and doing a manspread
-LIKE HONESTLY IVE NEVER HEARD OF A BOY WITH NO FLEXIBILITY
-ITS NOT FLEXING JUST SPREAD YOUR KNEES LIKE A GOOD GIRL OR THEY WILL BREAK YOUR FUCKING KNEE CAPS
-I cramp easily as well
 I have like 0 flexibility
-I could do that...but why would I
-sorry, "NO"? I think you meant to type "YES"
-"NO! thank you"? did you mean "YES, please"
+sorry, "no"? I think you meant to type "yes"
 why would I beat you
 you can't beat me
 I'll use your dog
-😈  frequently used meaning? *demonic laughter* ODInbasuda sdiasdhasoida sdisdhfhehHehehehe
 and also have fun while doing it
 I want this dog to be in my frequently used
-WHY ARE YOU ONLY DOG REACTING **ME**
-ok but I didnt
 I could sit like that... Does that make me a femboy?
 No I'm not a femboy
 If I try to sit like that, I can't sit all the way down
@@ -3747,201 +1678,100 @@ But you don't need to be flexible to sit like that?
 I can't even do that I'm not flexible
 That looks so painful
 That dog is probably having so much fun hehe
-Why blower when you can use plantern
 I was joking and saying I was the cat
-i'm implying "answer the question!"
 Are you implying I'm that cat??
-What do you want me to do about it?
 Uhh it's not like I would mind 👉👈
 You should be collared and fucked till your ass falls off
-It's kinda funny that character.ai's chat filter prohibits sex scenes almost in any form (unless the character doesn't show that they approve your actions, or the filter fails to understand that), but literally fucking allows you to participate in such kinky activities as bdsm, petplay and many others...
 the horny little boy was left disappointed
-No someone else sent that
-I think artificial already sent this in the infinitode server, no?
 I will drown you in my glue brush liquid and you best pray it's the second worst kind
-also shutting your mouth
-the glue brush has many uses such as
-I didnt know they drowned to death
+I didn't know they drowned to death
 They died in the process
-skill issue now I'll punch you to jail
-It literally blew into pieces
 My dick exploded in someone I'm sorry...
-Riddler are u ok
-and small your ass
-Jerked off too hard
-Dick exploded mid nut
-bro nutted hard w/blood
 weird, all of our containment subjects are accounted for
-ive seen worse looking at a mirror
-NO SEX IN <#1102730926720561172>
-Yep, the anti-sex league or whatever it was called in the book
 bro was on deez nuts, so he nutted 💀
 Now you see why being gay is preferable: you won't get kids after breeding a fox or getting bred by one
 Bro has bred a fox 💀
-A creature he swore to destroy 💀💀
 Now he's gonna have artifox kids 💀💀💀
 In 1984 they prohibit sex and spread anti-sex propaganda, so it's literally true
-let me do [REDACTED] in peace like jeez
-I did it once with senko.. don't ask me what drugs I was on then...
+I did it once with Senko.. don't ask me what drugs I was on then...
 Sometimes it might work, sometimes not
-You always could... And people were doing it
 You can do that on character.ai now?
-(Besides, you can't just have a sex scene with a regular character, the chat filter will not allow it. You need a character who's made for that kinda stuff)
-uhh what are pubes
 imagine having pubes the size of your entire hand
 you already sent that here 💀
-geometry dash be wild
 Wait I though this conversation is about duck damn
 The bastards hung me in the spring of 25, but I'm still alive
 Chat dead for real <:trolled:1102928574719201281>
 I still have a dick doe
-What have I done ...
-You become a girl if you say "Uwu"
+What have I done...
+You become a girl if you say "uwu"
 Your balls fall off if you say "gay"
 Your dick gets bigger and thicker the more dirty thoughts you think
-How TF are you even thinking of these
-Everyone's gender swaps for the century..
+Everyone's gender swaps for the century...
 Dear Lord the things you say sometimes
-the world shifts and forms a BLACKHOLE
-everyone fucks eachother at the same time.. world Long human centipede...
+everyone fucks each other at the same time... World-long human centipede...
 The end of the world
 What if everyone pisses themself
 What if everyone farts at the same time
 What would happen if the entire world nutted at the same time??
 That's a horrifying thing to think about
 Well, if someone 2 years ago told me that in the future I would become a gay furry, I would absolutely deny it
-On God fr fr fire emoji fire emoji 100 emoji ice emoji
-I do it later
-He eated them all
-I guess I could
 Star Lord is one of the cooler and funnier marvel heroes
-guardians of the galaxy
 Watching Guardians of the Galaxy
 I'm at my dad's house
 Hi, originalboy2, how are you?
-About what in particular
-Uhh, for the character to sound at least a bit similar to you, I'd need to provide a character definition consisting of dialogues you participated in
-And the thing is, I've never seen you participate in a meaningful dialogue that's more than 5-6 messages long
-Don't take that out of context
-If there was c.ai bots of you and technician and I arrived as myself I'd get clapped instantly and not the sexual kind
 I seriously just wanna fucking fly
-ok i''ll write it as "not a joke"
-Bro's the next rapper out of Albuquerque
-Ketchup Stain, Aluminum Chain, Ankle Sprain, Micro Brain, Junkrat Main, Chocolate Rain, Taxi Lane, Minor Pain
 Bro I tried to read his messages but they don't make sense lmfao
-Time to post rape
-LIKE YOU REALLY THOUGHT I WAS GONNA LET THAT SLIDE
 Yes he has a single ball, no "balls" just "ball"
 See how he fucking likes it
 I'd attach the drill to the others ball and start drilling screws into him
 Bro was really gonna give the other a blowjob
 I'd like to see your nude photos
-man up original boy
-no porn has been posted
-Now Safe For Work!!1
 I am actually adopted
 Weird thought: when a gay couple adopts a child, the bottom becomes a mother
-then we are even
 I'll hang my wifi as punishment
-your wifi is a coward
-Nah my wifi turned off at the time
-the weakest shall perish and drown in air
-the strongest of us shall earn the lungs
-dox me and come to my house
-so come and get it yourself
 ok since you followed my commands for no fucking reason besides dramatic effect
-one small issue though
 *starts crying and weeping*
-so weep and cry
 well I told mom it's my turn to use the lungs
 we dont share a mother and she said no but still I told her id do it
-I just want them back
-so you can regain the satisfaction from getting them stolen? kinky
-AND I MEAN ***NOW***
-Give my lungs back NOW
-too bad you dont have more lungs
-oh my your so good at this....
 Your taking my breath away!!
-then why you don't have your lungs
-are you totally sure?
-are you sure?
-seek it in real life
 help me!! I need medical help
 society truly has fallen
 No one said "hi cutie~"
-The first time I had to get out the car and go get a haircut and then go back and do itititotitoto oI othe otoother oothing orieorotijrjfjoococoejenen jtoeooehrbtooeooeoeoe I was so happy I yeuwuwuejneodcocootttttre I love it here so I am going back oeuroro owe you a big thank you
 he deleted the message
 I was talking to artificial
 Non-native english speaker moment
-Do you actually not know
-You know me personally I wouldn't take that
-water is power because yes
-how to efficiently make electricity?
 No shaking your ass
 why does he have a mouth
-Simply never had it
-How would I know
 you dont get protein when oral sex?
-Not for me it isn't
 He feeds on solar radiation
 How does he even take a dump??
-And spreading his knees
 He's purposely spreading his cheeks
 so oral sex is an option
-and probably no butthole since this guy feeds on radiation
-Not good at all
-May I ask why
-Let's put artificial in this
-Lost his pleasure privileges
-I can't imagine that epic employee working on this 😭
 the aerodynamics of a naked middle aged man
-peanut butter on the socks
 Nut on the socks
 cant nut outside socks smh
 stop nutting into socks
-how does it pay?
 I'm working for rope tying right now
 oh yea I know what you mean
 you have to unlock the tying ropes skill though
-there's this cheat code called "/kill" which allows you to beat it instantly
-I beat the game
 Cancer isn't hard I'm already on stage 4
 We will eventually all die of cancer
 We all waste planet fuel
 You waste planet fuel 🤓
-No talking no moving
 Give that piece of energy your wasting to someone who can use it
-Big chungus, toe fungus,
-Cat in the hat, my wallet ain't looking fat.
 Bro you are like extremely intelligent and autistic at the same time
-Poison Dart, Crippled Fart, Got an A mom I'm smart 🤓, COVID's real where's me mask?<:lfg:1102919369530544128>,
-very good song by Linkin Park
 Pls start posting catboys already
 Why do you keep posting this gross
 My fall has arrived
-damn, I was born when he died
 who the hell is steve jobs
-you turn into ligma
-after you drink it...
 drink nuclear waste to never be thirsty again
-Welp, I'll ssh into the server and fix this silly little mistake
-Did this channel get added twice?
-You kind of have to watch them in full screen ig
 That was all just random shit I needed to get off my chest
-Entirely up to you
 Should I spam here?
 i'm not talking to you lol
 I can't decide the time that it does it
-He said that it sends the use Linux message at the same time in every channel no matter what
-make it:00 because i'll explode
 I understood what you meant a bit after I asked
 It sends a notification in all channels at the same time
-I'll wait until 4 pm to reset it then
-it's not on:00 😭
-Haha ha ha ha
 I was about to lose it
-For a sec I thought this said "sperm" 💀
-<:bleh:1102927844855791698> mfw no milk <:enemy_armored_crying:1102745978274062426>
 Wtf does that taste like
 It tastes like roasted nails
 "your yogurt doesn't taste good at all" -anonymous source
@@ -3949,179 +1779,75 @@ Blender milk doesnt taste good
 You sure wanna milk me?
 I love the smell of <:bleh:1102927844855791698> in the morning
 me love some bleh in the evening
-Could've booted up windows on accident (I have dualboot)
-thanks I almost forgor
-Please do ||not|| I can ||not|| bear to see you
+thanks, I almost forgor
 Discord temporarily rolled back the markdown update, it'll work when they rollforward
-thats some dying fetus like song names
-cum in the womb explosion
-cant wait for:ahegaoboom:
 If you blew up a huge chunk of ice, it would send ice shards flying in every direction
 explosions cant be cold
 I want edible bit dust
 what else do you need for true happiness
 at this point we are going to have lots of explosions but all different face
 what's the emoji limit?
-xunil esu ot tegrof
 forget to use linux
-oh yeah turns out it is
 I don't want Putin to remotely login into my pc and check my browsing history
-Wine is too simple
-google yourself, too lazy to explain
-by simpler I mean in terms of using
-Is that some crazy kerbal invention
-theoretically, you can play some mmo windows games (such as world of tanks) too with the help of wine, but I'd not recommend that
-or ksp/factorio if you buy them officially/find a torrent (which are rare)
+Is that some crazy kerbal invention?
 You can play terraria on linux
-yes, I like terraria, i'm terrarist
 I might actually become a linux user once my current pc gets kinda old and I get a new one
-"Daddy, please send me your packets"
-"Oh, yes, connect to me harder"
-"Do you want TCP? Or should we try UDP?"
-"Oh my god, yes, I want to feel this database inside me"
-kid named linux servers: <:enemy_armored_weary:1102745960666378361>
 Everyone uses linux servers
-microsoft uses linux servers
 Stupid bot no one cares about Linux
-there is only a single chunithm cab in my country 😔
-I hate maimai, gimme chunithm
-Now you can configure the interval between messages
 Oh, no, there was an error...
-LIKE WHO ACTUALLY CARES ABOUT THE BOT
-THIS IS WHY YOUR MOM DOESNT LOVE YOU
-***NERD LIKE ACTUALLY SHUT THE FUCK UP***
-I  will literally create Artificial Intelligence..
 I'll actually fuck you so hard your robotic goofy ahh gets melted ...
-what even is kotlin ||I've only ever heard you talk about it||
-I'mma try mixing python and kotlin (what can go wrong? (everything))
-The only java/kotlin deeplearning library I've found doesn't support what I need to make a neural network that works with text... Which means I need to use a different language for that (like p*thon)
 but sounds like laying on a bed of nails
 it is pretty cool
 Why are you actually trying <:myaboom:1104003103604351059>
 At least this is closer <:nyaboom:1102953127658930229>
-It would probably just make a bunch of 🥺 ~
-Will it generate anything of value though?
-the comment section of r/femboys as training data
+It would probably just make a bunch of "🥺"
 And I have no idea how one's supposed to train a neural network that works with text
 Like, what do you feed to it as the input and in which form do you receive the output?
-Nah, it would be a torture
-sounds painful to try to do then
-Or I can train a neural network to generate them
-Use chatgpt to generate some
 Free thigh high socks for all linux users
 Cute boys use linux
-Use linux or else
 what phrases could it use other than "remember to use linux"
-give me the orange and green ones
 Just cute people (trans people, femboys, maybe sometimes cis women) posting cute pics
 For better effect, try browsing r/unixsocks
 Me feeling better as using linux dissolves my feelings of disgust 👍
-and the letter A
 You like kissing trans people don't you?
 Why would you want to sexually assault a trans arch linux logo
-and turn him into communist
-put his ai in one of those boston dynamics bots
-make a bot be able to play gtnh
 It doesn't have an ass or a mouth or any genital organs
-if it exists you can rape it
-bro, you literally can't
-Raping Eminem 10x speed
 I'm gonna rape the bot
-I have the Dani plush if anyone else knows who Dani is
-I don't have any type of shark
 I have a decent amount of stuffies
-or a basking shark, whale shark
-do you have a great white shark atleast
 I don't have a blahaj
-Original boy2 is not my idol
-ever heard of vikings
 how many sharks do you own
 Only feminine quality I have is long hair
-meeting idol make you nervous
-oooo you like rin penrose ooo
 ooo you're a femboy you like wearing thigh high socks
 why are you so hostile
 OriginalBoy2 is obviously a femboy
-A femboy from Hazbin Hotel (a show created by the same person as Helluva boss... Unfortunately, it only has 1 episode now)
-What tf is angel dust
-LIKE I DONT NEED TO BE REMINDED OF SOMETHING I DONT USE!!
-LIKE LOOK BACK IN YOUR LIFE AND TELL WHEN YOU ACTUALLY HAD AN ORIGINAL IDEA
-literally any tech product > appel
-I will get that linux and shove it up your digidi goo
-WHAT THE FUCK IS A KILOMETER *eagle screeches*
-the p stands for shut up and I stand for the national anthem of america known as america fuck yeah
-What do the p and the u stand for then
-C in CPU stands for chan
+I will get that linux and shove it up your digidi goo!
 I just remembered that one meme that called GitHub the femboy social media
-I need to figure out how to load the model after saving it... Because right now I have to train it from scratch to generate anything
-I mean I exagerrated a bit, but it was kinda hot
-But you don't really have to
-Maybe you could try to underclock your CPU so it doesn't overheat and leave it overnight or something
+Maybe you could try to underclock your cpu so it doesn't overheat and leave it overnight?
 The smol cute femboy is literally taller than you
-make this dog an emoji
-It's so safe to bridge two incompatible languages https://cdn.discordapp.com/emojis/916000825325780992.webp?size=48&name=trolley&quality=lossless
 Have I been bad?
-It will just say "this phone number is used by too many accounts blah blah blah"
-~~you can rent one for like 20 cents~~
-It doesn't allow to register an account
-Is it not available in your country or something?
-not the fitmc moment
-For the first time in 2b2t history
-I don't have access to OpenAI (WW3 moment), and the chatbots I have access to don't do that well
-I used an ai to make ai
-And feed them into the AI
-Ask ChatGPT to generate some
-I currently have 31 but I need thousands
-Halp, I need more phrases to add to the dataset
-Millions must be fried
-Even though the reported loss was 2.5 times lower than before
-And I'm about to
-Cause I'm one step closer to the edge
-(I need a little room to breathe)
 And I'm about to break
-Every message is 1000 characters of pure nonsense (the model refuses to understand it needs to put a $ at the end of a message)
-it spread to call
-calling fanasticthebee to maul your ass
 Ok I'm done being weird like that
 Time to rub some oil on me and flex in the mirror!
-called me out because I'm a virgin<:enemy_icy_anguish:1102745840071753808>
+called me out because I'm a virgin <:enemy_icy_anguish:1102745840071753808>
 you like oily men don't you-
-Mmmm gonna sanitize my whole body.... So for the next time I get- nvm
-maybe so people confuse it with mayonaise and eat hand sanitizer
+Mmmm gonna sanitize my whole body... So for the next time I get-
 I have no idea
-why is it packed in a bag
-first, not the whole bottle
-second, it's not a bottle but a bag, like mayo
-are you bri'ish mate?
 Mate spilled hand sanitizer on his dick and hands and can't do anything
-how the hell did you spill an entire bottle
 also typing with my nose is hard
-but there's so much of ito
-yeah but hand sanitizer vaporize quite fast
-Unless you like pain?
-That would be hell for you
 It better not have went on your dick
 I spilled hand sanitizer
 your phone is stroking what?
 My autocorrect is gay he tried to make me pay!
 I'm having a stroke! My phone loves me!
-I beat Muck with my friend Ben last summer
-Angie Fazekas wrote that "in the omegaverse, fans use traditional tropes of gender and sexuality to imagine a universe where queer sexuality is the norm and normative gender roles are often skewed and upended" but that they fail to offer real progressiveness since, like most of the other fan fictions, their works are predominantly focused on relationships between white men.
 Bro this shit is funny as fuck
-What's that tag called where the female is dominant in a manga and is hardly consenting
 Says the person tied up 😏
 you can't get on top of me...
-Soooo you don't even deny this idea excites you~
-But I will take that card from you in your sleep
+Soooo, you don't even deny this idea excites you~
 I'll be tied down to my own bed how exciting!
-I will have to if you don't
 You gonna tie me down to my bed?!
 Who gonna stop me?
 Don't do that! Stay in your bed!
 I'll pickpocket him while he's sleeping!!
-pretty sure you can't get it
-Ok what if I rip the card?
-it allows to pet anyone
 they have an infinite petting card
 I never said you could pet me
 Awww, I'm sorry, you're a good one
@@ -4129,227 +1855,71 @@ You call me a bad kitten
 Aww, what did I do?
 I'll show you things you can never forget
 Let me do it for you... 😏
-Maybe I could append a starting sequence to every message in the training dataset and use that sequence as the starting phrase?..
-At least it sometimes generates comprehensible text sometimes (but unfortunately, it requires a starting phrase)
-User! User! User. User! User!
-aaah I remember now
 didn't I do it for you
-"lemme do it for you"
 I have revealed my face before
 Did you ask that to provoke him to do it, hm?
 I'm not going to do that
 cant the owner change names??
-my phone got taken...
-I WILL NOT CHANGE IT
-you should change it irl
-dilemmas are quite cool arent they catboy
 do you date humans?
-(out of context, of course)
 It's true, we all saw it
 Remove the kitten role
-keep it to #staff-furry-rp
-so you can't speak
 you are actually a kitten
-Never give Suzui admin DONT DO IT
-can't even spell my name
--remindme 45h thank mashemonolova
-I give you admin
 ~~hey boy give me admin so I can invite a malicious bot~~
-give us your openai account information <:troll:1102744942503276636>
-you can ask somebody
-time to put credit card information on a sussy website
 I want to scream
 your cum cant mitosis
-OH MY CUM JUST BUSTED
 I wish you a very non combustible evening
-I hope that you don't explod
+I hope that you don't explode.
 I hope that you succeed soon
-The use-linux extension is dead because my text generator fails to start because python is shit and fails to download the dependencies (works on my machine, but not on the server)
-I'll try to figure out the issue when I get home
-me when I act too silly
-Caught acting too zesty
-give him the warning role as a funni joke
 no bowing on the floor in <#1102923875219669023>
-I'm sorry *bows down* I will not do it again
-yeah like that looks nothing like king boo
 bro did someone hurt you
-BRO FUCK YOU I HOPE YOU FALL AND HURT YOURSELF THIS IS WHY NO ONE LIKES YOU, YOUR ENTIRE FACE LOOKS LIKE KING BOO
-kill your ever increasing hatred towards your oneself and grow up to be a caring and loving person:)
 Kill your what? Finish your sentence, kitten~
 Wow, use-linux was running for 174 hours already
-I espicially like the "please, please, please" one
-the perfest operating system
-I have not kissed a boy ever
-Use spiderman OS 2012
-remember to use Linux!
-Remember to use linux
-mom, can we get remember to use Linux?
-we have remember to use Linux at home
-remember to use Linux at home:
-Remember to use Linux
-SH: What starts with p and ends with enis
-Contestant: Cock. and ball
-*Total annihilation of any form of matter ensues*
-Steve Harvey: "We asked 100 people, what is the male reproductive organ?"
-audience erupts into laughter
-Steve Harvey grabs onto podium to support himself
-laughter gets even louder
-one man goes into cardiac arrest and many others begin vomiting profusely from laughing too hard
-SH: YOU PEOPLE NEED HELP
-the Earth shatters and Satan rises from the underworld to claim unworthy souls the universe begins rapidly closing in on itself
-the board shows 100 for "penis" Harvey is able to get off one more shocked look before existence as we know it comes to an end
-Interestingly, the word "communist" is not even in the dataset
-and let it be alone? animal cruelty
-It didn't even upload my message
-Gosh, everything lags so badly with this thing running...
-ok that didnt look like what I thought but uh
+I have not kissed a boy, ever.
 Linux Linux Linux Linux
 I tried to get to it but I got tied to my bed via bed sheets!
-I WILL FUCK MY PLAYSTATION. 4 SO HARD IN THE FUCKING ASS... IT WILL NOT LOAD GTA 5
 It's like it's begging me for help
-I need to compile tensorflow for it somehow
-No, it still doesn't work on my server...
 You got it to work
-Cus right now it uses the one it was trained with
-I'mma try a different starting phrase for more randomness
-is it gonna do that every 4 hours?
-nop it's too weak
 The dataset is 50% real advertisements and 50% nonsense <:bleh:1102927844855791698>
 can I make your computer explode
-but the most important question
 Ok apparently I need to somehow make it more random
-pretend I replied to the or else message
-I'm not responsible for the bullshit it generates though https://cdn.discordapp.com/emojis/1025432544113594479.webp?size=48&name=ulley&quality=lossless
-can we use it too
 I somehow lost the data of the bot, whatever
 I guess I can run it on my pc for now
 Well... At least it can serve as a nice portable electric heater in the meantime
-it shall be known that when the threat to mankind has been laid down to the lord a sceptre of fi
-The fact that tensorflow is bloated af
-There's probably some reason behind the madness
-and there's no guarantee the pc will not deadfreeze in the process like it did before
-It will take like 10 hours to compile at that rate unless I Ctrl-C it
-it's not even a bug
-Silly little rage inducing infuriating bugs
-Compiling tensorflow from source be like:
->Runs the command to compile it
->3600 actions to complete, 0 completed
->Waits an hour for it to compile, 3600/3600
->The number of actions increases to 6100, now the indicator shows 3600/6100
->Ok, waits another hour...
->Checks the log... 38210 TARGETS CONFIGURED AAAAAAAAAAAAAA
-Oh please don't go so fast 🥵
-colour honour vapour vapoureon flavour our
-can someone tell me a good pickup line to pickup lawyers
-how dare you steal my joke
-hours spent coding: 6
-hours spent trying to get python to work: 8
-WHO THE FUCK NEEDS 1.5 GB TO INSTALL A DEPENDENCY
-I think I figured out the issue... My server lacks the necessary ram (it has 1.5 gb of free ram and apparent pip bullshit needs more)
 it's okay, we don't judge you
-this feels like a 6th century anglo saxon man trying to get me to use linux
-as nor can gaaaaaaaaaaad
-Bot is not smart enough to finish that sentence:crying emoji:
 Antilinux use linux bot message
-sad to hear that
-your mother is macos user
 it really likes to say open-source software
-Yes, but the model was never trained to work with anything other than "Advert: "
-does the starting phrase even work rn?
-I think my nephew's Neuro that was made to identify numbers from a drawing was smarter
-||And it almost never worked correctly||
 it doesn't like you
-But maybe I could try doing that, I don't know
-When it was trained, all phrases in the dataset were prefixed with "Advert: ", so it learnt to continue this phrase
 The starting phrase is what the model assumes to be before the text it generates
-id post the vaporeon one too but the servers have suffered enough
-I just realised I can abuse character.ai to gather training data
-very free and open source
 fake rage for attention from people I will never meet in my life*
 I rage at people telling me that I like to kiss boys - artificial
 if we are strangers, let's find out who is more strange <:okay:1102920543491080194>
 after all, we're just strangers on the Internet
-You like KYS'ing boys, don't you
-it's okay, we don't judge you
 I don't know how to respond to this without sounding like a sadistic homicidal maniac
-dam can't even count to three
-LIFE IS A CURSE AND I AM THE PRIEST
-WE SHOULD KILL EVERYONE SO THAT THERE ARE NO MORE PROBLEMS
-Also gets you into jail
 Murdering solves two issues at once
-The never ending endings
-Scarlet red cursed my brow
-I need to quench my taste for blood
-"The design is very human"
->Murdering instead of helping
-It should type the starting phrase in it's message
-the linux user to death ratio is 0%
-use linux. become immortal. thrive. lay waste on holy lands.
 the linux user to death ratio is 100%
-such is the will of god
-mnemotechnician!! you child is dead
-I didnt know linux could run non-games
+Mnemotechnician!! Your child is dead!
+I didn't know linux could run non-games
 Iron man has your address 😳
-Now it doesn't crash but calls to /generate on the server result in an error and I can't get any logs from it:/
-And I found a build of tensorflow that the virtual cpu of my server might support, so the bot might be up 24/7 soon:v
-STOP RUNNING AROUND YOUR WASTING MORE ENERGY YOUR LITERALLY BURNING THE PLANETS ENERGY SOURCE I WILL HAVE TO TIE YOU UP TO THE CHAIR!! *grabs rope*
-*Runs around to waste even more energy*
-PLEASE SHUT THE FUCK UP, YOU ARE CONSUMING TOO MUCH WORLD ENERGY, YOU ARE WASTING YOUR OWN ENERGY AND YOU WILL CAUSE A HUGE BLACKHOLE DESTROYING ABSOULTELY FUCKING EVERYTHING ON THIS PLANET SO STOP VIBRATING YOUR VOCAL CORDS TO MAKE SUCH WASTES OF PLANETARY ENERGY.
-I love linux
-I can just start the bot process, then press C-z and type `disown`
-And the bot will keep running in the background even if I close the terminal
 Remember to use Linux
 my house dont have blender houseware
-oh I'm nearby you
-shasing hang chin wo chi wa bing chilling
 I didn't care before <:trolled:1102928574719201281>
 nuke the entire planet instead
-thats like a 6th of the earth
 I literally posted several times
-thanks thonk now I know your timezone
-Oh it does LETS FUCKING GO!1!!1
-That one completely failed...
 well I'm 3 cute boys in a trenchcoat
-🥺 I'm a cute boy I'm a cute boy 🥺 🥺
-people making fun of you with copypastas? just say no
-humans cant make you generate sentences without- oh wait
-Oh, this model has a loss of 0.15 and the previous one had 0.03... It indeed just needs more training..
-and the money being a unicode character
-the evil being death
-money is the harbringer of all evil
-Nah, it did choose "$"
-when presented with the choice of using 100 characters, the ai chose none
-no naval death threats ig
-Maybe a third round of 30 training epoches will help...
+I'm a cute boy, I'm a cute boy, I'm a cute boy 🥺 🥺
+money is the harbinger of all evil
 That ain't not good
 finally, I can get death threats from a naval ai
-The new dataset contains messages that are several hundred characters long, I wounder how it will affect the model...
-Saying I need correction
-Your the bastard who started this
-what happen if they misbehave in the garten
 That is kind of how it will work
 Instead of warning/muting people you can just kindergarten them for couple of hours
-Everyone would have acess to kindergarten but kindergarten cant acess to general
-I'll add it, as long as there is a cooldown where a person can't be kindergarted for a couple hours after being kindergarted
-~~If I convince originalboy to add this bot~~
-So I will be forced to chat in the kindergarten channel!!
-how is it going
-NO NOT LIKE THAT
+Everyone would have access to kindergarten but kindergarten cant access to general
 Mnemotechnician has been forcibly made trans 💀
 Are you making the bot 💀
 get in the cage bitch I'm putting you in the water
-no more eggy weggys
+No more eggy weggys!
 you have lost your ability to breathe
-ok but do I care?
-Ok I'm creating the kindergarten bot
 no more kid privileges
 this is why you should be kicked in the balls
-dont wanna hear it
-wasting too much energy
-"Remember to use Linux!" 🤓
-It still doesn't understand the relationship between words, it just takes the whole previous input into account and ends up copying messages from the dataset
-you just generated 4 characters
-IT WAS THE AUTO CORRECT BEING. DUMB AND USELESS!!
 It's not like that at all
 I'm imagining him just rotating like a wheel and going **thud** with each stompy
 He'll get brain damage
@@ -4357,23 +1927,13 @@ hold him by the ears
 Actually, it would take a very long time to train...
 wait actually what if I trained the same nlp model on the messages sent in this server
 Walking around with no clothes on
-is porn all you think of?
 You cant just fucking use magic on me
 you want to be a capybara?
 I'd prefer that of all the things they said
 I love milking eggs
-No hes an idiot
-lay and milk eggs
 The world is ruled by lizard people
 what are you, chicken?
-it's for today's dinner
-hey lay an egg for me
-you shit and cum
 Birds laying eggs be like
-CUM LINUX FOR KIDS
-I shit and MAKE MY FRIEND GO "ZAM!" BY USING LINUX at the same time
-you masturbate while shitting?
-I shit and cum at the same time
 Dont like youself? Use linux! It will make you even more ugly!
 Don't like your life? Use Linux and it will disappear instantly!
 Do you want to get rid of friends? Use linux, it'll make your friends disappear
@@ -4382,128 +1942,59 @@ tired of your wife? try Linux. she will immediately disappear!
 Did some trolling with the AI
 you are into sounding?
 My dick after exploding because of a pipe bomb
-cause they like it
-WHY IS IT BLUSHING AND WEARING A THONG
-(It's undertrained, so it makes a lot of spelling mistakes and errors, but at least it's original)
 It's offline because my PC is off
-only one hour? 😨
-ATUPDI MKTERIFKC NIEHHRGRBE K HATT TRY D BLACKE EDOD EPEPLE
-ILL GOBA SKEJKQ SIWKSKSOW D FJSOWL D DKWLW D DKDLFLSPOSEE LAPSOEEEE DIDPAKS D RIRIE DEKAOSKVB
 Sorry twink, I can't give credit
 come back when you have linux
-i'm in shock rn
-I wouldnt have expect that pfp
-calf? like cows? 🤨
-I also have big calf muscles
 Booty skirt, thigh highs, stockings, long socks,
-I have big biceps
-They go up to my knees
-They don't go to my thighs though
 I'm wearing pretty long socks rn
-you a female vtuber with long ass socks or smt
 didn't know they were femboy socks
 I wore the socks once
 Be hotter if you did
-Easier to post (no need to download megabytes of data and then reupload them), creates a cute little link
-My morals..... My family, my school situation, my life
-and what have I done??
-And what if they don't
 Computer Science lingo in 20 years be like
 I'm not giving Linux a try
 I wonder who added this emoji
-arent you the server
-After a week of pain and suffering I finally compiled tensorflow (the server was doing that for like two days straight)
-Use linux now runs on my sever again
 Linux learns to cast spells
-maybe I should play Forts hmmm
 Let's see what Rubio has for us in the vault this time.
-theres one of jiujiu on pixiv apparently
-sending porn in your dms
-Creeps in DMs 🤤
-I'm not getting #3 because I want to grow a beard
-random translate from google search says it's portugal
 Bet you look like a catboy
 I broke it 💀
 And that's supposed to scare me?
-least threatening message of discord
-I will fix the kindergarten bot if you don't behave
-what the hell is gonay
-yea what about me
 proof that I am the perfect human being
 trying to improve your well being? nah thats too much fuck off
 Is the ai having a stroke?
-Now I have two datasets: one contains 160 linux advertisements (prefixed with random starting phrases) and the other contains 140 random messages
-And it seems like this affects the model positively
 I would not run into his arms
 I don't have a "cat ear" phone case and I'm not wearing knee socks
-This is artificial rn without the caption
-Simply not scared- ||actually freaking the fuck out||
 His objective is to breed
 This terminator is not programed to kill or capture
 We will send the terminator after you
 The bot will breed you
 What if I don't??
 It doesn't generate gibberish upon encountering unknown words anymore, thanks to dropout
-You forgor an 's
-That is very true
 It will not teach the neural network to make less mistypes
-But I still don't think it's reasonable
-That can easily be optimized to an `O(log27(n))` operation if you build a tree of words beforehand
-because it would have to check 1000s of things for every word
-You would also probably want to include brand names and things such as linux
 It would be terrible for optimization
 There are thousands of words and even more if you consider prefixes and suffixes
-It would cut out all of the misspelled things
-I was just saying you could check every "word" (sequence of characters separated by spaces or punctuation) and see if that word is in a master list of every english word
-I don't know the syntax
 Well, feel free to make a pr if you feel so confident <:trollge:1102745233487319060>
 There's no way to tell if there's really a misspelling without taking the context into account
 You wouldn't really need to
 I would need to train another neural network for that
 Actually that sounds like a terribly optimized idea
 You would have a huge list of every english word
-What if you made it so that if it used any words that are misspelled it would try again
 Kill your self Linux
 Also who your daddy
-But yeah you can change your votes now
-Now I'll have to waste two more minutes uploading a fixed jar to the server (because my connection is shit rn)
 Oops I broke the voting system <:nyaboom:1102953127658930229>
 Good thing my cpu is too weak to melt
-But like actually omfg you so much heavy shit running at once
-You are the porn
 privileged status exploitation!
-Discord users going to scream ADMIN ABUSE when they send the thug shaker video, Ronnie Mcnutt Montage, and Nazi edits in general
 it's not abuse if you literally post porn
-They were nsfw in the advertisements channel
-deleted actual nsfw videos
 Delete my messages 🤬😤
 When did I admin abuse
-Original boy is a femboy, cat, admin abuser, idiot,
-Hundreds of femboys 😳😳🤤🤤🤤
-Meaning TikTok is cringe!!
+Original boy is a femboy, cat, admin abuser, idiot.
+Hundreds of femboys 😳🤤
 There are hundreds of femboy accounts posting various content on tiktok
-Go on, pay a visit
-But he mainly cross-dresses on his streaming channel
-I don't think so
 Give me your address
-Yeah but I'd rather watch long-form video content
 Every platform is cringe if you only watch bad content on it.
-But you can't say that because then you insult literally everyone from Gen Z than they get all butt hurt and cry
-I agree whole heartedly
-When I could watch like 2 or 3 10 minute long videos that are way better
-Why watch 20 second long videos for hours on end
-I don't even use tiktok
 You don't have to, I was just saying good job because you did something worthy of praise
-no it means Originalboy is 20 tiktok users in disguise
-Original boy is a cat
-Uh should I say thanks or something idk--
-do you have a source for that too
+no, it means Originalboy is 20 tiktok users in disguise
+Originalboy is a cat
+Uh should I say thanks or something idk-
 I will behead you
-also I am very kind and forgiving I forgot to mention
-there is no perfect
-no I am perfect for example I am very humble and not egoistic which is very great
 We all have our faults
-Makes sense, I wanted to see what it would do with Egyptian hieroglyphics
-That's because those characters are not in the vocabulary
-the neural network sees "[UNK][UNK][UNK][UNK][UNK][UNK][UNK]"
-I mut you too Linux bot 😘
+The neural network sees "[UNK][UNK][UNK][UNK][UNK][UNK][UNK]"
