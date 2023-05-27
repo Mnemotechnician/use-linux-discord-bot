@@ -56,7 +56,8 @@ model = TextGeneratorModel(
     vocab_size=len(char_to_id.get_vocabulary()),
     batch_size=BATCH_SIZE,
     embedding_dim=EMBEDDING_UNITS,
-    rnn_units=RNN_UNITS
+    rnn_units=RNN_UNITS,
+    dropout_rate=DROPOUT_RATE
 )
 
 model.summary()
