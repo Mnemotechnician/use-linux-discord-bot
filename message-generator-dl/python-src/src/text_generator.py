@@ -15,8 +15,8 @@ class TextGenerator(tf.keras.Model):
         self.id_to_char = id_to_char
         self.char_to_id = char_to_id
 
-        # Create a mask to prevent "[UNK]" from being generated.
-        skip_ids = self.char_to_id(["[UNK]"])[:, None]
+        # Create a mask to prevent oov and mask tokens from being generated.
+        skip_ids = self.char_to_id([MASK_TOKEN, OOV_TOKEN])[:, None]
         sparse_mask = tf.SparseTensor(
             # Put a -inf at each bad index.
             values=[-float('inf')] * len(skip_ids),

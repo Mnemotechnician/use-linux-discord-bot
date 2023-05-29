@@ -38,7 +38,7 @@ model = TextGeneratorModel(
 # Load the model
 model.load_weights(savefile)
 
-generator = TextGenerator(model, id_to_char, char_to_id, 1.07)
+generator = TextGenerator(model, id_to_char, char_to_id, 1.0)
 
 sys.stderr.write("Generating. Type starting phrases to generate inputs.")
 

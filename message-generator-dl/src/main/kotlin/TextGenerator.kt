@@ -6,6 +6,7 @@ import java.io.PrintWriter
 import java.lang.IllegalStateException
 import java.lang.ProcessBuilder.Redirect.*
 import java.text.BreakIterator
+import kotlin.random.Random
 import kotlin.system.exitProcess
 
 /**
@@ -19,7 +20,14 @@ object TextGenerator {
 	val modelFileIndex = modelFileLocation.resolveSibling("model.ckpt.index")
 	val vocabFile = workDir.resolve("vocab.json")
 
-	val startingPhrases = listOf("Advert: ", "Linux advertisement: ", "Linux news: ")
+	val startingPhrases = listOf(
+		"Advert: ",
+		"Linux advertisement: ",
+		"Linux news: ",
+		"Reasons to use Linux: ",
+		"Linux is good, because: ",
+		"Here's why you should use Linux: "
+	)
 
 	// TODO: synchronize with common.py
 	const val BATCH_SIZE = 40
@@ -90,7 +98,18 @@ object TextGenerator {
 				PrintWriter(outputStream().bufferedWriter()).use { out ->
 					// These phrases are supposed to teach the network to write coherent sentences
 					val learningPhrases = TextGenerator.javaClass.getResourceAsStream("/train-learning.txt")!!.bufferedReader().use {
-						it.lines().toList()
+						it.lines()
+							.filter { it.isNotBlank() }
+							.map {
+								// A third of the lines are postfixed with a message terminator
+								// The rest are postfixed with a space.
+								if (Random.nextInt(0, 3) == 0) {
+									it + MESSAGE_TERMINATOR
+								} else {
+									"$it "
+								}
+							}
+							.toList()
 					}
 					// These phrases are used to train the network to generate advertisements
 					// They all begin with a starting phrase and end with the message terminator
@@ -214,12 +233,4 @@ object TextGenerator {
 			if (started) process.destroy()
 		}
 	}
-}
-
-private val breakIterator = BreakIterator.getCharacterInstance()
-fun String.unicodeLength() = run {
-	var count = 0
-	breakIterator.setText(this)
-	while (breakIterator.next() != BreakIterator.DONE) count++
-	count
 }
