@@ -155,10 +155,12 @@ class UseLinuxExtension : ULBotExtension() {
 				channelTimeouts[event.interaction.channelId] = System.currentTimeMillis() + timeoutChannelSeconds * 1000
 
 				val phrase = arguments.startingPhrase.trim().takeIf(String::isNotEmpty)
-				val (text, time) = if (phrase != null) {
-					textGeneratorProcess.generate(phrase + " ")
-				} else {
-					textGeneratorProcess.generate()
+				val (text, time) = withContext(Dispatchers.IO) {
+					if (phrase != null) {
+						textGeneratorProcess.generate(phrase + " ")
+					} else {
+						textGeneratorProcess.generate()
+					}
 				}
 
 				log("Generated a message for ${event.interaction.user.tag} in $time seconds.")
@@ -189,7 +191,7 @@ class UseLinuxExtension : ULBotExtension() {
 				if (targetChats.none {  it.shouldSend() }) continue
 
 				val text = withContext(Dispatchers.IO) {
-					val (text, timeTaken) = textGeneratorProcess.generate()
+					val (text, timeTaken) = textGeneratorProcess.generate(maxRetries = 5)
 					log("Generated a text in $timeTaken seconds")
 					text
 				}
@@ -200,9 +202,9 @@ class UseLinuxExtension : ULBotExtension() {
 							chat.send(text)
 						}.onFailure {
 							log("Failed to send notification in ${chat.id}: $it")
-							// Next attempt in no less than 5 minutes
+							// Next attempt in no less than 30 minutes
 							chat.nextNotification =
-								System.currentTimeMillis() + 1000 * 60 * 5L
+								System.currentTimeMillis() + 1000 * 60 * 30L
 						}
 						saveState()
 					}

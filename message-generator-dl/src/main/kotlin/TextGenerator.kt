@@ -5,9 +5,7 @@ import java.io.File
 import java.io.PrintWriter
 import java.lang.IllegalStateException
 import java.lang.ProcessBuilder.Redirect.*
-import java.text.BreakIterator
 import kotlin.random.Random
-import kotlin.system.exitProcess
 
 /**
  * A kotlin wrapper for an AI text generator in Python.
@@ -35,6 +33,24 @@ object TextGenerator {
 	const val MASK_TOKEN = '\u0001'
 
 	private var filesCopied = false
+
+	/*
+	 * These phrases are used to teach the network to write coherent sentences.
+	 */
+	val learningPhraseLines by lazy {
+		TextGenerator.javaClass.getResourceAsStream("/train-learning.txt")!!.bufferedReader().use {
+			it.lines().filter { it.isNotBlank() }.toList()
+		}
+	}
+	/*
+	 * These phrases are used to train the network to generate advertisements
+	 * They all begin with a starting phrase and end with the message terminator
+	 */
+	val advertisementPhraseLines by lazy {
+		TextGenerator.javaClass.getResourceAsStream("/train-main.txt")!!.use {
+			it.bufferedReader().use { it.lines().toList() }
+		}
+	}
 
 	/** Copies the python files, if neccesary. */
 	private fun copyPythonFiles() {
@@ -75,7 +91,7 @@ object TextGenerator {
 	 * Train the model associated with this generator and save it.
 	 * The model will be trained for the number of epochs specified in common.py [superEpochs] times.
 	 *
-	 * Must be called before loading it.
+	 * A model must be trained before it can be loaded.
 	 *
 	 * @param superEpochs The number of repeats (training and saves) to perform before finishing.
 	 *      Each superepoch shuffles the starting phrases in the dataset; default is 1.
@@ -92,34 +108,24 @@ object TextGenerator {
 			// The state still has to be restored for the consecutive trainings to be effective.
 			val shouldRestoreState = it != 0 || continueTraining
 
-			// Copy the datasets to the temp directory as well, formatting it properly
+			// Copy the datasets to the temp directory as well, formatting them properly
 			println("Preparing the dataset...")
+
+			val adverts = advertisementPhraseLines.map { startingPhrases.random() + it.trim() + MESSAGE_TERMINATOR }
+			val learningPhrases = learningPhraseLines
+				.map {
+					// A third of the lines are postfixed with a message terminator
+					// The rest are postfixed with a space.
+					if (Random.nextInt(0, 3) == 0) {
+						it + MESSAGE_TERMINATOR
+					} else {
+						"$it "
+					}
+				}
+
 			val dataset = pythonDir.resolve("train.txt").apply {
 				PrintWriter(outputStream().bufferedWriter()).use { out ->
-					// These phrases are supposed to teach the network to write coherent sentences
-					val learningPhrases = TextGenerator.javaClass.getResourceAsStream("/train-learning.txt")!!.bufferedReader().use {
-						it.lines()
-							.filter { it.isNotBlank() }
-							.map {
-								// A third of the lines are postfixed with a message terminator
-								// The rest are postfixed with a space.
-								if (Random.nextInt(0, 3) == 0) {
-									it + MESSAGE_TERMINATOR
-								} else {
-									"$it "
-								}
-							}
-							.toList()
-					}
-					// These phrases are used to train the network to generate advertisements
-					// They all begin with a starting phrase and end with the message terminator
-					val phraseLines = TextGenerator.javaClass.getResourceAsStream("/train-main.txt")!!.use {
-						it.bufferedReader().lines()
-							.map { startingPhrases.random() + it.trim() + MESSAGE_TERMINATOR }
-							.toList()
-					}
-
-					(learningPhrases + phraseLines)
+					(learningPhrases + adverts)
 						.filter { it.isNotBlank() }
 						.sortedBy { it.length } // To optimize the lengths
 						.windowed(BATCH_SIZE, BATCH_SIZE, true)
@@ -197,24 +203,39 @@ object TextGenerator {
 		/**
 		 * Generates a pair of (message, time in seconds).
 		 *
-		 * If [startingPhrase] is not supplied, a random one will be choosen instead.
+		 * If [startingPhrase] is not supplied, a random one will be chosen instead.
+		 *
+		 * If the network generates a phrase that's already in the dataset,
+		 * it may be regenerated. This can repeat up to [maxRetries] times, after which
+		 * the last generated phrase will be returned.
 		 *
 		 * [start] must be called first.
 		 */
-		fun generate(startingPhrase: String = startingPhrases.random()): Pair<String, Double> {
+		fun generate(
+			startingPhrase: String = startingPhrases.random(),
+			maxRetries: Int = 0
+		): Pair<String, Double> {
 			try {
-				if (!process.isAlive) throw RuntimeException("Generator stopped")
+				var totalTime = 0.0
+				var attempts = 0
+				while (true) {
+					if (!process.isAlive) throw RuntimeException("Generator stopped")
 
-				process.outputStream.write(startingPhrase.toByteArray())
-				process.outputStream.write('\n'.code)
-				process.outputStream.flush()
+					process.outputStream.write(startingPhrase.toByteArray())
+					process.outputStream.write('\n'.code)
+					process.outputStream.flush()
 
-				process.inputStream.bufferedReader().apply {
-					val output = readLine()
-					val time = readLine().removeSuffix("s").toDouble()
-					readLine() // empty line
+					process.inputStream.bufferedReader().apply {
+						val output = readLine().trim()
+						totalTime += readLine().removeSuffix("s").toDouble()
+						readLine() // empty line
 
-					return output to time
+						if (attempts++ >= maxRetries || advertisementPhraseLines.none { it.equals(output, true) }) {
+							return output to totalTime
+						} else {
+							attempts++
+						}
+					}
 				}
 			} catch (e: Throwable) {
 				System.err.apply {
