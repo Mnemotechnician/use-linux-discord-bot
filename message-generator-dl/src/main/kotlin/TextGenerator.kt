@@ -34,6 +34,8 @@ object TextGenerator {
 
 	private var filesCopied = false
 
+	val modelExists: Boolean get() = modelFileIndex.exists() && vocabFile.exists()
+
 	/*
 	 * These phrases are used to teach the network to write coherent sentences.
 	 */
@@ -42,6 +44,7 @@ object TextGenerator {
 			it.lines().filter { it.isNotBlank() }.toList()
 		}
 	}
+
 	/*
 	 * These phrases are used to train the network to generate advertisements
 	 * They all begin with a starting phrase and end with the message terminator
@@ -73,7 +76,8 @@ object TextGenerator {
 		}
 	}
 
-	private fun preparePythonEnvironment() {
+
+	fun preparePythonEnvironment() {
 		copyPythonFiles()
 
 		try {
@@ -87,17 +91,8 @@ object TextGenerator {
 		}
 	}
 
-	/**
-	 * Train the model associated with this generator and save it.
-	 * The model will be trained for the number of epochs specified in common.py [superEpochs] times.
-	 *
-	 * A model must be trained before it can be loaded.
-	 *
-	 * @param superEpochs The number of repeats (training and saves) to perform before finishing.
-	 *      Each superepoch shuffles the starting phrases in the dataset; default is 1.
-	 */
 	fun train(continueTraining: Boolean, superEpochs: Int = 1) {
-		require(!continueTraining || (modelFileIndex.exists() && vocabFile.exists())) {
+		require(!continueTraining || modelExists) {
 			"Cannot continue the training: no saved state detected."
 		}
 
@@ -105,13 +100,14 @@ object TextGenerator {
 
 		repeat(superEpochs) {
 			// Even if the user wants to start a new training process,
-			// The state still has to be restored for the consecutive trainings to be effective.
+			// The state still has to be restored during the consecutive trainings.
 			val shouldRestoreState = it != 0 || continueTraining
 
 			// Copy the datasets to the temp directory as well, formatting them properly
 			println("Preparing the dataset...")
 
-			val adverts = advertisementPhraseLines.map { startingPhrases.random() + it.trim() + MESSAGE_TERMINATOR }
+			val adverts =
+				advertisementPhraseLines.map { startingPhrases.random() + it.trim() + MESSAGE_TERMINATOR }
 			val learningPhrases = learningPhraseLines
 				.map {
 					// A third of the lines are postfixed with a message terminator
@@ -134,29 +130,19 @@ object TextGenerator {
 							val padLength = it.maxOf { it.codePointCount(0, it.length) }
 							it.map { line ->
 								// Manual padding because String.padX counts unicode code points
-								line + String(CharArray(padLength - line.codePointCount(0, line.length)) { MASK_TOKEN })
+								line + String(CharArray(
+									padLength - line.codePointCount(0, line.length)
+								) { MASK_TOKEN })
 							}
 						}
 						.forEach(out::println)
 				}
 			}
 
-			try {
-				ProcessBuilder("pipenv", "run", "python3", "train.py")
-					.directory(pythonDir)
-					.redirectError(INHERIT)
-					.redirectOutput(INHERIT)
-					.redirectInput(dataset)
-					.apply {
-						environment()["MODEL_SAVEFILE"] = modelFileLocation.absolutePath
-						environment()["VOCAB_SAVEFILE"] = vocabFile.absolutePath
-						if (shouldRestoreState) environment()["RESTORE_STATE"] = "1"
-					}
-					.start()
-					.waitFor()
-			} catch (e: Exception) {
-				throw IllegalStateException("Failed to execute python in a virtual environment!", e)
-			}
+			runPython("train.py") {
+				redirectInput(dataset)
+				if (shouldRestoreState) environment()["RESTORE_STATE"] = "1"
+			}.waitFor()
 		}
 	}
 
@@ -177,17 +163,33 @@ object TextGenerator {
 		GeneratorProcess().also { it.start() }
 	}
 
+	/**
+	 * Executes a python file in the current pipenv environment, providing the MODEL_SAVEFILE and VOCAB_SAVEFILE
+	 * environment variables.
+	 * [preparePythonEnvironment] must be called first.
+	 *
+	 * @param filename The python file to execute. Must be in the python tmp directory or be an absolute path.
+	 */
+	inline fun runPython(
+		filename: String,
+		inheritErrorStream: Boolean = true,
+		builder: ProcessBuilder.() -> Unit = {}
+	): Process = ProcessBuilder("pipenv", "run", "python3", filename)
+		.directory(pythonDir)
+		.redirectError(if (inheritErrorStream) INHERIT else PIPE)
+		.redirectOutput(INHERIT)
+		.redirectInput(INHERIT)
+		.apply {
+			environment()["MODEL_SAVEFILE"] = modelFileLocation.absolutePath
+			environment()["VOCAB_SAVEFILE"] = vocabFile.absolutePath
+		}
+		.apply(builder)
+		.start()
+
 	class GeneratorProcess : Closeable {
 		var started = false
 			private set
 		private val logFile = File.createTempFile("generator-process", "log")
-		private val builder = ProcessBuilder("pipenv", "run", "python3", "generate.py")
-			.redirectError(logFile)
-			.directory(pythonDir)
-			.apply {
-				environment()["MODEL_SAVEFILE"] = modelFileLocation.absolutePath
-				environment()["VOCAB_SAVEFILE"] = vocabFile.absolutePath
-			}
 
 		/** Initialised when start() is called. */
 		lateinit var process: Process
@@ -197,7 +199,11 @@ object TextGenerator {
 			if (started) return
 			started = true
 
-			process = builder.start()
+			process = runPython("generate.py") {
+				redirectInput(PIPE)
+				redirectOutput(PIPE)
+				redirectError(logFile)
+			}
 		}
 
 		/**

@@ -3,27 +3,20 @@ package com.github.mnemotechnician.messagegen
 import java.awt.SystemColor.text
 
 fun main() {
-	println("Type (t)rain to train the network or (g)enerate to generate text.")
-	print("> ")
+	println("""
+		Type:
+		  't' to train the model
+		  'g' to generate messages using the model
+		-----------------------------------------------
+	""".trimIndent())
 
-	when (readln().firstOrNull()) {
+	when (prompt { it.isNotBlank() }.firstOrNull()) {
 		't' -> {
 			println("Continue training? (y/n)")
-			print("> ")
-
-			val continueTraining = when (readln().trim().firstOrNull()?.lowercaseChar()) {
-				'y' -> true
-				'n' -> false
-				else -> error("Type y or n.")
-			}
+			val continueTraining = prompt { it in arrayOf("y", "n") } == "y"
 
 			println("Specify the number of superepochs - training repeats. Default is 1.")
-			print("> ")
-
-			val superEpochs = when (val line = readln().trim()) {
-				"" -> 1
-				else -> line.toIntOrNull() ?: error("Not a number.")
-			}
+			val superEpochs = prompt { it.toIntOrNull() != null }.toInt()
 
 			TextGenerator.train(continueTraining, superEpochs)
 		}
@@ -34,14 +27,14 @@ fun main() {
 			println()
 
 			var count = 0
-			var phrase: String? = null
+			var phrase = ""
 			while (true) {
 				if (--count <= 0) {
-					phrase = readln().takeIf { it.isNotBlank() }
+					phrase = prompt { true }
 					count = 5
 				}
 
-				val (text, time) = if (phrase != null) {
+				val (text, time) = if (phrase.isNotEmpty()) {
 					process.generate(phrase)
 				} else {
 					process.generate()
@@ -52,9 +45,34 @@ fun main() {
 				println()
 			}
 		}
+//		'i' -> {
+//			if (!TextGenerator.modelExists) {
+//				println("You need to train the model to some extent first!")
+//				return
+//			}
+//
+//			TextGenerator.preparePythonEnvironment()
+//			TextGenerator.runPython("train-interactive.py").waitFor()
+//		}
 		else -> {
 			println("Invalid command!")
-			main()
+			main() // super-brain moment
+		}
+	}
+}
+
+private inline fun prompt(
+	promptText: String = ">",
+	validator: (String) -> Boolean = { it.isNotEmpty() }
+): String {
+	while (true) {
+		print("$promptText ")
+		val input = readln().trim()
+
+		if (validator(input)) {
+			return input
+		} else {
+			println("Invalid input! Try again.")
 		}
 	}
 }
