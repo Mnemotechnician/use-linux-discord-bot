@@ -25,7 +25,7 @@ dependencies {
 	implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-core", "1.6.4")
 	implementation("org.jetbrains.kotlinx", "kotlinx-serialization-json", "1.3.2")
 
-	// implementation("org.slf4j", "slf4j-simple", "2.0.7") // FUCK SLF4J!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	implementation("org.slf4j", "slf4j-simple", "2.0.7") // FUCK SLF4J!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 }
 
 tasks.test {

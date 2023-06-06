@@ -11,6 +11,7 @@ suspend fun main() {
 		extensions {
 			add(::UseLinuxExtension)
 			add(::MemeRepostExtension)
+			add(::SuggestionMailExtension)
 		}
 	}
 
