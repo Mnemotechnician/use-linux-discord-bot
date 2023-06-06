@@ -1,5 +1,5 @@
 # "Use Linux" discord bot
-Sends a message saying "remember to use linux" into every opted-in channel every 4 hours.
+Sends a random ai-generated message that is supposed to tell you to use Linux every 4 hours. I am not responsible for any nonsense it may generate.
 
 You can use the `/add-channel` command to opt-in, `/remove-channel` to opt-out.
 
