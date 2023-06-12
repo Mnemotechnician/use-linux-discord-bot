@@ -41,7 +41,10 @@ object TextGenerator {
 	 */
 	val learningPhraseLines by lazy {
 		TextGenerator.javaClass.getResourceAsStream("/train-learning.txt")!!.bufferedReader().use {
-			it.lines().filter { it.isNotBlank() }.toList()
+			it.lines()
+				.filter { it.isNotBlank() }
+				.filter { !it.startsWith("##") }
+				.toList()
 		}
 	}
 
