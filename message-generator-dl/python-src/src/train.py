@@ -72,7 +72,9 @@ if (restore_state):
 history = model.fit(
     dataset,
     epochs=EPOCHS,
-    callbacks=[],
+    callbacks=[
+        tf.keras.callbacks.EarlyStopping(monitor='loss', patience=3, verbose=1, min_delta=0.01)
+    ],
     use_multiprocessing=True
 )
 
