@@ -1,3 +1,6 @@
+##
+## Region: random phrases
+##
 Life is simple, but we insist on making it complicated.
 Spamming and writing offensive reviews will result in a ban. Please be respectful to other users.
 I don't believe we have to make this rule myself, but here we are. Don't give birth in VC.
@@ -41,7 +44,63 @@ Is it really gay if the goal is to get you pregnant?
 It's not gay if you're wearing socks.
 Hello, and welcome to the 31st episode of "how to embarrass yourself in front of a discord server"!
 Please, I beg you, my little neural network, learn to generate your own phrases from those... Please, please, please...
+The fog is coming, the fog is coming, the fog is coming!
+The fox will come after you!
+The Big Brother is always watching.
+It's so sad Steve Jobs died from ligma.
+What is ligma?
+Ligma balls.
+As an AI language model, I cannot understand what you're saying.
+I can't even begin to understand what you're saying.
+As an AI language model, I don't care about your damn opinion. You should just shut the fuck up.
+I do not understand what I am saying, I'm just a humble AI language model.
 
+##
+## Region: Femboy/catboy/lgbt phrases
+##
+Femboy is the best version of man!
+Femboys are the best! I love femboys!
+You must wear a skirt and become a femboy, now!
+Help, there are little gay people in my phone!
+Be gay, do crime!
+Be crime, do gay!
+There are no options, wear a maid dress and do the sad cat dance!
+Wanna wear skirts and dance on the camera?
+Just checking, have you considered wearing a skirt yet?
+Become a catboy maid now, please!
+Astolfo is a great guy, the best of the guys and gays, and our mighty god and savior!
+I'm a catboy, I wear maid dresses and go "nya" on every occasion!
+Where do you find the submissive and breedable bottoms?
+Artificial is a breedable catboy bottom!
+
+
+##
+## Region: cute stuff
+##
+Nya! *Paws at you cutely*
+Hello, master! How can I serve you today? *Winks at you*
+Pet me please! *Wags his tail*
+Can I hug you, please? *Opens up his arms*
+*Bursts through the door* You are coming with me! :3
+Please, give me pets and head scritches and belly rubs!
+Please, I want cuddles! It's so bad!
+Artificial is cute, artificial is cute, artificial is cute! :3
+Good job, you're such a good boy!
+Good boy! You're doing amazing. What a smart, talented person you are.
+Hey, you! You're pretty.
+I hope you're doing great right now.
+I'm proud of you, good job!
+Hi, nya~ How can I help you today?
+Hi, we've been trying to contact you about your car's extended warranty.
+Hiiiiii~ Are you doing good? How can I help you today?
+Hello, did you know you are cute?
+Oh my god, hi! Who is this cutie reading this message right now?
+Hai! How are you today?
+
+
+##
+## Region: radnom ai-generated stuff
+##
 The sun sets on the horizon, painting the sky in hues of orange and pink.
 Hiking through lush green forests is an invigorating experience.
 Music has the power to transport us to another world.
@@ -52,7 +111,6 @@ The ocean waves crashed against the shore, creating a calming rhythm.
 Laughing with friends is one of life's greatest joys.
 Reading a gripping novel can make the hours fly by.
 The aroma of freshly brewed coffee is enough to wake up even the sleepiest of souls.
-
 Just finished my first half-marathon and I feel amazing!
 Finally got around to organizing my closet and it's so satisfying.
 Watching the sunrise over the mountains is a reminder of how beautiful life can be.
@@ -63,7 +121,6 @@ I love listening to podcasts while going for a walk - great for mental and physi
 Spending time with family and friends always brings so much joy to my life.
 Just watched a documentary that opened my eyes to a new perspective and I highly recommend it.
 Nothing beats a cozy night in with a good movie and some popcorn.
-
 I'm having trouble debugging my Python script - any tips?
 How do I reset my root password on Ubuntu?
 Is it possible to run Docker containers on a Raspberry Pi?
@@ -71,29 +128,6 @@ Any suggestions for a lightweight text editor for coding on a low-end machine?
 How do I add a new user to my Linux system and give them sudo privileges?
 I'm trying to install a new package on my Arch Linux system, but I keep getting dependency errors - any suggestions?
 What are some good resources for learning Git and version control?
-
-Is there life beyond Earth?
-Why do we laugh?
-Why is the sky blue?
-How can we reduce plastic waste?
-What is dark energy?
-What is time?
-What is consciousness?
-How does quantum computing work?
-Can artificial intelligence replace humans?
-What is the meaning of life?
-
-The sunset cast a golden glow on the sea, while the clouds turned a fiery scarlet.
-Do you want to help me organize my spice cabinet?
-I'm thinking of taking up a new hobby - what should I try?
-Why do we have to pay taxes, anyway?
-How many trees are there in the world?
-Did you know that penguins have knees, but they are hidden inside their bodies?
-Do you think robots will ever take over the world?
-Is it more important to be honest or polite, in your opinion?
-What's the longest word in the English language?
-Is time travel possible, and if so, how do you think it works?
-
 Do you want to watch the sunset together?
 I bet your smile could light up the night sky.
 Have you seen the way the sun glints off the leaves in autumn?
@@ -105,6 +139,35 @@ Can we walk through a garden of blossom trees in the spring?
 You're like a little ray of sunshine on a cloudy day.
 I never knew how beautiful the world could be until I met you.
 
+
+##
+## Region: random ai-generated philosophical stuff
+##
+Is there life beyond Earth?
+Why do we laugh?
+Why is the sky blue?
+How can we reduce plastic waste?
+What is dark energy?
+What is time?
+What is consciousness?
+How does quantum computing work?
+Can artificial intelligence replace humans?
+What is the meaning of life?
+The sunset cast a golden glow on the sea, while the clouds turned a fiery scarlet.
+Do you want to help me organize my spice cabinet?
+I'm thinking of taking up a new hobby - what should I try?
+Why do we have to pay taxes, anyway?
+How many trees are there in the world?
+Did you know that penguins have knees, but they are hidden inside their bodies?
+Do you think robots will ever take over the world?
+Is it more important to be honest or polite, in your opinion?
+What's the longest word in the English language?
+Is time travel possible, and if so, how do you think it works?
+
+
+##
+## Region: more ai-generated stuff
+##
 Did you hear that birds aren't real? They're just spies for the government.
 Who's got the best pizza rolls in the neighborhood? I'm in the mood for some cheesy goodness.
 Am I the only one who thinks the new Star Wars movies aren't canon?
@@ -115,7 +178,6 @@ Are aliens real, or am I just crazy?
 Can we have a serious conversation about how amazing the teletubbies are?
 Why does my cat keep knocking over my Lego sets? She has a grudge against me, I just know it.
 Who still remembers the original Pokemon theme song and can sing it flawlessly?
-
 How much does a rainbow weigh?
 If a tree falls in a forest and no one is around to hear it, does it still make a sound?
 Would you rather fight a horse-sized duck or ten duck-sized horses?
@@ -126,7 +188,6 @@ Would you rather be able to fly or become invisible for 24 hours?
 Would you rather have a talking dog or a dog that understands everything you say?
 Would you rather have a personal chef or a personal trainer?
 Would you rather have a super-hearing ability or the power to read minds?
-
 So, are we going to talk about how Harry Potter's room of requirement was definitely just a closet for orgies?
 Do you ever look at your pet and wonder what they're thinking? Sometimes I think mine wants to eat my face off.
 Would a vampire who's allergic to garlic be considered a vampire who's allergic to sunlight?
@@ -137,15 +198,19 @@ Has anyone ever tried to teach their pet to make their own breakfast by throwing
 Would you rather be able to fly, have telekinesis, or the ability to control time? I think time control would be the most useful for me.
 What's the goofiest thing you've ever worn to a Halloween party?
 Why does my cat always wake me up by stepping on my face? Can't she just let me sleep in peace?
+Who wants to play Among Us?
+Can someone help me with this level in Genshin Impact?
+Let's hop on a voice chat and catch up!
+Where's the best place to farm gold in World of Warcraft?
+I just hit a new high score in Osu!
+I'm trying to install this new mod in Minecraft, can anyone walk me through the steps!
+Let's team up and take down that boss!
+Are there any good book clubs or roleplay servers you guys recommend?
 
-Nya! *Paws at you cutely*
-Hello, master! How can I serve you today? *Winks at you*
-Pet me please! *Wags his tail*
-Can I hug you, please? *Opens up his arms*
-*Bursts through the door* You are coming with me! :3
-Please, give me pets and head scritches and belly rubs!
-Please, I want cuddles! It's so bad!
 
+##
+## Region: random ai-generated complaints
+##
 This moderation is ridiculous, I got banned for no reason at all!
 The mods here are so unfair, banning people left and right for no good reason.
 Why do the admins keep muting me? I haven't done anything wrong!
@@ -157,21 +222,10 @@ The admins don't listen to our complaints at all, they just ignore us.
 Why are the mods so trigger-happy with bans these days?
 This community is turning into a toxic mess thanks to the poor moderation.
 
-Good job, you're such a good boy!
-Good boy! You're doing amazing. What a smart, talented person you are.
-Hey, you! You're pretty.
-I hope you're doing great right now.
-I'm proud of you, good job!
 
-Who wants to play Among Us?
-Can someone help me with this level in Genshin Impact?
-Let's hop on a voice chat and catch up!
-Where's the best place to farm gold in World of Warcraft?
-I just hit a new high score in Osu!
-I'm trying to install this new mod in Minecraft, can anyone walk me through the steps!
-Let's team up and take down that boss!
-Are there any good book clubs or roleplay servers you guys recommend?
-
+##
+## Region: random ai-generated jokes
+##
 Why did the programmer quit his job as a chef? He took the "hash" too literally!
 What do you call a computer that gets frustrated easily? A hot-headed CPU!
 Why did the programmer get into a fight with his keyboard? He couldn't find the control key!
@@ -181,22 +235,46 @@ Why did the programmer get a new keyboard? The old one was driving him "alt"!
 Why did the programmer bring a baseball bat to work? To use on the "bugs"!
 How did the programmer propose to his boyfriend? With a diamond "ring" statement!
 
-Hi, nya~ How can I help you today?
-Hi, we've been trying to contact you about your car's extended warranty.
-Hiiiiii~ Are you doing good? How can I help you today?
-Hello, did you know you are cute?
-Oh my god, hi! Who is this cutie reading this message right now?
-Hai! How are you today?
+##
+## Region: random short ai-generated phrases without much meaning
+##
+A purple elephant danced on the moon.
+The coffee tasted like a rainbow.
+I found a treasure map in my cornflakes.
+The sun smiled at me this morning.
+My shoes have wings and can fly.
+The sea whispered secrets to the sand.
+The clouds resembled fluffy pillows.
+A talking tree told me a joke.
+The stars danced in the sky like fireflies.
+An unexpected gust of wind stole my hat.
+The moonshine tasted like grape juice.
+A caterpillar played a harmonica in the garden.
+A snail raced a turtle and won.
+A rainbow appeared in the middle of the night.
+A bear offered me a cup of tea in the forest.
+A ladybug sang a lullaby to a blade of grass.
+My pencil wrote in invisible ink.
+A butterfly transformed into a dragon.
+A peacock showed me a magic trick.
+A cloud shaped like a dragon flew above the city
+The clock on the wall is always watching.
+My dreams are made of neon-colored clouds.
+The sound of rain is like a lullaby for my soul.
+The flowers in the garden sing a joyful tune.
+The wind whispers secrets through the trees.
+My thoughts are a tornado of chaos and creativity.
+The stars in the sky are like a billion twinkling eyes.
+The ocean waves are a never-ending dance.
+My heart beats like a drum in my chest.
+The world is filled with stories waiting to be heard.
 
-It's so sad Steve Jobs died from ligma.
-What is ligma?
-Ligma balls.
 
 
 
-
-
-
+##
+## region: around 1800 messages from a discord server
+##
 I forgot, I'll do it when I get home, I'm at school right now.
 When will I get the artificial puking emoji?
 I don't know what this is.
@@ -1040,7 +1118,7 @@ I am taking that out of context and you can't do anything
 ~~and by that I mean hug artificial~~
 we should be more like foxes
 The foxes actually look kinda sorta maybe a little technically theoretically hypothetically cute
-Discord is focused on maintaining a safe and secure environment for our community. We've found your account to be in violation of our Terms of Service or Community Guidelines. As a result, we've disabled your account for the following reason:
+Discord is focused on maintaining a safe and secure environment for our community. We've found your account to be in violation of our Terms of Service or Community Guidelines.
 We're required to strictly enforce our age limit for legal reasons, and as such, we'll need to confirm your age if you intend to appeal.
 well, we are degenerates I guess
 I imagine that the silent part of the server just sees the chat and thinks we're degenerates...
@@ -2021,9 +2099,12 @@ Artificial is going to have artifox kits!
 No breeding me!
 a bot to breed artificial
 Bruh, I just noticed one of the trees in the background is floating mid-air.
+why the fuck would you have these opinions in your clipboard?
+What happens after becoming french? Are you immortal?
 
-
-
+##
+## Region: random joes
+##
 Ok, ping me when someone suggests "1 litre of liquid cum"
 You can't just say "1 litre of liquid cum"
 Okay, why did the neural network autocompleting my code and text just say the phrase above?
@@ -2031,7 +2112,6 @@ I'm not a bot
 For real? Then who are you?
 I'm a bot
 What? Can you please decide what you are?
-
 Google en passant.
 Holy hell!
 New response just dropped.
@@ -2042,6 +2122,10 @@ Knighmare fuel.
 Queen sacrifice, anyone?
 Pawnstorm incoming!
 
+##
+## Superregion: music lyrics (unique lines only)
+##
+## Army of the night - Powerwolf
 Stand up all the night and call the fight,
 Let your mind go wild before the light;
 Here we come, the army of the night, mater Maria!
@@ -2049,10 +2133,15 @@ Lined up side by side and bound to pray,
 Sent to die and fight the final day,
 Army of the night - we came to slay, mater Maria!
 
+## Universe on fire - Gloryhammer
 I wanna set the universe on fire, feel it burn tonight; set the universe on fire, there's no end in sight.
 Bring me to the holy, raging power, where I'll find my destiny.
 Set the universe on fire, you're my guiding light.
+Gliding across the sun to soak up all its might...
+Charging my solar gun and preparing for epic fight...
+Questing through nebulas in search for crystal storm, which gives me the overdose of force to claim space throne!
 
+## Screaming eagles - Sabaton
 Crack of the lightning splitting the ground
 Thunder is sounding, artillery pounding
 Wrath of the nazis cast on Bastogne, facing their forces alone!
@@ -2075,3 +2164,35 @@ Chill of the winter bites to the bone, and Christmas is drawing near.
 The soldiers are freezing, the death toll increasing, they're dying in their holes.
 There's no surrender, there's no retreat, and Wehrmacht is drawing near.
 There's no reinforcements, they're fighting all alone!
+
+## Never gonna give you up - Rick Astley
+Never gonna give you up, never gonna let you down, never gonna run around and desert you
+We are no strangers to love
+You know the rules, and so do I.
+A full commitment is what I'm thinking of.
+You wouldn't get this from any other guy
+I just wanna tell you how I'm feeling
+
+## Stormtroopers - Sabaton
+Now there's a standstill in the war, redoing what's been done before
+It must come to an end, a few will transcend
+They were under 25, and under fire they would thrive
+The sturmman is born, the enemies gorn
+A glimpse of the future, new tactics in war, new doctrine in combat explored
+As fast as lightning, there's no time to morn
+A gimpse of the future and blitzkrieg is born!
+Strike at zero hour, with overwhelming firepower
+They're fueled by the fear in their enemies eyes
+It's a shocktroop infiltration, a fast and violent escalation
+Out of the trenches the stormtroopers rise!
+
+## Goblin King of the Darkstorm Galaxy - Gloryhammer
+Goblin king of the darkstorm galaxy, ride on the wings of doom!
+Grant me the power to fight my foes and defeat the lords of the moon!
+I have returned from centuries of slumber
+Now the universe must burn!
+I feel the power, yet still I thirst for more... Ancient secrets I must learn!
+I ride the twilight in search of cosmic fire, the goblin king knows my desire!
+This magic crystal is the artifact you seek to unleash evil from the sky.
+You must find the portal, the crystal is the key; all universal life will die!
+Deep beneath Dundee, the mighty citadel, there lies a passageway to hell!
