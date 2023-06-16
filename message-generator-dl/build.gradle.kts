@@ -9,13 +9,6 @@ repositories {
 	mavenCentral()
 }
 
-dependencies {
-}
-
-tasks.test {
-	useJUnitPlatform()
-}
-
 // Requires pipenv to be installed
 tasks.create("python") {
 	sourceSets.main.get().resources.srcDirs += File("python")
@@ -31,19 +24,24 @@ tasks.create("python") {
 }
 
 tasks.create("prepare-python-files") {
-	outputs.dir(layout.buildDirectory.dir("python"))
+	val outname = project.name
+	outputs.dir(layout.buildDirectory.dir("python/$outname"))
 
 	outputs.upToDateWhen { false }
 
 	doLast {
-		val outputDir = layout.buildDirectory.dir("python").get().asFile.also { it.mkdir() }
+		val outputDir = layout.buildDirectory.dir("python")
+			.get().asFile
+			.resolve(outname)
+			.also {
+				it.deleteRecursively()
+				it.mkdirs()
+			}
 
-		val files = layout.projectDirectory.asFile.resolve("python-src/src").walk().filter { it.isFile }.toList() +
-			rootProject.file("Pipfile") +
-			rootProject.file("Pipfile.lock")
+		val files = layout.projectDirectory.asFile.resolve("python-src/src").walk().filter { it.isFile }.toList()
 
 		outputDir.resolve("python-filepaths.txt").writeText(files.joinToString("\n") {
-			"/" + it.name
+			"/$outname/${it.name}"
 		})
 
 		files.forEach {
@@ -59,6 +57,8 @@ tasks.jar {
 
 	from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
 	from(layout.buildDirectory.file("python"))
+	from(rootProject.file("Pipfile"))
+	from(rootProject.file("Pipfile.lock"))
 
 	manifest {
 		attributes["Main-Class"] = "com.github.mnemotechnician.messagegen.CliAppKt"

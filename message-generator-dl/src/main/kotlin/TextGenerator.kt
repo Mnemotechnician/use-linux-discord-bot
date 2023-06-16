@@ -11,8 +11,13 @@ import kotlin.random.Random
  * A kotlin wrapper for an AI text generator in Python.
  */
 object TextGenerator {
-	val workDir = File("${System.getProperty("user.home")}/use-linux/deepl/").also(File::mkdirs)
-	val pythonDir = workDir.resolve("tmp").also(File::mkdir)
+	/** The directory in which context pipenv is invoked. */
+	val rootPipDir = File("${System.getProperty("user.home")}/use-linux/deepl/")
+	/** The root directory of this deep learning subproject. */
+	val workDir = rootPipDir.resolve("message-generator").also(File::mkdirs)
+	/** The directory in which this subproject stores temporary work files. */
+	val pythonDir = workDir.resolve("tmp").also(File::mkdirs)
+
 	/** Not the actual model file; may not exist even after training. See [modelFileIndex]. */
 	val modelFileLocation = workDir.resolve("model.ckpt")
 	val modelFileIndex = modelFileLocation.resolveSibling("model.ckpt.index")
@@ -64,18 +69,12 @@ object TextGenerator {
 		filesCopied = true
 
 		// Copy the files
-		val resourcesToCopy = javaClass.getResourceAsStream("/python-filepaths.txt")!!
+		val resourcesToCopy = javaClass.getResourceAsStream("/message-generator-dl/python-filepaths.txt")!!
 			.bufferedReader().use { it.readText().split("\n") }
 
 		resourcesToCopy.forEach { resource ->
 			println("Copying $resource")
-			javaClass.getResourceAsStream(resource)!!.use { stream ->
-				pythonDir.resolve(resource.substringAfterLast("/"))
-					.outputStream()
-					.use {
-						stream.copyTo(it)
-					}
-			}
+			copyResource(resource, pythonDir.resolve(resource.substringAfterLast("/")))
 		}
 	}
 
@@ -83,9 +82,14 @@ object TextGenerator {
 	fun preparePythonEnvironment() {
 		copyPythonFiles()
 
+		// Copy the dependency list
+		listOf("Pipfile", "Pipfile.lock").forEach {
+			copyResource("/$it", rootPipDir.resolve(it))
+		}
+
 		try {
 			ProcessBuilder("pipenv", "sync")
-				.directory(pythonDir)
+				.directory(rootPipDir)
 				.redirectOutput(INHERIT)
 				.start()
 				.waitFor()
@@ -171,14 +175,14 @@ object TextGenerator {
 	 * environment variables.
 	 * [preparePythonEnvironment] must be called first.
 	 *
-	 * @param filename The python file to execute. Must be in the python tmp directory or be an absolute path.
+	 * @param filename The python file to execute. Must be in [pythonDir].
 	 */
 	inline fun runPython(
 		filename: String,
 		inheritErrorStream: Boolean = true,
 		builder: ProcessBuilder.() -> Unit = {}
-	): Process = ProcessBuilder("pipenv", "run", "python3", filename)
-		.directory(pythonDir)
+	): Process = ProcessBuilder("pipenv", "run", "python3", pythonDir.resolve(filename).canonicalPath)
+		.directory(rootPipDir)
 		.redirectError(if (inheritErrorStream) INHERIT else PIPE)
 		.redirectOutput(INHERIT)
 		.redirectInput(INHERIT)
@@ -188,6 +192,21 @@ object TextGenerator {
 		}
 		.apply(builder)
 		.start()
+
+	/**
+	 * Safely copies a resource present in the jar file to the destination file.
+	 *
+	 * @throws IllegalStateException if the resource doesn't exist.
+	 */
+	fun copyResource(resourceName: String, destination: File) {
+		val resource = javaClass.getResourceAsStream(resourceName)
+
+		require(resource != null) { "Resource $resourceName not found" }
+
+		destination.outputStream().use { out ->
+			resource.use { it.copyTo(out) }
+		}
+	}
 
 	class GeneratorProcess : Closeable {
 		var started = false
@@ -200,13 +219,14 @@ object TextGenerator {
 
 		fun start() {
 			if (started) return
-			started = true
 
 			process = runPython("generate.py") {
 				redirectInput(PIPE)
 				redirectOutput(PIPE)
 				redirectError(logFile)
 			}
+
+			started = true
 		}
 
 		/**

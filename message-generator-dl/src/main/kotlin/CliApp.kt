@@ -1,7 +1,5 @@
 package com.github.mnemotechnician.messagegen
 
-import java.awt.SystemColor.text
-
 fun main() {
 	println("""
 		Type:
@@ -67,12 +65,11 @@ private inline fun prompt(
 ): String {
 	while (true) {
 		print("$promptText ")
-		val input = readln().trim()
+		val input = readln()
 
-		if (validator(input)) {
-			return input
-		} else {
-			println("Invalid input! Try again.")
+		when {
+			validator(input) -> return input
+			else -> println("Invalid input! Try again.")
 		}
 	}
 }
