@@ -9,20 +9,6 @@ repositories {
 	mavenCentral()
 }
 
-// Requires pipenv to be installed
-tasks.create("python") {
-	sourceSets.main.get().resources.srcDirs += File("python")
-
-	outputs.upToDateWhen { false }
-
-	doLast {
-		exec {
-			workingDir("python")
-			commandLine("pipenv", "sync")
-		}
-	}
-}
-
 tasks.create("prepare-python-files") {
 	val outname = project.name
 	outputs.dir(layout.buildDirectory.dir("python/$outname"))
@@ -38,7 +24,7 @@ tasks.create("prepare-python-files") {
 				it.mkdirs()
 			}
 
-		val files = layout.projectDirectory.asFile.resolve("python-src/src").walk().filter { it.isFile }.toList()
+		val files = layout.projectDirectory.asFile.resolve("mg-python/src").walk().filter { it.isFile }.toList()
 
 		outputDir.resolve("python-filepaths.txt").writeText(files.joinToString("\n") {
 			"/$outname/${it.name}"

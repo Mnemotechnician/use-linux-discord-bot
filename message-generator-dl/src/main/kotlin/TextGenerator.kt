@@ -45,7 +45,7 @@ object TextGenerator {
 	 * These phrases are used to teach the network to write coherent sentences.
 	 */
 	val learningPhraseLines by lazy {
-		TextGenerator.javaClass.getResourceAsStream("/train-learning.txt")!!.bufferedReader().use {
+		getResource("train-learning.txt")!!.bufferedReader().use {
 			it.lines()
 				.filter { it.isNotBlank() }
 				.filter { !it.startsWith("##") }
@@ -58,7 +58,7 @@ object TextGenerator {
 	 * They all begin with a starting phrase and end with the message terminator
 	 */
 	val advertisementPhraseLines by lazy {
-		TextGenerator.javaClass.getResourceAsStream("/train-main.txt")!!.use {
+		getResource("train-main.txt")!!.use {
 			it.bufferedReader().use { it.lines().toList() }
 		}
 	}
@@ -69,7 +69,7 @@ object TextGenerator {
 		filesCopied = true
 
 		// Copy the files
-		val resourcesToCopy = javaClass.getResourceAsStream("/message-generator-dl/python-filepaths.txt")!!
+		val resourcesToCopy = getResource("python-filepaths.txt")!!
 			.bufferedReader().use { it.readText().split("\n") }
 
 		resourcesToCopy.forEach { resource ->
@@ -163,7 +163,7 @@ object TextGenerator {
 	fun load() = run {
 		preparePythonEnvironment()
 
-		if (!vocabFile.exists()) {
+		if (!modelExists) {
 			error("Model files do not exist!")
 		}
 
@@ -207,6 +207,9 @@ object TextGenerator {
 			resource.use { it.copyTo(out) }
 		}
 	}
+
+	fun getResource(name: String) =
+		javaClass.getResourceAsStream("/message-generator-dl/$name")
 
 	class GeneratorProcess : Closeable {
 		var started = false
@@ -254,10 +257,10 @@ object TextGenerator {
 					process.outputStream.write('\n'.code)
 					process.outputStream.flush()
 
-					process.inputStream.bufferedReader().apply {
-						val output = readLine().trim()
-						totalTime += readLine().removeSuffix("s").toDouble()
-						readLine() // empty line
+					process.inputStream.bufferedReader().use {
+						val output = it.readLine().trim()
+						totalTime += it.readLine().removeSuffix("s").toDouble()
+						it.readLine() // empty line
 
 						if (attempts++ >= maxRetries || advertisementPhraseLines.none { it.equals(output, true) }) {
 							return output to totalTime
