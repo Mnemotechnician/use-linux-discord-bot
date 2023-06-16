@@ -257,7 +257,7 @@ object TextGenerator {
 					process.outputStream.write('\n'.code)
 					process.outputStream.flush()
 
-					process.inputStream.bufferedReader().use {
+					process.inputStream.bufferedReader().let {
 						val output = it.readLine().trim()
 						totalTime += it.readLine().removeSuffix("s").toDouble()
 						it.readLine() // empty line
