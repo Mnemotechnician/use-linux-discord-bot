@@ -8,14 +8,14 @@ class TextGeneratorModel(tf.keras.Model):
             embedding_dim,
             mask_zero=True
         )
-        self.gru1 = tf.keras.layers.GRU(
-            rnn_units,
+        self.rnn1 = tf.keras.layers.LSTM(
+            rnn_units // 2,
             dropout=dropout_rate,
             return_sequences=True,
             return_state=True
         )
-        self.gru2 = tf.keras.layers.GRU(
-            rnn_units // 2,
+        self.rnn2 = tf.keras.layers.LSTM(
+            rnn_units,
             dropout=dropout_rate,
             return_sequences=True,
             return_state=True
@@ -25,26 +25,21 @@ class TextGeneratorModel(tf.keras.Model):
         self.build(tf.TensorShape([batch_size, None]))
 
     @tf.function
-    def call(self, inputs, states: tuple=None, return_state=False, training=False):
-        x = inputs
-        x = self.embedding(x, training=training)
+    def call(self, inputs, states: tuple=None, return_states=False, training=False):
+        x = self.embedding(inputs, training = training)
 
-        # GRU 1 + dropout 1
-        if states is None:
-            states = (self.gru1.get_initial_state(x), None)
-        x, newState = self.gru1(x, initial_state=states[0], training=training)
-        states = (newState, states[1])
+        if states is not None:
+            initial_states_l1, initial_states_l2 = states
 
-        # GRU 2 + dropout 2
-        if states[1] is None:
-            states = (states[0], self.gru2.get_initial_state(x))
-        x, newState = self.gru2(x, initial_state=states[1], training=training)
-        states = (states[0], newState)
+            x, state_h1, state_c1 = self.rnn1(x, initial_state=initial_states_l1, training=training)
+            x, state_h2, state_c2 = self.rnn2(x, initial_state=initial_states_l2, training=training)
+        else:
+            x, state_h1, state_c1 = self.rnn1(x, training=training)
+            x, state_h2, state_c2 = self.rnn2(x, training=training)
 
-        # Output
-        x = self.dense(x, training=training)
+        x = self.dense(x)
 
-        if return_state:
-            return x, states
+        if return_states:
+            return x, ([state_h1, state_c1], [state_h2, state_c2])
         else:
             return x
