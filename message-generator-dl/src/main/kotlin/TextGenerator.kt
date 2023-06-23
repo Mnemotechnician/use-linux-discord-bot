@@ -146,10 +146,15 @@ object TextGenerator {
 				}
 			}
 
-			runPython("train.py") {
+			val process = runPython("train.py") {
 				redirectInput(dataset)
 				if (shouldRestoreState) environment()["RESTORE_STATE"] = "1"
-			}.waitFor()
+			}
+			process.waitFor()
+
+			require(process.exitValue() == 0) {
+				"Trainer process terminated with non-zero exit code: ${process.exitValue()}"
+			}
 		}
 	}
 
