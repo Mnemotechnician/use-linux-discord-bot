@@ -4,6 +4,7 @@
 ################################################################################################
 # Accept env variables:                                                                        #
 # MODEL_SAVEFILE, VOCAB_SAVEFILE - file pathes                                                 #
+# PRETRAINED_EMBEDDING - file path                                                             #
 # RESTORE_STATE - if set and not an empty state, will load the previous state before training. #
 ################################################################################################
 
@@ -22,6 +23,7 @@ if (not 'MODEL_SAVEFILE' in os.environ or not 'VOCAB_SAVEFILE' in os.environ):
 savefile = os.environ['MODEL_SAVEFILE']
 vocabfile = os.environ['VOCAB_SAVEFILE']
 restore_state = bool(os.environ['RESTORE_STATE']) if 'RESTORE_STATE' in os.environ else False
+pretrained_embedding = os.environ['PRETRAINED_EMBEDDING'] if 'PRETRAINED_EMBEDDING' in os.environ else None
 
 # Read the dataset
 text = sys.stdin.read()
@@ -68,6 +70,8 @@ model.compile(optimizer='adam', loss=loss)
 
 if (restore_state):
     model.load_weights(savefile)
+elif pretrained_embedding is not None:
+    model.load_embedding_layer(pretrained_embedding, char_to_id.get_vocabulary())
 
 history = model.fit(
     dataset,

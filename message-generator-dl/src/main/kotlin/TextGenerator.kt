@@ -105,6 +105,9 @@ object TextGenerator {
 
 		preparePythonEnvironment()
 
+		val pretrainedEmbeddingFile = pythonDir.resolve("pretrained-embedding.txt")
+		copyResource("/message-generator-dl/char-embeddings.txt", pretrainedEmbeddingFile)
+
 		repeat(superEpochs) {
 			// Even if the user wants to start a new training process,
 			// The state still has to be restored during the consecutive trainings.
@@ -148,6 +151,7 @@ object TextGenerator {
 
 			val process = runPython("train.py") {
 				redirectInput(dataset)
+				environment()["PRETRAINED_EMBEDDING"] = pretrainedEmbeddingFile.absolutePath
 				if (shouldRestoreState) environment()["RESTORE_STATE"] = "1"
 			}
 			process.waitFor()

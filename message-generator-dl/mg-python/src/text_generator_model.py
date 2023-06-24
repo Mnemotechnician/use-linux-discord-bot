@@ -1,8 +1,13 @@
 import tensorflow as tf
+import numpy as np
 
 class TextGeneratorModel(tf.keras.Model):
     def __init__(self, batch_size, vocab_size, embedding_dim, rnn_units, dropout_rate=0.0):
         super().__init__(self)
+
+        self.vocab_size = vocab_size
+        self.embedding_dim = embedding_dim
+
         self.embedding = tf.keras.layers.Embedding(
             vocab_size,
             embedding_dim,
@@ -23,6 +28,40 @@ class TextGeneratorModel(tf.keras.Model):
         self.dense = tf.keras.layers.Dense(vocab_size)
 
         self.build(tf.TensorShape([batch_size, None]))
+
+    def load_embedding_layer(self, filepath: str, vocabulary: list):
+        """
+        Loads some pre-trained character embedding data.
+        """
+        embeddings_index = {}
+
+        with open(filepath) as file:
+            for line in file:
+                if len(line) < 100:
+                    continue
+                values = line.split()
+                char = values[0]
+                embeddings = np.asarray(values[1:], dtype='float32')
+                embeddings_index[char] = embeddings
+
+        embedding_dim = len(embeddings_index['a'])
+
+        if (embedding_dim != self.embedding_dim):
+            raise Exception("Embedding dim mismatch")
+
+        embedding_matrix = np.ndarray((len(vocabulary), embedding_dim))
+        original_matrix = self.embedding.embeddings.numpy()
+
+        i = 0
+        for char in vocabulary:
+            if (char in embeddings_index):
+                embedding_matrix[i] = embeddings_index[char]
+            else:
+                embedding_matrix[i] = original_matrix[i]
+            i += 1
+
+        self.embedding.embeddings = embedding_matrix
+        print(self.embedding.embeddings)
 
     @tf.function
     def call(self, inputs, states: tuple=None, return_states=False, training=False):
