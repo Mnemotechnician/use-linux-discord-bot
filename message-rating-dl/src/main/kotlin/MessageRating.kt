@@ -106,14 +106,14 @@ object MessageRating {
 			PrintWriter(outputStream().bufferedWriter()).use { out ->
 				learningDataset
 					.sortedBy { it.message.length }
-					.mapNotNull {
-						// Drop out 90% messages containing 0 as the target value
-						if (it.rating == 0f && Random.nextInt(0..10) != 0) {
-							null
-						} else {
-							it
-						}
-					}
+//					.mapNotNull {
+//						// Drop out 90% messages containing 0 as the target value
+//						if (it.rating == 0f && Random.nextInt(0..10) != 0) {
+//							null
+//						} else {
+//							it
+//						}
+//					}
 					.windowed(BATCH_SIZE, BATCH_SIZE, true) { batch ->
 						val padWidth = batch.maxOf { it.message.length + 10 }
 						batch.map {
