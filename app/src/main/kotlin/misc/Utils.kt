@@ -17,7 +17,7 @@ suspend fun TextChannel.canPost() = run {
 
 suspend fun TextChannel.isModifiableBy(user: Snowflake) = run {
 	val userPerms = getEffectivePermissions(user)
-	Permission.ManageChannels in userPerms || user == OWNER_ID // TODO: do I need this backdoor?
+	Permission.ManageChannels in userPerms || user == OWNER_ID
 }
 
 fun SlashCommand<*, *, *>.ownerOnlyCheck() {
