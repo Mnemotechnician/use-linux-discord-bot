@@ -17,12 +17,13 @@ repositories {
 
 dependencies {
 	implementation(project(":message-generator-dl"))
+	implementation(project(":message-rating-dl"))
 
 	implementation("com.kotlindiscord.kord.extensions", "kord-extensions", "1.5.6-SNAPSHOT")
 
 	implementation("dev.kord", "kord-core", "0.8.0")
 
-	implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-core", "1.6.4")
+	implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-core", "1.7.1")
 	implementation("org.jetbrains.kotlinx", "kotlinx-serialization-json", "1.3.2")
 
 	implementation("org.slf4j", "slf4j-simple", "2.0.7") // FUCK SLF4J!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
