@@ -5,11 +5,13 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="17" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/message-generator-dl" />
+            <option value="$PROJECT_DIR$/message-rating-dl" />
           </set>
         </option>
       </GradleProjectSettings>
