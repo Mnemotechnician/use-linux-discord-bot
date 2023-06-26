@@ -32,15 +32,22 @@ lines = tf.ragged.constant(list(map(
     lambda line: [char for char in list(line)],
     text.splitlines()
 )))
-# The first characters, a-z and A-Z, must come in pairs
-vocabulary = [MASK_TOKEN, OOV_TOKEN] + list("aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ")
-# The rest of the vocabulary is sorted and inherited from the input
-vocabulary.extend(
-    list(filter(
-        lambda char: not char in vocabulary, # Only retain non-letters
-        sorted(set(text)) # Individual characters from the text
-    ))
-)
+
+if restore_state:
+    # Load the existing vocabulary
+    with open(vocabfile, "r") as file:
+        vocabulary = json.load(file)
+else:
+    # Create a new vocabulary
+    # The first characters, a-z and A-Z, must come in pairs
+    vocabulary = [MASK_TOKEN, OOV_TOKEN] + list("aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ")
+    # The rest of the vocabulary is sorted and inherited from the input
+    vocabulary.extend(
+        list(filter(
+            lambda char: not char in vocabulary, # Only retain non-letters
+            sorted(set(text)) # Individual characters from the text
+        ))
+    )
 
 char_to_id = tf.keras.layers.StringLookup(vocabulary=vocabulary, mask_token=MASK_TOKEN, oov_token=OOV_TOKEN)
 id_to_char = tf.keras.layers.StringLookup(vocabulary=char_to_id.get_vocabulary(), invert=True, mask_token=MASK_TOKEN, oov_token=OOV_TOKEN)
