@@ -5,6 +5,9 @@ import java.io.File
 import java.io.PrintWriter
 import java.lang.IllegalStateException
 import java.lang.ProcessBuilder.Redirect.*
+import java.nio.file.Files
+import java.time.*
+import java.time.format.DateTimeFormatter
 import kotlin.random.Random
 
 /**
@@ -15,6 +18,8 @@ object TextGenerator {
 	val rootPipDir = File("${System.getProperty("user.home")}/use-linux/deepl/")
 	/** The root directory of this deep learning subproject. */
 	val workDir = rootPipDir.resolve("message-generator").also(File::mkdirs)
+	/** The directory in which checkpoints are stored. */
+	val checkpointDir = workDir.resolve("checkpoints").also(File::mkdir)
 	/** The directory in which this subproject stores temporary work files. */
 	val pythonDir = workDir.resolve("tmp").also(File::mkdirs)
 
@@ -34,7 +39,7 @@ object TextGenerator {
 
 	// TODO: synchronize with common.py
 	const val BATCH_SIZE = 40
-	const val MESSAGE_TERMINATOR = '$'
+	const val MESSAGE_TERMINATOR = '\u0002'
 	const val MASK_TOKEN = '\u0001'
 
 	private var filesCopied = false
@@ -112,6 +117,30 @@ object TextGenerator {
 			// Even if the user wants to start a new training process,
 			// The state still has to be restored during the consecutive trainings.
 			val shouldRestoreState = it != 0 || continueTraining
+
+			// Create a backup of the current state and link it back
+			val now = Clock.systemUTC().instant().atZone(ZoneId.systemDefault())
+			val timestamp = DateTimeFormatter.ISO_LOCAL_DATE_TIME.format(now)
+
+			// We need to move "checkpoint", "vocab.json" and all files starting with ${modelFileLocation}
+			val candidates = listOf(vocabFile, workDir.resolve("checkpoint")) +
+				workDir.listFiles()!!.filter {
+					it.isFile && it.name.startsWith(modelFileLocation.name)
+						&& !Files.isSymbolicLink(it.toPath())
+				}
+
+			if (candidates.isNotEmpty()) {
+				val backupPath = checkpointDir.resolve("ckpt-$timestamp").also(File::mkdirs)
+				println("Backing the current checkpoint to $backupPath")
+
+				candidates.forEach {
+					val target = backupPath.resolve(it.name)
+
+					Files.move(it.toPath(), target.toPath())
+					// Link back to make sure the python scripts can read it
+					Files.createSymbolicLink(it.toPath(), target.toPath())
+				}
+			}
 
 			// Copy the datasets to the temp directory as well, formatting them properly
 			println("Preparing the dataset...")
@@ -231,13 +260,11 @@ object TextGenerator {
 
 		fun start() {
 			if (started) return
-
 			process = runPython("generate.py") {
 				redirectInput(PIPE)
 				redirectOutput(PIPE)
 				redirectError(logFile)
 			}
-
 			started = true
 		}
 
