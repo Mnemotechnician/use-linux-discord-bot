@@ -103,7 +103,7 @@ object TextGenerator {
 		}
 	}
 
-	fun train(continueTraining: Boolean, superEpochs: Int = 1) {
+	fun train(continueTraining: Boolean, dataset: DatasetPref = DatasetPref.BOTH, superEpochs: Int = 1) {
 		require(!continueTraining || modelExists) {
 			"Cannot continue the training: no saved state detected."
 		}
@@ -145,9 +145,14 @@ object TextGenerator {
 			// Copy the datasets to the temp directory as well, formatting them properly
 			println("Preparing the dataset...")
 
-			val adverts =
-				advertisementPhraseLines.map { startingPhrases.random() + it.trim() + MESSAGE_TERMINATOR }
+			val adverts = advertisementPhraseLines
+				.takeIf { dataset.main }
+				.orEmpty()
+				.map { startingPhrases.random() + it.trim() + MESSAGE_TERMINATOR }
+
 			val learningPhrases = learningPhraseLines
+				.takeIf { dataset.learning }
+				.orEmpty()
 				.map {
 					// A third of the lines are postfixed with a message terminator
 					// The rest are postfixed with a space.
@@ -321,5 +326,11 @@ object TextGenerator {
 		override fun close() {
 			if (started) process.destroy()
 		}
+	}
+
+	enum class DatasetPref(val main: Boolean, val learning: Boolean) {
+		BOTH(true, true),
+		MAIN_ONLY(true, false),
+		LEARNING_ONLY(false, true)
 	}
 }

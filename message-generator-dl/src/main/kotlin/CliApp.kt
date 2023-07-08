@@ -1,5 +1,8 @@
 package com.github.mnemotechnician.messagegen
 
+import com.github.mnemotechnician.messagegen.TextGenerator.DatasetPref
+import com.github.mnemotechnician.messagegen.TextGenerator.DatasetPref.*
+
 fun main() {
 	println("""
 		Type:
@@ -16,7 +19,12 @@ fun main() {
 			println("Specify the number of superepochs - training repeats. Default is 1.")
 			val superEpochs = prompt { it.toIntOrNull() != null }.toInt()
 
-			TextGenerator.train(continueTraining, superEpochs)
+			val datasets = mapOf("main" to MAIN_ONLY, "learning" to LEARNING_ONLY, "both" to BOTH)
+
+			println("Choose which dataset to use (main, learning, both).")
+			val dataset = prompt { it.lowercase() in datasets }.let { datasets[it.lowercase()]!! }
+
+			TextGenerator.train(continueTraining, dataset, superEpochs)
 		}
 		'g' -> {
 			val process = TextGenerator.load()
