@@ -9,10 +9,10 @@
 ################################################################################################
 
 import json
+import math
 import os
 import sys
 
-import tensorflow
 import tensorflow as tf
 
 from common import *
@@ -80,7 +80,7 @@ model.summary()
 
 # Training the model
 loss = tf.losses.MeanSquaredError()
-optimizer = tf.optimizers.Adam(learning_rate=0.0003)
+optimizer = tf.optimizers.Adam(learning_rate=0.0001)
 model.compile(optimizer=optimizer, loss=loss)
 
 if (restore_state):
@@ -91,6 +91,9 @@ history = model.fit(
     epochs=epochs,
     callbacks=[
         # tf.keras.callbacks.EarlyStopping(monitor='loss', patience=3, verbose=1, min_delta=0.001)
+        tf.keras.callbacks.LearningRateScheduler(lambda epoch, lr:
+            0.0001 * max(1.0, 30 ** (1 / math.ceil((epoch + 1) / 10))),
+        verbose=1)
     ],
     use_multiprocessing=True
 )

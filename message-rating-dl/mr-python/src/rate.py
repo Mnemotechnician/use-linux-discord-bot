@@ -56,6 +56,6 @@ while True:
 
     predictions = rater.rate_text(tf.constant([text]))
 
-    print(predictions[0].numpy())
+    print(predictions.numpy())
     print(f"{time.time() - start_time} s")
     print("   ")
