@@ -10,6 +10,12 @@ https://discord.com/api/oauth2/authorize?client_id=1102611086756290560&permissio
 This bot uses a recurrent neural network model which generates text character-by-character.
 For obvious reasons, you must train the said model before it can be used (see below).
 
+## Preparation
+- Clone the repository with `git clone --depth 1 https://github.com/mnemotechnician/use-linux-discord-bot use-linux`
+    and navigate to the directory.
+- Run `pipenv lock` to refresh the dependencies and also ensure you have pipenv in installed and in you $PATH
+    as the generator depends on it.
+
 ## Training the model
 The module `message-generator-dl` includes a CLI tool that allows you to train the model on your machine.
 It uses two datasets:
