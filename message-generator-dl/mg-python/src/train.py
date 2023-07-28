@@ -58,7 +58,7 @@ dataset = (
     tf.data.Dataset.from_tensor_slices(all_ids)
         .map(lambda x: (x[:-1], x[1:]))
         .batch(BATCH_SIZE)
-        .shuffle(1000, reshuffle_each_iteration=False)
+        .shuffle(1000, reshuffle_each_iteration=True)
         .prefetch(tf.data.experimental.AUTOTUNE))
 
 model = TextGeneratorModel(
