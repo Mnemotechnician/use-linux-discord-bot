@@ -93,9 +93,12 @@ object TextGenerator {
 		}
 
 		try {
+			println("Preparing the pipenv environment (if this is the first run, be patient. It may take a long time)")
+
 			ProcessBuilder("pipenv", "sync")
 				.directory(rootPipDir)
 				.redirectOutput(INHERIT)
+				.redirectError(INHERIT)
 				.start()
 				.waitFor()
 		} catch (e: Exception) {
