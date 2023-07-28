@@ -5,6 +5,7 @@ import dev.kord.common.annotation.*
 import dev.kord.common.entity.Snowflake
 import dev.kord.core.entity.GuildEmoji
 import dev.kord.core.event.message.MessageCreateEvent
+import dev.kord.gateway.*
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 
@@ -22,7 +23,10 @@ class MessageRatingExtension : ULBotExtension() {
 	).map { Snowflake(it) }
 	val emojiCache = mutableMapOf<ULong, GuildEmoji>()
 
+	@OptIn(PrivilegedIntent::class)
 	override suspend fun setup() {
+		intents += Intent.MessageContent
+
 		kord.launch {
 			withContext(Dispatchers.IO) {
 				messageRatingProcess = MessageRating.load()
@@ -32,7 +36,7 @@ class MessageRatingExtension : ULBotExtension() {
 
 		kord.events
 			.filterIsInstance<MessageCreateEvent>()
-			.filterNot { it.message.author?.isBot ?: false }
+			.filterNot { it.message.author?.isBot ?: true }
 			.filter {
 				// Currently only enabled in a selected few guilds
 				it.guildId in acceptedGuilds
@@ -42,6 +46,8 @@ class MessageRatingExtension : ULBotExtension() {
 				val score = withContext(Dispatchers.IO) {
 					messageRatingProcess.rate(it.message.content).first
 				}
+
+				log("Message ${it.message.id} rated with ${(score * 100).toInt()}%")
 
 				val emoji = emojiForScore(score) ?: return@onEach
 				try {
@@ -55,12 +61,12 @@ class MessageRatingExtension : ULBotExtension() {
 
 	private suspend fun emojiForScore(score: Float) = when {
 		// neutral
-		score in -0.09..0.09 -> null
+		score in -0.11..0.11 -> null
 		// good
-		score in -0.25..-0.09 -> guildEmoji(1122309286605885451U)
+		score in -0.25..-0.11 -> guildEmoji(1122309286605885451U)
 		score in -1.0..-0.25 -> guildEmoji(1122309339177287832U)
 		// bad
-		score in 0.09..0.2 -> guildEmoji(1122309372391985213U)
+		score in 0.11..0.2 -> guildEmoji(1122309372391985213U)
 		score in 0.2..0.5 -> guildEmoji(1122309555100078193U)
 		score in 0.5..1.0 -> guildEmoji(1122309648595296307U)
 

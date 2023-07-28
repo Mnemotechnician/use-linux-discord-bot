@@ -159,7 +159,7 @@ class UseLinuxExtension : ULBotExtension() {
 					if (phrase != null) {
 						textGeneratorProcess.generate(phrase + " ")
 					} else {
-						textGeneratorProcess.generate()
+						textGeneratorProcess.generate(maxRetries = 5)
 					}
 				}
 

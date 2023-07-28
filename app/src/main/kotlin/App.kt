@@ -12,7 +12,7 @@ suspend fun main() {
 			add(::UseLinuxExtension)
 			add(::MemeRepostExtension)
 			add(::SuggestionMailExtension)
-			add(::MessageRatingExtension)
+			// add(::MessageRatingExtension)
 		}
 	}
 
