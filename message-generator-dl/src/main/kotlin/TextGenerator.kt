@@ -123,10 +123,10 @@ object TextGenerator {
 			val timestamp = DateTimeFormatter.ISO_LOCAL_DATE_TIME.format(now)
 
 			// We need to move "checkpoint", "vocab.json" and all files starting with ${modelFileLocation}
-			val candidates = listOf(vocabFile, workDir.resolve("checkpoint")) +
-				workDir.listFiles()!!.filter {
+			val candidates = (listOf(vocabFile, workDir.resolve("checkpoint")) + workDir.listFiles()!!)
+				.filter {
 					it.isFile && it.name.startsWith(modelFileLocation.name)
-						&& !Files.isSymbolicLink(it.toPath())
+						&& it.exists() && !Files.isSymbolicLink(it.toPath())
 				}
 
 			if (candidates.isNotEmpty()) {

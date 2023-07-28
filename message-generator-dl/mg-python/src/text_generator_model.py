@@ -14,13 +14,13 @@ class TextGeneratorModel(tf.keras.Model):
             mask_zero=True
         )
         self.rnn1 = tf.keras.layers.LSTM(
-            rnn_units // 2,
+            rnn_units,
             dropout=dropout_rate,
             return_sequences=True,
             return_state=True
         )
         self.rnn2 = tf.keras.layers.LSTM(
-            rnn_units,
+            rnn_units // 5,
             dropout=dropout_rate,
             return_sequences=True,
             return_state=True
@@ -63,7 +63,7 @@ class TextGeneratorModel(tf.keras.Model):
         self.embedding.embeddings = embedding_matrix
         print(self.embedding.embeddings)
 
-    @tf.function
+    @tf.function(reduce_retracing=True)
     def call(self, inputs, states: tuple=None, return_states=False, training=False):
         x = self.embedding(inputs, training = training)
 
