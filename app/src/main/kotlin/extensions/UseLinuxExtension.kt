@@ -32,12 +32,12 @@ class UseLinuxExtension : ULBotExtension() {
 	val generatorProcessLoaded get() = ::textGeneratorProcess.isInitialized
 
 	/** Maps channels to the moments /generate will be usable in them. */
-	val channelTimeouts = HashMap<Snowflake, Long>()
+	val channelCooldowns = HashMap<Snowflake, Long>()
 	/** Maps users to the moments when they will be able to use /generate again. */
-	val userTimeouts = HashMap<Snowflake, Long>()
+	val userCooldowns = HashMap<Snowflake, Long>()
 
-	val timeoutUserSeconds = 10
-	val timeoutChannelSeconds = 4
+	val cooldownUserSeconds = 5
+	val cooldownChannelSeconds = 4
 
 	init {
 		saveFile.parentFile.mkdirs()
@@ -133,15 +133,15 @@ class UseLinuxExtension : ULBotExtension() {
 				if (!generatorProcessLoaded) fail("The generator process has not started yet!")
 			}
 			check {
-				val userTimeout = userTimeouts[event.interaction.user.id] ?: 0L
+				val userTimeout = userCooldowns[event.interaction.user.id] ?: 0L
 				if (System.currentTimeMillis() < userTimeout) {
-					fail("You must wait $timeoutUserSeconds seconds before using this command again.")
+					fail("You must wait $cooldownUserSeconds seconds before using this command again.")
 				}
 			}
 			check {
-				val channelTimeout = channelTimeouts[event.interaction.channelId] ?: 0L
+				val channelTimeout = channelCooldowns[event.interaction.channelId] ?: 0L
 				if (System.currentTimeMillis() < channelTimeout) {
-					fail("You must wait $timeoutChannelSeconds seconds before using this command again in this channel.")
+					fail("You must wait $cooldownChannelSeconds seconds before using this command again in this channel.")
 				}
 			}
 			check {
@@ -151,8 +151,8 @@ class UseLinuxExtension : ULBotExtension() {
 			}
 
 			action {
-				userTimeouts[event.interaction.user.id] = System.currentTimeMillis() + timeoutUserSeconds * 1000
-				channelTimeouts[event.interaction.channelId] = System.currentTimeMillis() + timeoutChannelSeconds * 1000
+				userCooldowns[event.interaction.user.id] = System.currentTimeMillis() + cooldownUserSeconds * 1000
+				channelCooldowns[event.interaction.channelId] = System.currentTimeMillis() + cooldownChannelSeconds * 1000
 
 				val phrase = arguments.startingPhrase.trim().takeIf(String::isNotEmpty)
 				val (text, time) = withContext(Dispatchers.IO) {
@@ -178,7 +178,7 @@ class UseLinuxExtension : ULBotExtension() {
 
 		kord.launch {
 			withContext(Dispatchers.IO) {
-				textGeneratorProcess = TextGenerator.load()
+				textGeneratorProcess = TextGenerator.load(TextGenerator.getKnownCheckpoints().first())
 				log("Text generator loaded, preparing to begin the broadcast.")
 			}
 
@@ -276,7 +276,7 @@ class UseLinuxExtension : ULBotExtension() {
 	inner class GenerateArgs : Arguments() {
 		val startingPhrase by coalescingDefaultingString {
 			name = "starting-phrase"
-			description = "The starting phrase. Chooses a random one if not specified."
+			description = "The starting phrase. Can be empty."
 			defaultValue = ""
 		}
 	}
