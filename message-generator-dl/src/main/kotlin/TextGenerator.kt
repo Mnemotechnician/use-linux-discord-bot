@@ -5,9 +5,6 @@ import java.io.File
 import java.io.PrintWriter
 import java.lang.IllegalStateException
 import java.lang.ProcessBuilder.Redirect.*
-import java.nio.file.Files
-import java.time.*
-import java.time.format.DateTimeFormatter
 import kotlin.random.Random
 
 /**
@@ -19,32 +16,18 @@ object TextGenerator {
 	/** The root directory of this deep learning subproject. */
 	val workDir = rootPipDir.resolve("message-generator").also(File::mkdirs)
 	/** The directory in which checkpoints are stored. */
-	val checkpointDir = workDir.resolve("checkpoints").also(File::mkdir)
+	val checkpointDir = workDir
 	/** The directory in which this subproject stores temporary work files. */
 	val pythonDir = workDir.resolve("tmp").also(File::mkdirs)
 
-	/** Not the actual model file; may not exist even after training. See [modelFileIndex]. */
-	val modelFileLocation = workDir.resolve("model.ckpt")
-	val modelFileIndex = modelFileLocation.resolveSibling("model.ckpt.index")
-	val vocabFile = workDir.resolve("vocab.json")
-
-	val startingPhrases = listOf(
-		"Advert: ",
-		"Linux advertisement: ",
-		"Linux news: ",
-		"Reasons to use Linux: ",
-		"Linux is good, because: ",
-		"Here's why you should use Linux: "
-	)
-
 	// TODO: synchronize with common.py
 	const val BATCH_SIZE = 40
+
+	const val MESSAGE_START = "\"u0010"
 	const val MESSAGE_TERMINATOR = '\u0002'
 	const val MASK_TOKEN = '\u0001'
 
 	private var filesCopied = false
-
-	val modelExists: Boolean get() = modelFileIndex.exists() && vocabFile.exists()
 
 	/*
 	 * These phrases are used to teach the network to write coherent sentences.
@@ -106,9 +89,14 @@ object TextGenerator {
 		}
 	}
 
-	fun train(continueTraining: Boolean, dataset: DatasetPref = DatasetPref.BOTH, superEpochs: Int = 1) {
-		require(!continueTraining || modelExists) {
-			"Cannot continue the training: no saved state detected."
+	/**
+	 * Trains the underlying neural network.
+	 *
+	 * If [checkpoint] is not null, it will restore the state from the checkpoint before continuing training.
+	 */
+	fun train(checkpoint: File?, pref: DatasetPref = DatasetPref.BOTH, epochs: Int = 10) {
+		require(checkpoint == null || (checkpoint.exists() && checkpoint.isDirectory)) {
+			"The provided checkpoint does not exist."
 		}
 
 		preparePythonEnvironment()
@@ -116,86 +104,61 @@ object TextGenerator {
 		val pretrainedEmbeddingFile = pythonDir.resolve("pretrained-embedding.txt")
 		copyResource("/message-generator-dl/char-embeddings.txt", pretrainedEmbeddingFile)
 
-		repeat(superEpochs) {
-			// Even if the user wants to start a new training process,
-			// The state still has to be restored during the consecutive trainings.
-			val shouldRestoreState = it != 0 || continueTraining
+		// Copy the datasets to the temp directory as well, formatting them properly
+		println("Preparing the dataset...")
 
-			// Create a backup of the current state and link it back
-			val now = Clock.systemUTC().instant().atZone(ZoneId.systemDefault())
-			val timestamp = DateTimeFormatter.ISO_LOCAL_DATE_TIME.format(now)
+		val adverts = advertisementPhraseLines
+			.takeIf { pref.main }
+			.orEmpty()
+			.map { MESSAGE_START + it.trim() + MESSAGE_TERMINATOR }
 
-			// We need to move "checkpoint", "vocab.json" and all files starting with ${modelFileLocation}
-			val candidates = (listOf(vocabFile, workDir.resolve("checkpoint")) + workDir.listFiles()!!)
-				.filter {
-					it.isFile && it.name.startsWith(modelFileLocation.name)
-						&& it.exists() && !Files.isSymbolicLink(it.toPath())
-				}
-
-			if (candidates.isNotEmpty()) {
-				val backupPath = checkpointDir.resolve("ckpt-$timestamp").also(File::mkdirs)
-				println("Backing the current checkpoint to $backupPath")
-
-				candidates.forEach {
-					val target = backupPath.resolve(it.name)
-
-					Files.move(it.toPath(), target.toPath())
-					// Link back to make sure the python scripts can read it
-					Files.createSymbolicLink(it.toPath(), target.toPath())
+		val learningPhrases = learningPhraseLines
+			.takeIf { pref.learning }
+			.orEmpty()
+			.map {
+				// A third of the lines are postfixed with a message terminator
+				// The rest are postfixed with a space.
+				if (Random.nextInt(0, 3) == 0) {
+					it + MESSAGE_TERMINATOR
+				} else {
+					"$it "
 				}
 			}
 
-			// Copy the datasets to the temp directory as well, formatting them properly
-			println("Preparing the dataset...")
-
-			val adverts = advertisementPhraseLines
-				.takeIf { dataset.main }
-				.orEmpty()
-				.map { startingPhrases.random() + it.trim() + MESSAGE_TERMINATOR }
-
-			val learningPhrases = learningPhraseLines
-				.takeIf { dataset.learning }
-				.orEmpty()
-				.map {
-					// A third of the lines are postfixed with a message terminator
-					// The rest are postfixed with a space.
-					if (Random.nextInt(0, 3) == 0) {
-						it + MESSAGE_TERMINATOR
-					} else {
-						"$it "
-					}
-				}
-
-			val dataset = pythonDir.resolve("train.txt").apply {
-				PrintWriter(outputStream().bufferedWriter()).use { out ->
-					(learningPhrases + adverts)
-						.filter { it.isNotBlank() }
-						.sortedBy { it.length } // To optimize the lengths
-						.windowed(BATCH_SIZE, BATCH_SIZE, true)
-						.flatMap {
-							// Within each batch, all the lines must have an equal length
-							val padLength = it.maxOf { it.codePointCount(0, it.length) }
-							it.map { line ->
-								// Manual padding because String.padX counts unicode code points
-								line + String(CharArray(
-									padLength - line.codePointCount(0, line.length)
-								) { MASK_TOKEN })
-							}
+		val dataset = pythonDir.resolve("train.txt").apply {
+			PrintWriter(outputStream().bufferedWriter()).use { out ->
+				(learningPhrases + adverts)
+					.filter { it.isNotBlank() }
+					.sortedBy { it.length } // To optimize the lengths
+					.windowed(BATCH_SIZE, BATCH_SIZE, true)
+					.flatMap {
+						// Within each batch, all the lines must have an equal length
+						val padLength = it.maxOf { it.codePointCount(0, it.length) }
+						it.map { line ->
+							// Manual padding because String.padX counts unicode code points
+							line + String(CharArray(
+								padLength - line.codePointCount(0, line.length)
+							) { MASK_TOKEN })
 						}
-						.forEach(out::println)
-				}
+					}
+					.forEach(out::println)
 			}
+		}
 
-			val process = runPython("train.py") {
-				redirectInput(dataset)
-				environment()["PRETRAINED_EMBEDDING"] = pretrainedEmbeddingFile.absolutePath
-				if (shouldRestoreState) environment()["RESTORE_STATE"] = "1"
+		val process = runPython("train.py") {
+			redirectInput(dataset)
+			environment()["CHECKPOINT_DIR"] = checkpointDir.absolutePath
+			environment()["PRETRAINED_EMBEDDING"] = pretrainedEmbeddingFile.absolutePath
+			environment()["EPOCHS"] = epochs.toString()
+			if (checkpoint != null) {
+				environment()["RESTORE_STATE"] = "1"
+				environment()["CHECKPOINT"] = checkpoint.absolutePath
 			}
-			process.waitFor()
+		}
+		process.waitFor()
 
-			require(process.exitValue() == 0) {
-				"Trainer process terminated with non-zero exit code: ${process.exitValue()}"
-			}
+		require(process.exitValue() == 0) {
+			"Trainer process terminated with non-zero exit code: ${process.exitValue()}"
 		}
 	}
 
@@ -206,15 +169,23 @@ object TextGenerator {
 	 *
 	 * This allocates a system resource.
 	 */
-	fun load() = run {
+	fun load(checkpoint: File) = run {
 		preparePythonEnvironment()
 
-		if (!modelExists) {
-			error("Model files do not exist!")
-		}
-
-		GeneratorProcess().also { it.start() }
+		GeneratorProcess(checkpoint).also { it.start() }
 	}
+
+	/**
+	 * Returns a list of valid known checkpoints for use in [load] and [train].
+	 *
+	 * The list is sorted, with the newest checkpoints being first.
+	 */
+	fun getKnownCheckpoints() = checkpointDir.listFiles().orEmpty()
+		.filter(File::isDirectory)
+		.filter { it.name.startsWith("ckpt_") }
+		.filter { it.resolve("vocab.json").exists() }
+		.filter { it.resolve("checkpoint").exists() }
+		.sortedDescending()
 
 	/**
 	 * Executes a python file in the current pipenv environment, providing the MODEL_SAVEFILE and VOCAB_SAVEFILE
@@ -232,10 +203,6 @@ object TextGenerator {
 		.redirectError(if (inheritErrorStream) INHERIT else PIPE)
 		.redirectOutput(INHERIT)
 		.redirectInput(INHERIT)
-		.apply {
-			environment()["MODEL_SAVEFILE"] = modelFileLocation.absolutePath
-			environment()["VOCAB_SAVEFILE"] = vocabFile.absolutePath
-		}
 		.apply(builder)
 		.start()
 
@@ -257,7 +224,7 @@ object TextGenerator {
 	fun getResource(name: String) =
 		javaClass.getResourceAsStream("/message-generator-dl/$name")
 
-	class GeneratorProcess : Closeable {
+	class GeneratorProcess(val checkpoint: File) : Closeable {
 		var started = false
 			private set
 		private val logFile = File.createTempFile("generator-process", "log")
@@ -272,14 +239,13 @@ object TextGenerator {
 				redirectInput(PIPE)
 				redirectOutput(PIPE)
 				redirectError(logFile)
+				environment()["CHECKPOINT"] = checkpoint.absolutePath
 			}
 			started = true
 		}
 
 		/**
 		 * Generates a pair of (message, time in seconds).
-		 *
-		 * If [startingPhrase] is not supplied, a random one will be chosen instead.
 		 *
 		 * If the network generates a phrase that's already in the dataset,
 		 * it may be regenerated. This can repeat up to [maxRetries] times, after which
@@ -288,7 +254,7 @@ object TextGenerator {
 		 * [start] must be called first.
 		 */
 		fun generate(
-			startingPhrase: String = startingPhrases.random(),
+			startingPhrase: String = "",
 			maxRetries: Int = 0
 		): Pair<String, Double> {
 			try {

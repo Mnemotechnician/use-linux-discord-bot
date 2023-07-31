@@ -2,12 +2,13 @@
 # Run this script to train the model.                                                          #
 # This script is used under the hood by TextGenerator.train()                                  #
 ################################################################################################
-# Accept env variables:                                                                        #
-# MODEL_SAVEFILE, VOCAB_SAVEFILE - file pathes                                                 #
+# Accepted env variables:                                                                      #
+# CHECKPOINT_DIR, CHECKPOINT - file pathes                                                     #
 # PRETRAINED_EMBEDDING - file path                                                             #
 # RESTORE_STATE - if set and not an empty state, will load the previous state before training. #
+# EPOCHS - integer                                                                             #
 ################################################################################################
-
+import datetime
 import json
 import os
 import sys
@@ -17,11 +18,11 @@ import tensorflow as tf
 from common import *
 from text_generator_model import TextGeneratorModel
 
-if (not 'MODEL_SAVEFILE' in os.environ or not 'VOCAB_SAVEFILE' in os.environ):
-    print("MODEL_SAVEFILE or VOCAB_SAVEFILE environment variable are not set")
+if ('CHECKPOINT_DIR' not in os.environ or 'EPOCHS' not in os.environ):
+    print("CHECKPOINT_DIR or EPOCHS environment variables are not set")
     exit(1)
-savefile = os.environ['MODEL_SAVEFILE']
-vocabfile = os.environ['VOCAB_SAVEFILE']
+epochs = int(os.environ['EPOCHS'])
+checkpoint_dir = os.environ['CHECKPOINT_DIR']
 restore_state = bool(os.environ['RESTORE_STATE']) if 'RESTORE_STATE' in os.environ else False
 pretrained_embedding = os.environ['PRETRAINED_EMBEDDING'] if 'PRETRAINED_EMBEDDING' in os.environ else None
 
@@ -34,17 +35,19 @@ lines = tf.ragged.constant(list(map(
 )))
 
 if restore_state:
+    loaded_checkpoint_dir = os.environ['CHECKPOINT']
+
     # Load the existing vocabulary
-    with open(vocabfile, "r") as file:
+    with open(os.path.join(loaded_checkpoint_dir, "vocab.json"), "r") as file:
         vocabulary = json.load(file)
 else:
     # Create a new vocabulary
-    # The first characters, a-z and A-Z, must come in pairs
+    # The first characters, a-z and A-Z, come in pairs
     vocabulary = [MASK_TOKEN, OOV_TOKEN] + list("aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ")
     # The rest of the vocabulary is sorted and inherited from the input
     vocabulary.extend(
         list(filter(
-            lambda char: not char in vocabulary, # Only retain non-letters
+            lambda char: char not in vocabulary, # Only retain non-letters
             sorted(set(text)) # Individual characters from the text
         ))
     )
@@ -73,24 +76,42 @@ model.summary()
 
 # Training the model
 loss = tf.losses.SparseCategoricalCrossentropy(from_logits=True)
-model.compile(optimizer='adam', loss=loss)
+optimizer = tf.optimizers.Adam(learning_rate=LEARNING_RATE)
+model.compile(optimizer=optimizer, loss=loss)
 
 if (restore_state):
-    model.load_weights(savefile)
+    # noinspection PyUnboundLocalVariable
+    model.load_weights(os.path.join(loaded_checkpoint_dir, "ckpt"))
 elif pretrained_embedding is not None:
     model.load_embedding_layer(pretrained_embedding, char_to_id.get_vocabulary())
 
+last_epoch = 0
+def create_checkpoint_if_necessary(epoch=-1, logs=None):
+    last_epoch = epoch
+    if ((epoch + 1) % 5 == 0):
+        timestamp = str(datetime.datetime.now()).split(".")[0].replace(":", ".")
+
+        checkpoint = os.path.join(checkpoint_dir, f"ckpt_{timestamp}")
+        if (logs is not None):
+            checkpoint += " loss %.3f" % logs['loss']
+        os.mkdir(checkpoint)
+
+        print(f"\nBacking the current checkpoint up to {checkpoint}")
+        model.save_weights(os.path.join(checkpoint, "ckpt"))
+
+        with open(os.path.join(checkpoint, "vocab.json"), "w") as file:
+            json.dump(char_to_id.get_vocabulary(), file)
+
 history = model.fit(
     dataset,
-    epochs=EPOCHS,
+    epochs=epochs,
     callbacks=[
-        tf.keras.callbacks.EarlyStopping(monitor='loss', patience=3, verbose=1, min_delta=0.01)
+        tf.keras.callbacks.EarlyStopping(monitor='loss', patience=3, verbose=1, min_delta=0.01),
+        tf.keras.callbacks.LambdaCallback(on_epoch_end=create_checkpoint_if_necessary)
     ],
     use_multiprocessing=True
 )
 
-# Save the model and vocabulary
-model.save_weights(savefile)
-
-with open(vocabfile, "w") as file:
-    json.dump(char_to_id.get_vocabulary(), file)
+# The final checkpoint
+if (last_epoch % 5 != 0):
+    create_checkpoint_if_necessary()

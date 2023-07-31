@@ -66,7 +66,7 @@ class TextGenerator(tf.keras.Model):
         """
         start = time.time()
         states = None
-        next_char: tf.Tensor = tf.constant([starting_phrase], dtype=tf.string)
+        next_char: tf.Tensor = tf.constant([MESSAGE_START + starting_phrase], dtype=tf.string)
         result = ""
         length = 0
 

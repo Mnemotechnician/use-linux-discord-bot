@@ -3,7 +3,7 @@
 # This script is used under the hood by TextGenerator.GeneratorProcess #
 ########################################################################
 # Accept env variables:                                                #
-# MODEL_SAVEFILE, VOCAB_SAVEFILE - file pathes                         #
+# CHECKPOINT - file path                                               #
 ########################################################################
 
 import json
@@ -16,14 +16,13 @@ from text_generator import TextGenerator
 from text_generator_model import TextGeneratorModel
 from common import *
 
-if (not 'MODEL_SAVEFILE' in os.environ or not 'VOCAB_SAVEFILE' in os.environ):
-    print("MODEL_SAVEFILE or VOCAB_SAVEFILE environment variable are not set")
+if ("CHECKPOINT" not in os.environ):
+    print("CHECKPOINT environment variable is not set")
     exit(1)
-savefile = os.environ['MODEL_SAVEFILE']
-vocabfile = os.environ['VOCAB_SAVEFILE']
+checkpoint = os.environ["CHECKPOINT"]
 
 # Load the vocabulary
-with open(vocabfile, "r") as file:
+with open(os.path.join(checkpoint, "vocab.json"), "r") as file:
     vocabulary = json.load(file)
 
 char_to_id = tf.keras.layers.StringLookup(vocabulary=vocabulary, mask_token=MASK_TOKEN, oov_token=OOV_TOKEN)
@@ -36,7 +35,7 @@ model = TextGeneratorModel(
     rnn_units=RNN_UNITS
 )
 # Load the model
-model.load_weights(savefile)
+model.load_weights(os.path.join(checkpoint, "ckpt"))
 
 generator = TextGenerator(model, id_to_char, char_to_id, 1.0)
 

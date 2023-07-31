@@ -63,7 +63,7 @@ class TextGeneratorModel(tf.keras.Model):
         self.embedding.embeddings = embedding_matrix
         print(self.embedding.embeddings)
 
-    @tf.function(reduce_retracing=True)
+    @tf.function
     def call(self, inputs, states: tuple=None, return_states=False, training=False):
         x = self.embedding(inputs, training = training)
 
