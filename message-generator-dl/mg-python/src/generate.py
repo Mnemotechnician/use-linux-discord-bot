@@ -45,6 +45,6 @@ while True:
     phrase = input()
 
     text, time = generator.generate_message(phrase)
-    print(text)
+    print(phrase + text)
     print(f"{time} s")
     print("")

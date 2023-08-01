@@ -168,9 +168,6 @@ class UseLinuxExtension : ULBotExtension() {
 				respond {
 					embed {
 						description = text
-						if (phrase != null) {
-							description = "$phrase $description"
-						}
 					}
 				}
 			}

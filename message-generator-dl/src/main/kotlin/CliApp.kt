@@ -1,10 +1,8 @@
 package com.github.mnemotechnician.messagegen
 
-import com.github.mnemotechnician.messagegen.TextGenerator.DatasetPref
 import com.github.mnemotechnician.messagegen.TextGenerator.DatasetPref.*
-import org.w3c.dom.Text
-import java.awt.SystemColor.text
-import java.io.File
+import java.io.*
+import java.nio.charset.Charset
 import kotlin.math.log10
 
 fun main() {
@@ -37,23 +35,54 @@ fun main() {
 		}
 		'g' -> {
 			val process = TextGenerator.load(promptForCheckpoint())
+			val textSplitRegex = "(.{1,100}(?!\\w)|.+)".toRegex()
+			val blockChar = "+"
 
 			println("Type a starting phrase (optional). Press enter to generate.")
 			println()
 
-			var count = 0
-			var phrase = ""
 			while (true) {
-				if (--count <= 0) {
-					phrase = prompt { true }
-					count = 5
+				val phrase = prompt("Phrase >") { true }
+
+				val outputs = (1..5)
+					.map { process.generate(phrase) }
+					.map {
+						val lines = textSplitRegex.findAll(it.first).map { it.value.trim() }.toList()
+						val time = "%.3f sec.".format(it.second)
+						lines to time
+					}
+					.filter { it.first.isNotEmpty() }
+
+				// Output as a table
+				val textColLength = outputs.maxOf {
+					it.first.maxOf { it.length }
+				}.coerceAtLeast(10)
+
+				val timeColLength = outputs.maxOf { it.second.length }.coerceAtLeast(10)
+				val totalLength = 2 + textColLength + 3 + timeColLength + 2
+				val dividerLine = blockChar.toString().repeat(totalLength)
+
+				val outputsWithHeader = listOf(listOf("Text".padStart(textColLength / 2)) to "Time taken".padStart(timeColLength / 2)) +
+					outputs
+
+				println(dividerLine)
+				outputsWithHeader.forEach {
+					print("$blockChar ")
+					print(it.first.first().padEnd(textColLength))
+					print(" $blockChar ")
+					print(it.second.padEnd(timeColLength))
+					println(" $blockChar")
+
+					if (it.first.size > 1) it.first.drop(1).forEach { text ->
+						print("$blockChar ")
+						print(text.padEnd(textColLength))
+						print(" $blockChar ")
+						print(" ".repeat(timeColLength))
+						println(" $blockChar")
+					}
+
+					println(dividerLine)
 				}
-
-				val (text, time) = process.generate(phrase)
-
-				println("Text: $text")
-				println("Took $time seconds")
-				println()
 			}
 		}
 		else -> {
