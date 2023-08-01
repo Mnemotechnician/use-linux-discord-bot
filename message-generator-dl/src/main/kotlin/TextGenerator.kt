@@ -23,7 +23,7 @@ object TextGenerator {
 	// TODO: synchronize with common.py
 	const val BATCH_SIZE = 40
 
-	const val MESSAGE_START = "\"u0010"
+	const val MESSAGE_START = '\u0010'
 	const val MESSAGE_TERMINATOR = '\u0002'
 	const val MASK_TOKEN = '\u0001'
 

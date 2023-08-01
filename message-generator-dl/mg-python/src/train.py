@@ -106,12 +106,12 @@ history = model.fit(
     dataset,
     epochs=epochs,
     callbacks=[
-        tf.keras.callbacks.EarlyStopping(monitor='loss', patience=3, verbose=1, min_delta=0.01),
+        tf.keras.callbacks.EarlyStopping(monitor='loss', patience=3, verbose=1, min_delta=0.007),
         tf.keras.callbacks.LambdaCallback(on_epoch_end=create_checkpoint_if_necessary)
     ],
     use_multiprocessing=True
 )
 
 # The final checkpoint
-if (last_epoch % 5 != 0):
+if ((last_epoch + 1) % 5 != 0):
     create_checkpoint_if_necessary()
