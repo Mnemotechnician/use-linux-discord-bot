@@ -59,16 +59,24 @@ class TextGenerator(tf.keras.Model):
         # Return the characters and model state.
         return predicted_chars, states
 
-    def generate_message(self, starting_phrase: str) -> (str, float):
+    def generate_message(self, starting_phrase: str, state_random_ranges: list[list[float]]=None) -> (str, float):
         """
         Generates a message.
+        :param state_random_ranges: a nested list with the shape [[1_min, 1_max], [2_min, 2_max]] containing random ranges used to init the hidden states, or none.
         :return: A tuple of the generated message and the time in seconds it took to generate it.
         """
         start = time.time()
-        states = self.model.create_initial_state(1)
         next_char: tf.Tensor = tf.constant([MESSAGE_START + starting_phrase], dtype=tf.string)
         result = ""
         length = 0
+
+        if state_random_ranges is not None:
+            first = state_random_ranges[0] if len(state_random_ranges) > 0 else None
+            second = state_random_ranges[1] if len(state_random_ranges) > 1 else None
+
+            states = self.model.create_initial_state(1, first, second)
+        else:
+            states = self.model.create_initial_state(1)
 
         while True:
             next_char, states = self.generate_one_step(next_char, states=states)

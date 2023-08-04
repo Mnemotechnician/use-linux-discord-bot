@@ -144,23 +144,18 @@ class UseLinuxExtension : ULBotExtension() {
 					fail("You must wait $cooldownChannelSeconds seconds before using this command again in this channel.")
 				}
 			}
-			check {
-				arguments?.invoke()?.startingPhrase?.let {
-					if (it.length > 128) fail("The starting phrase is too long.")
-				}
-			}
 
 			action {
 				userCooldowns[event.interaction.user.id] = System.currentTimeMillis() + cooldownUserSeconds * 1000
 				channelCooldowns[event.interaction.channelId] = System.currentTimeMillis() + cooldownChannelSeconds * 1000
 
-				val phrase = arguments.startingPhrase.trim().takeIf(String::isNotEmpty)
+				val phrase = arguments.startingPhrase.trim().takeIf(String::isNotEmpty)?.let { "$it " }.orEmpty()
+				val params = TextGenerator.GeneratorProcess.GeneratorParams(
+					arguments.firstLayerRandomRange?.parseFloatRange(),
+					arguments.secondLayerRandomRange?.parseFloatRange()
+				)
 				val (text, time) = withContext(Dispatchers.IO) {
-					if (phrase != null) {
-						textGeneratorProcess.generate(phrase + " ")
-					} else {
-						textGeneratorProcess.generate(maxRetries = 5)
-					}
+					textGeneratorProcess.generate(phrase, params, maxRetries = 5)
 				}
 
 				log("Generated a message for ${event.interaction.user.tag} in $time seconds.")
@@ -275,6 +270,16 @@ class UseLinuxExtension : ULBotExtension() {
 			name = "starting-phrase"
 			description = "The starting phrase. Can be empty."
 			defaultValue = ""
+		}
+
+		val firstLayerRandomRange by optionalFloatRange {
+			name = "random-range-1"
+			description = "Random range used to init the state of the 1st LSTM layer. Format: `min..max`. Default: `-0.1..0.1`."
+		}
+
+		val secondLayerRandomRange by optionalFloatRange {
+			name = "random-range-2"
+			description = "Random range used to init the state of the 2nd LSTM layer. Format: `min..max`. Default: `-1..1`."
 		}
 	}
 

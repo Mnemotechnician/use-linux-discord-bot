@@ -44,7 +44,16 @@ sys.stderr.write("Generating. Type starting phrases to generate inputs.")
 while True:
     phrase = input()
 
-    text, time = generator.generate_message(phrase)
+    # If the phrase contains a `PARAMS::` string, remove it and treat the following as a params object.
+    if "PARAMS::" in phrase:
+        phrase, params = phrase.split("PARAMS::")
+        params = json.loads(params)
+        state_random_ranges = params["ranges"]
+    else:
+        state_random_ranges = None
+
+
+    text, time = generator.generate_message(phrase, state_random_ranges)
     print(phrase + text)
     print(f"{time} s")
     print("")

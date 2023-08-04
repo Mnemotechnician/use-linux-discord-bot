@@ -1,8 +1,6 @@
 package com.github.mnemotechnician.messagegen
 
-import java.io.Closeable
-import java.io.File
-import java.io.PrintWriter
+import java.io.*
 import java.lang.IllegalStateException
 import java.lang.ProcessBuilder.Redirect.*
 import kotlin.random.Random
@@ -255,6 +253,7 @@ object TextGenerator {
 		 */
 		fun generate(
 			startingPhrase: String = "",
+			params: GeneratorParams? = null,
 			maxRetries: Int = 0
 		): Pair<String, Double> {
 			try {
@@ -263,9 +262,22 @@ object TextGenerator {
 				while (true) {
 					if (!process.isAlive) throw RuntimeException("Generator stopped")
 
-					process.outputStream.write(startingPhrase.toByteArray())
-					process.outputStream.write('\n'.code)
-					process.outputStream.flush()
+					PrintWriter(process.outputStream.writer()).apply {
+						print(startingPhrase)
+						if (params != null) {
+							print("PARAMS::")
+							print("{\"ranges\":[")
+							arrayOf(params.firstStateRange, params.secondStateRange)
+								.joinToString(", ") { when (it) {
+									null -> "null"
+									else -> "[${it.start}, ${it.endInclusive}]"
+								} }
+								.let(::print)
+							print("]}")
+						}
+						println()
+						flush()
+					}
 
 					process.inputStream.bufferedReader().let {
 						val output = it.readLine().trim()
@@ -295,6 +307,17 @@ object TextGenerator {
 		override fun close() {
 			if (started) process.destroy()
 		}
+
+		/**
+		 * Dynamic message generation parameters.
+		 *
+		 * @param firstStateRange random range used to initialize the states of the first LSTM layer of the message generator.
+		 * @param secondStateRange random range used to initialize the states of the second LSTM layer of the message generator.
+		 */
+		data class GeneratorParams(
+			val firstStateRange: ClosedRange<Float>?,
+			val secondStateRange: ClosedRange<Float>?
+		)
 	}
 
 	enum class DatasetPref(val main: Boolean, val learning: Boolean) {

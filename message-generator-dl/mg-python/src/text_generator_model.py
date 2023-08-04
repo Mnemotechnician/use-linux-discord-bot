@@ -63,8 +63,12 @@ class TextGeneratorModel(tf.keras.Model):
         self.embedding.embeddings = embedding_matrix
         print(self.embedding.embeddings)
 
-    # noinspection PyDefaultArgument
-    def create_initial_state(self, batch_size: int, range_1: list=[-0.1, 0.1], range_2: list=[-1, 1]):
+    def create_initial_state(self, batch_size: int, range_1=None, range_2=None):
+        if range_1 is None:
+            range_1 = [-0.1, 0.1]
+        if range_2 is None:
+            range_2 = [-1, 1]
+
         random_h1 = tf.random.uniform([batch_size, self.rnn1.units], range_1[0], range_1[1])
         random_h2 = tf.random.uniform([batch_size, self.rnn2.units], range_2[0], range_2[1])
         random_c1 = tf.random.uniform([batch_size, self.rnn1.units], range_1[0], range_1[1])
