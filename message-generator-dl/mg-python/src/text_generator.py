@@ -10,13 +10,13 @@ class TextGenerator(tf.keras.Model):
     def __init__(self, model, id_to_char, char_to_id, temperature=1.0):
         super().__init__()
 
-        self.temperature = temperature
-        self.model = model
+        self.temperature: float = temperature
+        self.model: TextGeneratorModel = model
         self.id_to_char = id_to_char
         self.char_to_id = char_to_id
 
         # Create a mask to prevent oov and mask tokens from being generated.
-        skip_ids = self.char_to_id([MASK_TOKEN, OOV_TOKEN])[:, None]
+        skip_ids = self.char_to_id([MASK_TOKEN, OOV_TOKEN, MESSAGE_START])[:, None]
         sparse_mask = tf.SparseTensor(
             # Put a -inf at each bad index.
             values=[-float('inf')] * len(skip_ids),
@@ -65,7 +65,7 @@ class TextGenerator(tf.keras.Model):
         :return: A tuple of the generated message and the time in seconds it took to generate it.
         """
         start = time.time()
-        states = None
+        states = self.model.create_initial_state(1)
         next_char: tf.Tensor = tf.constant([MESSAGE_START + starting_phrase], dtype=tf.string)
         result = ""
         length = 0

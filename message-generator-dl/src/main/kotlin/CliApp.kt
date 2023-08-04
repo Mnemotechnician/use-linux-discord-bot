@@ -35,7 +35,7 @@ fun main() {
 		}
 		'g' -> {
 			val process = TextGenerator.load(promptForCheckpoint())
-			val textSplitRegex = "(.{1,100}(?!\\w)|.+)".toRegex()
+			val textSplitRegex = "(.{1,100}(?!\\w)|.{1,100})".toRegex()
 			val blockChar = "+"
 
 			println("Type a starting phrase (optional). Press enter to generate.")

@@ -157,7 +157,7 @@ object TextGenerator {
 		}
 		process.waitFor()
 
-		require(process.exitValue() == 0) {
+ 		require(process.exitValue() == 0) {
 			"Trainer process terminated with non-zero exit code: ${process.exitValue()}"
 		}
 	}

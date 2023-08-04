@@ -24,7 +24,7 @@ between words and occasionally phrases.
 During training, 33% phrases in it are postfixed with a message terminator character,
 the rest is postfixed with a space.
 - `train-main` - contains actual phrases telling people to use Linux. During training,
-messages here are prefixed with a random starting phrase (which changes every 10 epochs)
+all messages here are prefixed with a starting token
 and postfixed with a message terminator.
 
 In order to train the model, you must first compile the module:

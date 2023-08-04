@@ -5,27 +5,27 @@ class TextGeneratorModel(tf.keras.Model):
     def __init__(self, batch_size, vocab_size, embedding_dim, rnn_units, dropout_rate=0.0):
         super().__init__(self)
 
-        self.vocab_size = vocab_size
-        self.embedding_dim = embedding_dim
+        self.vocab_size: int = vocab_size
+        self.embedding_dim: int = embedding_dim
 
-        self.embedding = tf.keras.layers.Embedding(
+        self.embedding: tf.keras.layers.Embedding = tf.keras.layers.Embedding(
             vocab_size,
             embedding_dim,
             mask_zero=True
         )
-        self.rnn1 = tf.keras.layers.LSTM(
+        self.rnn1: tf.keras.layers.LSTM = tf.keras.layers.LSTM(
             rnn_units,
             dropout=dropout_rate,
             return_sequences=True,
             return_state=True
         )
-        self.rnn2 = tf.keras.layers.LSTM(
+        self.rnn2: tf.keras.layers.LSTM = tf.keras.layers.LSTM(
             rnn_units // 5,
             dropout=dropout_rate,
             return_sequences=True,
             return_state=True
         )
-        self.dense = tf.keras.layers.Dense(vocab_size)
+        self.dense: tf.keras.layers.Dense = tf.keras.layers.Dense(vocab_size)
 
         self.build(tf.TensorShape([batch_size, None]))
 
@@ -62,6 +62,15 @@ class TextGeneratorModel(tf.keras.Model):
 
         self.embedding.embeddings = embedding_matrix
         print(self.embedding.embeddings)
+
+    # noinspection PyDefaultArgument
+    def create_initial_state(self, batch_size: int, range_1: list=[-0.1, 0.1], range_2: list=[-1, 1]):
+        random_h1 = tf.random.uniform([batch_size, self.rnn1.units], range_1[0], range_1[1])
+        random_h2 = tf.random.uniform([batch_size, self.rnn2.units], range_2[0], range_2[1])
+        random_c1 = tf.random.uniform([batch_size, self.rnn1.units], range_1[0], range_1[1])
+        random_c2 = tf.random.uniform([batch_size, self.rnn2.units], range_2[0], range_2[1])
+
+        return ([random_h1, random_c1], [random_h2, random_c2])
 
     @tf.function
     def call(self, inputs, states: tuple=None, return_states=False, training=False):

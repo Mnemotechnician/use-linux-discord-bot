@@ -86,9 +86,10 @@ elif pretrained_embedding is not None:
     model.load_embedding_layer(pretrained_embedding, char_to_id.get_vocabulary())
 
 last_epoch = 0
-def create_checkpoint_if_necessary(epoch=-1, logs=None):
-    last_epoch = epoch
-    if ((epoch + 1) % 5 == 0):
+def create_checkpoint_if_necessary(epoch=-1, logs=None, force=False):
+    global last_epoch
+
+    if (((epoch + 1) % 5 == 0 or force) and epoch != last_epoch):
         timestamp = str(datetime.datetime.now()).split(".")[0].replace(":", ".")
 
         checkpoint = os.path.join(checkpoint_dir, f"ckpt_{timestamp}")
@@ -102,16 +103,16 @@ def create_checkpoint_if_necessary(epoch=-1, logs=None):
         with open(os.path.join(checkpoint, "vocab.json"), "w") as file:
             json.dump(char_to_id.get_vocabulary(), file)
 
+        last_epoch = epoch
+
 history = model.fit(
     dataset,
     epochs=epochs,
     callbacks=[
         tf.keras.callbacks.EarlyStopping(monitor='loss', patience=3, verbose=1, min_delta=0.007),
-        tf.keras.callbacks.LambdaCallback(on_epoch_end=create_checkpoint_if_necessary)
-    ],
-    use_multiprocessing=True
+       tf.keras.callbacks.LambdaCallback(
+            on_epoch_end=create_checkpoint_if_necessary,
+            on_train_end=lambda logs: create_checkpoint_if_necessary(last_epoch, logs, force=True)
+        )
+    ]
 )
-
-# The final checkpoint
-if ((last_epoch + 1) % 5 != 0):
-    create_checkpoint_if_necessary()
