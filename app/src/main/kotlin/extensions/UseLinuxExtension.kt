@@ -103,6 +103,7 @@ class UseLinuxExtension : ULBotExtension() {
 			description = "View all notified channels and their intervals."
 
 			ownerOnlyCheck()
+			ownerGuildOnly()
 
 			action {
 				editingPaginator {

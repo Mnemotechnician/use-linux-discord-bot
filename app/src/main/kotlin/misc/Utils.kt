@@ -7,6 +7,7 @@ import dev.kord.core.Kord
 import dev.kord.core.entity.channel.TextChannel
 
 val OWNER_ID = Snowflake(502871063223336990UL)
+val OWNER_GUILD = Snowflake(732661261812367450)
 
 suspend fun TextChannel.canPost() = run {
 	val selfId = getKoin().inject<Kord>().value.selfId
@@ -25,3 +26,6 @@ fun SlashCommand<*, *, *>.ownerOnlyCheck() {
 		if (event.interaction.user.id != OWNER_ID) fail("Access Denied.")
 	}
 }
+
+fun SlashCommand<*, *, *>.ownerGuildOnly() =
+	guild(OWNER_GUILD)
