@@ -60,13 +60,13 @@ class DebugExtension : ULBotExtension() {
 			name = "channel"
 			description = "Channel to send message in"
 		}
-		val reference by optionalSnowflake {
-			name = "ref"
-			description = "Message to reply to"
-		}
 		val content by string {
 			name = "content"
 			description = "Message content"
+		}
+		val reference by optionalSnowflake {
+			name = "ref"
+			description = "Message to reply to"
 		}
 		val attachment by optionalAttachment {
 			name = "attachment"
