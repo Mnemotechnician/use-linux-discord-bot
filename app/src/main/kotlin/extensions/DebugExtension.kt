@@ -1,18 +1,13 @@
 package com.github.mnemotechnician.uselinux.extensions
 
 import com.github.mnemotechnician.uselinux.misc.*
-import com.kotlindiscord.kord.extensions.DiscordRelayedException
 import com.kotlindiscord.kord.extensions.commands.Arguments
 import com.kotlindiscord.kord.extensions.commands.converters.impl.*
-import com.kotlindiscord.kord.extensions.extensions.*
-import com.kotlindiscord.kord.extensions.extensions.ephemeralMessageCommand
-import com.kotlindiscord.kord.extensions.pagination.RIGHT_EMOJI
+import com.kotlindiscord.kord.extensions.extensions.ephemeralSlashCommand
 import com.kotlindiscord.kord.extensions.types.respond
 import dev.kord.common.annotation.*
 import dev.kord.core.behavior.channel.createMessage
 import io.ktor.client.request.forms.*
-import io.ktor.http.*
-import io.ktor.util.reflect.*
 import io.ktor.utils.io.jvm.javaio.*
 import java.net.URL
 

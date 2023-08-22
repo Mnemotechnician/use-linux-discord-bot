@@ -3,23 +3,21 @@ package com.github.mnemotechnician.uselinux.extensions
 import com.github.mnemotechnician.messagegen.TextGenerator
 import com.github.mnemotechnician.uselinux.misc.*
 import com.kotlindiscord.kord.extensions.commands.Arguments
-import com.kotlindiscord.kord.extensions.commands.application.slash.converters.impl.*
+import com.kotlindiscord.kord.extensions.commands.application.slash.converters.impl.defaultingNumberChoice
 import com.kotlindiscord.kord.extensions.commands.converters.impl.*
 import com.kotlindiscord.kord.extensions.extensions.publicSlashCommand
 import com.kotlindiscord.kord.extensions.types.*
-import com.kotlindiscord.kord.extensions.utils.*
-import dev.kord.common.entity.*
+import com.kotlindiscord.kord.extensions.utils.getKoin
+import dev.kord.common.entity.Snowflake
 import dev.kord.core.Kord
 import dev.kord.core.behavior.channel.createMessage
 import dev.kord.core.entity.channel.TextChannel
 import dev.kord.rest.builder.message.create.embed
 import kotlinx.coroutines.*
 import kotlinx.serialization.*
-import kotlinx.serialization.Transient
 import kotlinx.serialization.json.Json
 import java.io.File
 import java.util.*
-import kotlin.collections.HashMap
 
 class UseLinuxExtension : ULBotExtension() {
 	override val name = "use-linux"

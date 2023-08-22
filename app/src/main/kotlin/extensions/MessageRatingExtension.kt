@@ -1,7 +1,6 @@
 package com.github.mnemotechnician.uselinux.extensions
 
 import com.github.mnemotechnician.messagerating.MessageRating
-import dev.kord.common.annotation.*
 import dev.kord.common.entity.Snowflake
 import dev.kord.core.entity.GuildEmoji
 import dev.kord.core.event.message.MessageCreateEvent
